@@ -46,4 +46,12 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 **Usuario (Referencia):** Nos haremos de este término para indicar cuando un caso de uso puede tener tanto un operador o un administrador como actor.
 
 ### 2.2.2 – Diagrama de casos de uso
-![](./diagrams/Capitulo 2/Diagrama de CU.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/3b6b944fcf9c666104da3eb1d666f5d9f9cbc5ac/Diagrams/Capitulo%202/Diagrama%20de%20CU.png)
+
+
+
+
+
+
+
+
