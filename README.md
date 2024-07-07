@@ -624,7 +624,131 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 ![](https://github.com/ClaudioTilbe/oneforall/blob/8a4c003b21132945ae9bcccfa0ec49cef5c67c13/Diagrams/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
 
 
+### 9.2 – Patrones de diseño
 
+En el desarrollo de nuestro software, hemos aplicado cuidadosamente patrones de diseño para mejorar su estructura y eficiencia. A continuación, presentamos los patrones que seleccionamos y las razones detrás de cada elección.
+
+
+**Patrón Fabrica**
+Hemos incorporado el patrón Factory en la capa de backend. Optamos por el patrón Factory para proporcionar una capa de abstracción entre la API Rest y la capa de lógica del backend. Esto garantiza la seguridad y la eficiencia en la gestión de solicitudes, al tiempo que mantiene la lógica del sistema encapsulada, sin exponer detalles concretos a la API REST.
+
+**Patron Singleton**
+En nuestro proyecto, hemos seleccionado el patrón Singleton por su capacidad para controlar la creación de instancias de clases de manera precisa. El patrón Singleton asegura que una clase tenga una única instancia y se encarga de crearla solo cuando sea necesario, evitando el desperdicio de recursos. Esto simplifica la gestión y garantiza que cada clase Singleton sea accesible de manera uniforme en toda la aplicación, proporcionando un control efectivo sobre sus estados y operaciones.
+Singleton será mayormente utilizado en el backend del sistema por sus características, así como también en el “Hub”, clase que tendrá los métodos referentes a SignalR del lado del servidor.
+
+
+
+# CAMBIOS, PROBLEMAS Y REPLANIFICACIONES (10)
+
+### 10.1 – Cambios realizados 
+
+***En este capitulo solo se indican los cambios realizados, con la finalidad de marcar el porque de algunos apartados "tachados". Este capitulo se extiende con el fundamento detras de cada cambio en el documento de entrega pero no aporta nada a fines practicos en este repositorio.*** 💬
+
+- Retiro de caso de uso “Ajustar potencia Motor"
+- Retiro del valor “ejecutándose” de estado de analisis de red
+- Retiro de relación entre análisis de red y subred
+- Retiro de relación entre estado motor y administrador
+
+
+
+# INVESTIGACIÓN (11)
+
+### 11.1 – Fuentes de busqueda e informacion
+Para la investigación de las distintas tecnologías y algoritmos que componen la solución opte por utilizar varias fuentes y métodos de búsqueda; Inicialmente probando con las fuentes clásicas hasta llegar a algunas más modernas y/o específicas dependiendo del resultado buscado.
+
+
+**Google**
+La primera instancia para cualquiera de las búsquedas fue google. A partir de aquí pude identificar foros, fuentes oficiales de documentación, repositorios, entre otros. La mayoría de las búsquedas se comenzaron a realizar en inglés en el momento que note la enorme diferencia de resultados y de información extra que podía alcanzar.
+
+**Fuentes oficiales**
+Las fuentes oficiales de cada tecnología utilizada y cada tecnología evaluada durante la etapa de planificación, fueron vitales para confeccionar y codificar de manera correcta y con buenas prácticas la solución; además de ser también en parte grandes repositorios con código de ejemplo que en muchos casos fue sumamente útil.
+
+**BIOS**
+Los proyectos generados a lo largo de la carrera fueron fundamentales para el desarrollo del sistema, actuando como grandes repositorios de código y como fuente de información a través de las transparencias.
+
+**Foros**
+Algunos foros de confianza previa y descubiertos durante los distintos procesos del proyecto también fueron útiles para solucionar problemas eventuales y puntuales, permitiendo llegar a varias soluciones que además eran discutidas por los distintos usuarios del foro para determinar su eficacia y calidad.
+
+**Repositorios**
+Más allá de algunas fuentes oficiales que a su vez tenían gran parte de repositorio, se utilizaron páginas puntuales que están definidas como tal y contenían soluciones con fragmentos de código útiles para mi proyecto.
+
+**Inteligencia artificial**
+Partiendo inicialmente como una prueba finalmente  se convirtió en una herramienta potente para consultas muy específicas, en las que el contexto era enorme y las palabras clave eran demasiadas para una búsqueda convencional. Fue principalmente utilizada cuando todas las fuentes anteriores fallaban y su información corroborada antes de ser utilizada debido a su poca fiabilidad.
+
+
+### 11.2 – Aprendizaje de tecnologías
+En este apartado se indicará la documentación con la que se abordaron principalmente las tecnologías o conceptos que eran desconocidos hasta antes de comenzar con el desarrollo del software.
+
+- Bootstrap 
+Fuente oficial: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+
+- Chart.js 
+Fuente oficial: https://www.chartjs.org/docs/latest/samples/information.html 
+
+- SignalR 
+Fuente oficial: https://learn.microsoft.com/en-us/aspnet/signalr/overview/older-versions/tutorial-getting-started-with-signalr 
+Realice el siguiente curso para capacitarme en esta tecnología:
+https://www.udemy.com/course/aplicaciones-web-en-tiempo-real-con-aspnet-signalr/?couponCode=KEEPLEARNING 
+
+- JQuery
+Fuente oficial: https://api.jquery.com/
+Otras fuentes: https://www.w3schools.com/jquery/default.asp 
+ 
+- API Rest
+Fuente oficial: https://learn.microsoft.com/es-es/aspnet/core/web-api/?view=aspnetcore-5.0&WT.mc_id=dotnet-35129-website 
+Uso de Swagger:
+https://learn.microsoft.com/es-es/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0
+Otras fuentes:
+https://www.c-sharpcorner.com/article/asp-net-core-5-0-web-api/ 
+
+
+
+### 11.3 – Problemáticas y resolución
+En este apartado se indicará la documentación con la que se abordaron problemas puntuales que fueron surgiendo a lo largo del desarrollo de la solución; algunos artículos son parcialmente útiles al desarrollo de la misma por lo que se extrae únicamente la información necesaria.
+
+- Problema 1 - Uso de Nmap a través de código C#
+La alternativa más favorable resultó ser ejecutar el software nmap a través de código C# como consola y obtener el output. Para esto se utilizó principalmente la clase Process.
+Fuente oficial: https://learn.microsoft.com/es-es/dotnet/api/system.diagnostics.process?view=net-5.0 
+
+- Problema 2 - Manejo de Session en arquitectura MVC
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0 
+https://stackoverflow.com/questions/55220812/how-to-store-and-retrieve-objects-in-session-state-in-asp-net-core-2-x 
+
+- Problema 3 - Envío de correo a través de código C#
+La manera más sencilla y efectiva que encontré investigando es agregando un using.
+https://www.kyocode.com/2019/08/como-enviar-correo-con-c/ 
+
+- Problema 4 - Almacenamiento de imágenes en SQL Server
+Idea de utilizar “VARBINARY(MAX)” como medio de almacenamiento de imágenes:
+https://es.stackoverflow.com/questions/259400/convertir-a-byte-una-imagen-para-guardarla-en-sql-server-desde-c
+Conversión de “IFormFile” desde la view a un array “byte[]” a almacenar en el objeto:
+https://stackoverflow.com/questions/36432028/how-to-convert-a-file-into-byte-array-in-memory
+
+- Problema 5 - Consumo de métodos de API Rest (get, post, put y delete)
+https://www.tutorialsteacher.com/webapi/consume-web-api-for-crud-operation 
+
+- Problema 6 - Chequeo de conexión de dispositivos
+https://learn.microsoft.com/es-es/dotnet/api/system.net.networkinformation.ping?view=net-5.0
+https://stackoverflow.com/questions/11800958/using-ping-in-c-sharp
+https://www.c-sharpcorner.com/UploadFile/167ad2/how-to-use-ping-in-C-Sharp/
+
+- Problema 7 - Uso de Thread en C#
+https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread?view=net-5.0 
+
+- Problema 8 - Generación dinámica y uso de múltiples Task
+https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0
+https://dotnettutorials.net/lesson/how-to-execute-multiple-tasks-in-csharp/
+
+- Problema 9 - Comunicación de variables entre procesos del motor con ConcurrentDictionary
+https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=net-5.0 
+
+- Problema 10 - Utilización de JWT Token para autenticar usuarios en API Rest
+https://www.c-sharpcorner.com/article/jwt-json-web-token-authentication-in-asp-net-core/ 
+https://www.c-sharpcorner.com/article/jwt-validation-and-authorization-in-net-5-0/
+
+- Problema 11 - Ordenar listados por IP
+Algo que parecía sencillo ordenar con Linq finalmente no lo fue tanto y tuve que recurrir a la búsqueda de otra solución.
+https://stackoverflow.com/questions/4785218/linq-lambda-orderby-delegate-for-liststring-of-ip-addresses 
 
 
 
