@@ -621,7 +621,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 **9.1.4 – Vista de modelo de distribución**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/e8fe95e85fa674af178d1e35787053842c3ce463/Diagrams/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/8a4c003b21132945ae9bcccfa0ec49cef5c67c13/Diagrams/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
 
 
 
