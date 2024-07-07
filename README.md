@@ -100,6 +100,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Estrategia de mitigación:** Seguir buenas prácticas de desarrollo y estructurar los algoritmos de manera ordenada. Realizar un testeo intensivo del motor tanto durante la etapa de desarrollo de iteraciones como durante la integración.  | 
 | **Plan de contingencia:** Reinicio del Motor por medio de la funcionalidad integrada en el sistema. | 
 
+---
+
 | Ataques al sistema | 
 | ------------- | 
 | **Descripción**:  Ataques informáticos dirigidos a vulnerar el sistema por parte de cibercriminales. | 
@@ -108,6 +110,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Estrategia de mitigación:** Estructurar la solución con una seguridad robusta. Investigar posibles vulnerabilidades de las tecnologías utilizadas. Realizar pruebas de Pentesting contra el sistema una vez finalizado.  | 
 | **Plan de contingencia:** Analizar el ataque para ubicar puntos débiles en el sistema. Fortalecer y reforzar en materia de seguridad él o los sectores afectados por el ataque. | 
 
+---
+
 | Exceder recursos del servidor | 
 | ------------- | 
 | **Descripción**:  El sistema exige más potencia en términos de recursos de los que el servidor puede proveer.| 
@@ -115,6 +119,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Impacto en el sistema:** Alto  | 
 | **Estrategia de mitigación:**  Realizar pruebas al finalizar el desarrollo del sistema en algún equipo para poder brindar una recomendación de base a fundamentos sobre un ajuste óptimo con un hardware definido. Efectuar pruebas luego del deploy para ajustar los recursos que va a consumir a un nivel que no exceda las capacidades del servidor.  | 
 | **Plan de contingencia:** Realizar un análisis de consumo de recursos apoyado en herramientas del sistema operativo y/o software externo con licencias de uso gratuito. Disminuir la potencia del sistema y por lo tanto los recursos consumidos por el mismo. En caso de no obtener resultados óptimos consultar la posibilidad de mejorar el hardware del servidor.  | 
+
+---
 
 #### 4.1.2 – Riesgos durante la etapa de desarrollo
 
@@ -126,6 +132,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Estrategia de mitigación:**  Investigación previa y constante sobre tecnologías a utilizar. Llevar un control semanal sobre los ciclos de desarrollo. | 
 | **Plan de contingencia:** Rediseñar el ciclo de desarrollo en función de los cambios que se hayan producido, esto incluye suma de carga horaria y/o agregar más ciclos de desarrollo. | 
 
+---
+
 | Falta de experiencia | 
 | ------------- | 
 | **Descripción**: Falta de experiencia en tecnologías y metodologías utilizadas para el desarrollo del sistema. | 
@@ -133,6 +141,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Impacto en el sistema:** Media  | 
 | **Estrategia de mitigación:** Capacitación e investigación constante. | 
 | **Plan de contingencia:** Revisiones en retrospectiva mensualmente analizando el sistema en busca de mejoras teniendo en cuenta la progresión en términos de conocimiento del desarrollador. |
+
+---
 
 | Investigación insuficiente | 
 | ------------- | 
@@ -142,6 +152,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Estrategia de mitigación:** Reafirmar la veracidad y aplicación de la información extraída de las fuentes comparándolas con otras; extraer información principalmente de fuentes oficiales o de confianza.  | 
 | **Plan de contingencia:** Realizar una revisión de la estructura, configuración y/o código escrito realizado en base a fuentes de información poco fiables o inadecuadas. |
 
+---
+
 | Conceptualización de la idea no acertada | 
 | ------------- | 
 | **Descripción**:  Fallo al conceptualizar la solución con la información proporcionada del cliente. | 
@@ -150,6 +162,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Estrategia de mitigación:** Grabar audio de reuniones con el cliente para su posterior revisión en caso de ser necesario  (si está de acuerdo). Efectuar revisiones de la documentación generada. | 
 | **Plan de contingencia:** Programar nuevas reuniones con el cliente, promover un feed-back constante si es necesario. Planificar anticipadamente las consultas a realizar con el cliente en las reuniones. |
 
+---
+
 | Cambios en los requisitos del cliente | 
 | ------------- | 
 | **Descripción**: Cambio en las necesidades del cliente que afecten a los requerimientos de la solución. | 
@@ -157,6 +171,251 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Impacto en el sistema:** Medio  | 
 | **Estrategia de mitigación:** Establecer una buena comunicación con el cliente. Proporcionar recomendaciones con respecto a la estructura y funcionalidades de la solución. | 
 | **Plan de contingencia:** Planificar una nueva reunión y re estructurar las secciones de la solución que sean necesarias. |
+
+
+# CASOS DE USO (5)
+### 5.1 – Casos de uso de alto nivel
+
+| Caso de uso  | Logueo |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador  |
+| **Actor secundario**  |   |
+| **Descripcion** | Inicio de sesión con su cuenta asignada. |
+
+---
+
+| Caso de uso  | Deslogueo |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador  |
+| **Actor secundario**  |   |
+| **Descripcion** | Cerrar sesión con su cuenta asignada. |
+
+---
+
+| Caso de uso  | Visualizar perfil |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador  |
+| **Actor secundario**  |   |
+| **Descripcion** | El Usuario puede visualizar la información de su propio perfil. En caso de ser Administrador podrá visualizar el perfil de otros.|
+
+---
+
+| Caso de uso  | Listado de diagramas de red |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra un listado con los diagramas de red subidos por cada usuario.|
+
+---
+
+| Caso de uso  | Listado Sucursales |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de sucursales con la respectiva información de cada una. |
+
+---
+
+| Caso de uso  | Listado Grupos |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | El usuario accede a un listado con sus Grupos creados. |
+
+---
+
+| Caso de uso  | Listado Reportes |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de Reportes con la respectiva información de cada uno. |
+
+---
+
+| Caso de uso  | Visualizar Logs de Motor |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite visualizar errores no previstos que puedan darse dentro del Motor. |
+
+---
+
+| Caso de uso  | Listado de análisis de puertos  |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de análisis de puertos efectuados y por efectuar con la respectiva información de cada uno. |
+
+---
+
+| Caso de uso  | Visualizar Dashboard  |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra un conjunto de estadísticas presentadas como distintos gráficos. |
+
+---
+
+| Caso de uso  | Configurar Mail  |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | El usuario podrá configurar el mail desde el que se envían los reportes. |
+
+---
+
+| Caso de uso  | Listado Operadores  |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de Operadores con la respectiva información de cada uno, al seleccionar alguno muestra las subredes a su cargo. |
+
+---
+
+| Caso de uso  | Listado Dispositivos  |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista total de dispositivos a cargo, con su información, una serie de acciones y con filtro por subred, grupo o sucursal. |
+
+---
+
+| Caso de uso  | Listado de análisis de subred   |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de análisis de subred efectuados y por efectuar con la respectiva información de cada uno. |
+
+---
+
+| Caso de uso  | Listar dispositivos por estado  |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | El Usuario selecciona en un panel un tipo de estado de Dispositivos para que se le liste.|
+
+---
+
+| Caso de uso  | Iniciar Motor |
+| ------------- | ------------- |
+| **Actor principal** |  Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite iniciar los trabajos realizados por el Motor. |
+
+---
+
+| Caso de uso  | Listado Administradores |
+| ------------- | ------------- |
+| **Actor principal** |  Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Muestra una lista de Administradores con la respectiva información de cada uno. |
+
+---
+
+| Caso de uso  | Sincronizar sondeo |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el monitoreo de una lista de dispositivos, que pueden ser filtrados por grupo, actualizando sus datos en tiempo real. |
+
+---
+
+| Caso de uso  | Detener Sondeo |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Deja de actualizar las funciones de monitoreo en pantalla con datos en tiempo real. |
+
+---
+
+| Caso de uso  | Exportar listado de Dispositivos |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite exportar en formato xlsx (Excel) un listado de dispositivos seleccionados. |
+
+---
+
+| Caso de uso  | Gestión de sucursal |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de una sucursal mediante su selección en lista o su búsqueda.|
+
+---
+
+| Caso de uso  | Gestión de diagrama de red |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite subir un diagrama de red visible para si mismo y los administradores. También permite eliminarlo. |
+
+---
+
+| Caso de uso  | Gestión de Grupo |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de un Grupo mediante su selección en lista o su búsqueda. |
+
+---
+
+| Caso de uso  | Detener Motor |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite detener los trabajos realizados por el Motor. |
+
+---
+
+| Caso de uso  | Gestión de Reporte |
+| ------------- | ------------- |
+| **Actor principal** | Operador, Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de un Reporte mediante su selección en lista o selección de dispositivo para Generar. | 
+
+---
+
+| Caso de uso  | Gestión de análisis de puertos |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | El Administrador puede programar como tarea un análisis de puertos de un dispositivo conocido. | 
+
+---
+
+| Caso de uso  | Gestión de análisis de subred  |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | El Administrador puede programar como tarea un análisis indicando una subred. | 
+
+---
+
+| Caso de uso  | Gestión de Dispositivo  |
+| ------------- | ------------- |
+| **Actor principal** | Operador,  Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de un dispositivo mediante su selección en lista o su búsqueda. | 
+
+---
+
+| Caso de uso  | Gestión de Operador |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de un Operador mediante su selección en lista o su búsqueda. | 
+
+---
+
+| Caso de uso  | Gestión de Administrador |
+| ------------- | ------------- |
+| **Actor principal** | Administrador |
+| **Actor secundario**  |   |
+| **Descripcion** | Permite el alta, baja y modificación de un Administrador mediante su selección en lista o su búsqueda. | 
+
+
+
 
 
 
