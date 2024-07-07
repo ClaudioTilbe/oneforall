@@ -7,7 +7,7 @@ A continuacion presento una sintesis de la documentacion generada para el proyec
 # INTRODUCCIÓN (1)
 
 ### 1.1 - Presentación de equipo
-El equipo está únicamente conformado por Claudio Tilbe, desarrollador a cargo de la documentación y codificación de la solución, de nacionalidad uruguaya.
+El equipo está únicamente conformado por Claudio Tilbe, de nacionalidad uruguaya, desarrollador a cargo de la documentación y codificación de la solución.
 
 ### 1.2 - Presentación de cliente
 Una cadena de supermercados mayoristas nacional que cuenta con varias sucursales de mayor y menor envergadura a lo largo del país, se pone en posición de cliente, solicitando un sistema a través del cual pueda monitorear toda su red; desde servidores de importancia en su sucursal central hasta pequeños equipos que sean puntos finales de la red.
