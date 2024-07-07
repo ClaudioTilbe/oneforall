@@ -448,7 +448,125 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagrams/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 
+# Modelo Conceptual (7)
 
+### 7.1 – Diagrama Entidad-Relación 
+#### 7.1.1 – DER
+
+![](https://github.com/ClaudioTilbe/oneforall/blob/d64f73ff3f78ed1042fb9df7339b526b18cb5cd5/Diagrams/Capitulo%207/DER.png)
+
+
+#### 7.1.2 – Pasaje a Tablas
+
+- **Mail** ( <ins>Correo</ins>, Contraseña, HostServidor, Puerto)
+- **Usuario** ( <ins>UsuarioID</ins>, Contraseña, Correo)
+- **Administrador** ( <ins>UsuarioID</ins>, Nombre, NumeroFuncionario, Cargo)
+- **Operador** ( <ins>UsuarioID</ins>, NumeroFuncionarioSupervisor, NombreSupervisor)
+- **Sucursal** ( <ins>NumeroSucursal</ins>, Tipo, Departamento, Calle, NumeroLocal)
+- **SucursalXOperador** ( <ins>UsuarioID, NumeroSucursal</ins>)
+- **Subred** ( <ins>Rango</ins>, NumeroSucursal)
+- **Dispositivo** ( <ins>IP</ins>, Nombre, Tipo, Conectado, Accesible, Sector, Prioridad, Permanencia, UltimaConexion, UltimaNotificacion, NumeroSucursal)
+- **Grupo** ( <ins>Codigo</ins>, NombreGrupo, Descripcion, UsuarioID)
+- **DispositivoEnGrupo** ( <ins>CodigoGrupo, DispositivoIP</ins>)
+- **Reporte** ( <ins>Codigo</ins>, Correo, DispositivoIP, Asunto, Destino, Mensaje) 
+- **MensajeVisor** ( <ins>Id</ins>, DispositivoIP, FechaGenerado, Contenido, UsuarioID)
+- **EstadoMotor** ( <ins>IDEstado</ins>, Activo, UltimaModificacion, UsuarioReg)
+- **AnalisisRed** ( <ins>IdAnalisis</ins>, RangoSubred, Razon, Estado, Prioridad, NuevosDispositivos, FechaGenerado, FechaFinalizado, UsuarioID)
+- **EscaneoPuertos** ( <ins>IdEscaneo</ins>, DispotitivoIP, Razon, Estado, Prioridad, CadenaSalida, FechaGenerado, FechaFinalizado, UsuarioID)
+- **DiagramaRed** ( <ins>NumeroSucursal</ins>, Nombre, FechaSubida, DiagramaImagen)
+- **MensajeAPI** ( <ins>IDMensaje</ins>, Excepcion, Mensaje, MetodoOrigen, FechaGenerado, Tipo)
+
+#### 7.1.3 – RNE
+
+- **Tabla MAIL:**
+Correo: Debe contener "@" y ".com"
+Puerto: Debe estar entre 0 y 65536
+
+- **Tabla ADMINISTRADOR:**
+NumeroFuncionario: Mayor a 0 y menor a 10000000
+
+- **Tabla OPERADOR:**
+NumeroFuncionarioSupervisor: Mayor a 0 y menos a 100000000
+
+- **Tabla SUCURSAL:**
+NumeroSucursal: Menor a 10000 y mayor a 0
+NumeroLocal: Mayor a 0 y menor a 100000000
+
+- **Tabla DISPOSITIVO:**
+IP: Tiene la estructura X.X.X.X; siendo X distintos números entre 1 y 255
+Prioridad: Puede ser alta, media o baja
+UltimaConexion: No puede tener fecha y hora por delante del presente
+UltimaNotificacion: No puede tener fecha y hora por delante del presente
+
+- **Tabla GRUPO:**
+Codigo: Identity (1, 1)
+
+- **Tabla REPORTE:**
+Codigo : Identity (1, 1)
+Destino:  Debe contener "@" y ".com"
+
+- **Tabla MENSAJEVISOR:**
+Id: Identity (1, 1)
+FechaGenerado: No puede tener fecha y hora por delante del presente
+
+- **Tabla ESTADOMOTOR:**
+IDEstado: Identity (1, 1)
+UltimaModificacion: No puede tener fecha y hora por delante del presente
+
+- **Tabla ANALISISRED:**
+IdAnalisis: Identity (1, 1)
+Subred: Tiene la estructura X.X.X; siendo X distintos números entre 1 y 255
+Estado: Puede estar en pendiente, cancelado, finalizado
+Prioridad: Puede ser baja, media o alta
+NuevosDispositivos: Debe ser mayor o igual a 0
+FechaGenerado: No puede tener fecha y hora por delante del Presente
+FechaFinalizado: No puede tener fecha y hora por delante del Presente
+
+- **Tabla ESCANEOPUERTOS:**
+IdEscaneo: Identity (1, 1)
+Estado: Puede estar en pendiente, ejecutandose, cancelado, finalizado
+Prioridad: Puede ser baja, media o alta
+FechaGenerado: No puede tener fecha y hora por delante del Presente
+FechaFinalizado: No puede tener fecha y hora por delante del Presente
+
+- **Tabla DIAGRAMARED:**
+FechaSubida: No puede tener fecha y hora por delante del Presente
+DiagramaImagen: Formato Imagen
+
+- **Tabla MENSAJEAPI:**
+IDMensaje: Identity (1, 1)
+FechaGenerado: No puede tener fecha y hora por delante del Presente
+Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
+
+
+### 7.2 – Modelo Conceptual
+
+![](https://github.com/ClaudioTilbe/oneforall/blob/a64b85161629fc3efcfa3e6a5c7db9b2f331b1fa/Diagrams/Capitulo%207/Modelo%20Conceptual.png)
+
+
+# Análisis y Diseño (8)
+
+### 8.1 – Expansión completa por caso de uso
+#### 8.1.1 – Diagramas y tablas
+
+***Aclaraciones:***
+- _Para facilitar el desarrollo de los casos de uso tomamos por convención que en aquellos momentos que se utilice “Usuario” estamos haciendo referencia a un administrador u operador._
+- _Se confeccionaron diagramas de comunicación para gestión de operador, gestión de análisis de subred y ~~ajustar potencia Motor~~_
+
+Los diagramas y/o tablas a continuación seguirán el siguiente formato:
+- Caso de uso Expandido
+- Diagrama de secuencia del sistema
+- Contrato de software
+- Diagrama de comunicación (en los casos seleccionados)
+
+**(Pendiente. Dandole formato...)** 💬
+
+
+# ARQUITECTURA Y PATRONES (9)
+
+### 9.1 – SAD
+#### 9.1.1 – Vista del modelo de casos de uso
+**9.1.1.1 – Diagrama de casos de uso relevantes de la arquitectura**
 
 
 
