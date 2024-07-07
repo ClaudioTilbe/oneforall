@@ -568,5 +568,48 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 #### 9.1.1 – Vista del modelo de casos de uso
 **9.1.1.1 – Diagrama de casos de uso relevantes de la arquitectura**
 
+![](https://github.com/ClaudioTilbe/oneforall/blob/332d1f5621994caeaafec930f3687178652c652f/Diagrams/Capitulo%209/CU%20Relevantes%20a%20Arquitectura.png)
+
+**9.1.1.1** – Justificacion de los casos de uso relevantes
+**Logueo.** Es relevante porque es el caso de uso a través del cual un usuario anónimo se identifica, o no, con credenciales ya registradas en el sistema. Luego de iniciar sesión pasará a ser un usuario con acceso a las funciones que corresponda según su tipo de usuario. Este caso de uso es fundamental ya que es el que valida que el usuario anónimo o desconocido pueda ingresar a funciones del sistema.
+
+**Deslogueo.** Es relevante porque a través de este caso de uso el usuario previamente autenticado que inicio sesión, podrá cerrarla, y por lo tanto también cerrar el acceso a las funciones del sistema. Este caso de uso es importante para mermar el riesgo lo máximo posible y evitar situaciones desfavorables para la seguridad del sistema y/o el usuario.
+
+**Gestión de diagrama de red.** Es relevante porque permite la alta y baja de los diagramas de red de cada sucursal, así como también visualizarlos en detalle.
+
+**Gestión de análisis de subred.** Es relevante porque permite el alta de nuevos análisis de red, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
+
+**Configurar mail.** Es relevante porque permite la configuración del mail, que será vital a la hora de que el back-end envíe los correos pertinentes según los reportes que hayan sido configurados por el usuario en cuestión. 
+
+**Gestión de análisis de puertos.** Es relevante porque permite el alta de nuevos escaneos de puertos, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis de puertos el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
+
+**Gestión de grupo.** Es relevante porque este caso de uso posee las funcionalidades, en cuanto a grupos, de alta, baja, modificar y visualizar en detalle; que a su vez son importantes para la manipulación de una entidad destinada a agrupar dispositivos y presentar una vista sobre dispositivos más específicos que se desean monitorear. 
+
+**Gestión de dispositivo.** Es relevante porque es el caso de uso que permite gestionar los dispositivos a través del alta, baja, modificar y visualizar en detalle. Siendo los dispositivos una de las entidades principales, que abarca gran cantidad de casos de uso, es pertinente que disponga de herramientas que permitan una manipulación y gestión total sobre la entidad.
+
+**Gestión de reporte.** Es relevante ya que gestiona por medio de alta, baja, modificar y visualizar en detalle, los reportes. Por medio de esta entidad el sistema puede identificar para qué dispositivos tiene que enviar un mail notificando sobre su estado.
+
+**Iniciar Motor.** Es relevante porque permite iniciar el motor del sistema, que se encarga del sondeo de dispositivos, de ejecutar los análisis de red, ejecutar los escaneos de puertos y enviar los correos según las configuraciones de reportes que haya registrado.
+
+**Visualizar Logs Motor.** Es relevante ya que permite visualizar a los administradores aquellos errores que hayan ocurrido durante procesos en el motor que hayan provocado algún error.
+
+**Gestión de sucursales.** Es relevante ya que permite el alta, baja, modificar y visualizar en detalle de sucursales; entidad destinada a ser un punto de referencia geográfico y de ubicación de dispositivos.
+
+**Gestión de administrador.** Es relevante porque permite el alta, baja, modificar y visualizar en detalle de administradores. Los administradores son tipos de usuarios que se abocan en la completa administración, tanto de la red por medio del sistema, como de los distintos usuarios que pueden y podrán tener acceso en un futuro al sistema desde las varias sucursales existentes.
+
+**Gestión de operador.** Es relevante porque permite el alta, baja, modificar y visualizar en detalle de operadores. Los operadores son tipos de usuarios que se dedican al monitoreo y revisión de una o varias de las subredes existentes.
+
+**Detener Motor.** Es relevante porque permite iniciar el motor del sistema. Es fundamental tener la posibilidad de detener los procesos del motor por varias razones, entre ellas:
+* Frenar el consumo de recursos del servidor en situaciones puntuales en las que los procesos son innecesarios.
+* Ajustar los hilos de trabajo destinados al motor.
+* Tener un método de reinicio del motor.
+* Poder, en caso de que se estén ocasionando errores, solventar los mismos antes de un nuevo inicio.
+
+
+
+
+
+
+
 
 
