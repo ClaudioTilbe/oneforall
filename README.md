@@ -52,7 +52,7 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 FURPS+
 
 
-# TECNOLOGÍAS Y PLATAFORMAS (3)
+# 🛠 TECNOLOGÍAS Y PLATAFORMAS (3)
 
 **Aclaración:** Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como Front-end.
 
@@ -85,6 +85,87 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 **Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put, y delete que expondrá el back-end de nuestra aplicación para que sean consumidas por el front-end.
 
 **Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
+
+
+# EVALUACIÓN DE RIESGOS (4)
+### 4.1 – Identificación de Riesgos
+#### 4.1.1 – Riesgos del sistema
+
+
+| Fallo en el Motor  | 
+| ------------- | 
+| **Descripción**: Falla no controlada en los hilos de trabajo del motor.  | 
+| **Probabilidad de Ocurrencia:** Baja | 
+| **Impacto en el sistema:** Alto  | 
+| **Estrategia de mitigación:** Seguir buenas prácticas de desarrollo y estructurar los algoritmos de manera ordenada. Realizar un testeo intensivo del motor tanto durante la etapa de desarrollo de iteraciones como durante la integración.  | 
+| **Plan de contingencia:** Reinicio del Motor por medio de la funcionalidad integrada en el sistema. | 
+
+| Ataques al sistema | 
+| ------------- | 
+| **Descripción**:  Ataques informáticos dirigidos a vulnerar el sistema por parte de cibercriminales. | 
+| **Probabilidad de Ocurrencia:** Baja | 
+| **Impacto en el sistema:** Alto  | 
+| **Estrategia de mitigación:** Estructurar la solución con una seguridad robusta. Investigar posibles vulnerabilidades de las tecnologías utilizadas. Realizar pruebas de Pentesting contra el sistema una vez finalizado.  | 
+| **Plan de contingencia:** Analizar el ataque para ubicar puntos débiles en el sistema. Fortalecer y reforzar en materia de seguridad él o los sectores afectados por el ataque. | 
+
+| Exceder recursos del servidor | 
+| ------------- | 
+| **Descripción**:  El sistema exige más potencia en términos de recursos de los que el servidor puede proveer.| 
+| **Probabilidad de Ocurrencia:** Baja | 
+| **Impacto en el sistema:** Alto  | 
+| **Estrategia de mitigación:**  Realizar pruebas al finalizar el desarrollo del sistema en algún equipo para poder brindar una recomendación de base a fundamentos sobre un ajuste óptimo con un hardware definido. Efectuar pruebas luego del deploy para ajustar los recursos que va a consumir a un nivel que no exceda las capacidades del servidor.  | 
+| **Plan de contingencia:** Realizar un análisis de consumo de recursos apoyado en herramientas del sistema operativo y/o software externo con licencias de uso gratuito. Disminuir la potencia del sistema y por lo tanto los recursos consumidos por el mismo. En caso de no obtener resultados óptimos consultar la posibilidad de mejorar el hardware del servidor.  | 
+
+#### 4.1.2 – Riesgos durante la etapa de desarrollo
+
+| Planificación demasiado optimista | 
+| ------------- | 
+| **Descripción**:  Superar los límites de tiempo estimados en alguno o varios ciclos de desarrollo.| 
+| **Probabilidad de Ocurrencia:** Media | 
+| **Impacto en el sistema:** Bajo  | 
+| **Estrategia de mitigación:**  Investigación previa y constante sobre tecnologías a utilizar. Llevar un control semanal sobre los ciclos de desarrollo. | 
+| **Plan de contingencia:** Rediseñar el ciclo de desarrollo en función de los cambios que se hayan producido, esto incluye suma de carga horaria y/o agregar más ciclos de desarrollo. | 
+
+| Falta de experiencia | 
+| ------------- | 
+| **Descripción**: Falta de experiencia en tecnologías y metodologías utilizadas para el desarrollo del sistema. | 
+| **Probabilidad de Ocurrencia:** Alta | 
+| **Impacto en el sistema:** Media  | 
+| **Estrategia de mitigación:** Capacitación e investigación constante. | 
+| **Plan de contingencia:** Revisiones en retrospectiva mensualmente analizando el sistema en busca de mejoras teniendo en cuenta la progresión en términos de conocimiento del desarrollador. |
+
+| Investigación insuficiente | 
+| ------------- | 
+| **Descripción**: Fuentes de información inadecuadas o insuficientes. | 
+| **Probabilidad de Ocurrencia:** Media | 
+| **Impacto en el sistema:** Medio  | 
+| **Estrategia de mitigación:** Reafirmar la veracidad y aplicación de la información extraída de las fuentes comparándolas con otras; extraer información principalmente de fuentes oficiales o de confianza.  | 
+| **Plan de contingencia:** Realizar una revisión de la estructura, configuración y/o código escrito realizado en base a fuentes de información poco fiables o inadecuadas. |
+
+| Conceptualización de la idea no acertada | 
+| ------------- | 
+| **Descripción**:  Fallo al conceptualizar la solución con la información proporcionada del cliente. | 
+| **Probabilidad de Ocurrencia:** Baja | 
+| **Impacto en el sistema:** Medio  | 
+| **Estrategia de mitigación:** Grabar audio de reuniones con el cliente para su posterior revisión en caso de ser necesario  (si está de acuerdo). Efectuar revisiones de la documentación generada. | 
+| **Plan de contingencia:** Programar nuevas reuniones con el cliente, promover un feed-back constante si es necesario. Planificar anticipadamente las consultas a realizar con el cliente en las reuniones. |
+
+| Cambios en los requisitos del cliente | 
+| ------------- | 
+| **Descripción**: Cambio en las necesidades del cliente que afecten a los requerimientos de la solución. | 
+| **Probabilidad de Ocurrencia:** Baja | 
+| **Impacto en el sistema:** Medio  | 
+| **Estrategia de mitigación:** Establecer una buena comunicación con el cliente. Proporcionar recomendaciones con respecto a la estructura y funcionalidades de la solución. | 
+| **Plan de contingencia:** Planificar una nueva reunión y re estructurar las secciones de la solución que sean necesarias. |
+
+
+
+
+
+
+
+
+
 
 
 
