@@ -45,11 +45,46 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 
 **Usuario (Referencia):** Nos haremos de este término para indicar cuando un caso de uso puede tener tanto un operador o un administrador como actor.
 
-### 2.2.2 – Diagrama de casos de uso
+#### 2.2.2 – Diagrama de casos de uso
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3b6b944fcf9c666104da3eb1d666f5d9f9cbc5ac/Diagrams/Capitulo%202/Diagrama%20de%20CU.png)
 
+### 2.3 – Requerimientos no funcionales
+FURPS+
 
 
+# TECNOLOGÍAS Y PLATAFORMAS (3)
+
+**Aclaración:** Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como Front-end.
+
+### 3.1 – Repositorio de datos
+**SQL Server 2019** se utilizará para gestionar la base de datos empleada por el sistema.
+La base de datos se creará a través de un script en el cual también se definirán una serie de procedimientos almacenados que serán utilizados por la API Rest.
+Por otro lado, la seguridad integrada estará deshabilitada y la seguridad será definida principalmente por un conjunto de usuarios, roles y permisos delimitados por el desarrollador.
+
+### 3.2 – Back-End
+**API REST**. Será la interfaz que permitirá la comunicación entre nuestro Back-end y Front-end. En la API Rest se alojan una serie de métodos que podrán ser utilizados por nuestra aplicación web y que cumplen la función de utilizar las operaciones de nuestras capas en el Back-end para lograr el procesamiento y finalmente la resolución de los objetivos del usuario al efectuar los diversos casos de uso.
+
+**ADO.NET** será utilizado en la capa de persistencia para poder acceder a los registros de la base de datos.
+
+**Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
+
+### 3.3 – Front-End
+**Aplicación web de ASP.NET MVC**. Será el principal componente del Front-end y la tecnología que utilizará nuestro sistema para proveer de un sitio web a nuestros usuarios.
+
+**Bootstrap** será utilizado en la aplicación web para agilizar los tiempos de desarrollo y diseñar una interfaz para el sitio de una manera rápida y efectiva.
+
+**JQuery** será utilizado en el Front-end para facilitar y agilizar la creación de las páginas web que necesiten ser más dinámicas e interactivas; este factor será más recurrente en aquellas paginas que requieren el uso de SignalR.
+
+**SignalR** será el componente destinado a simplificar la adición de funcionalidad web en tiempo real a la aplicación.
+
+**Chart.js** es una librería javascript destinada a la creación de gráficos en base a datos; dicha función tendrá la finalidad de agregar esta librería al Front-End.
+ClosedXML es una API C# de código abierto para leer, manipular y escribir documentos de Microsoft Excel 2007+. Será utilizada para generar los documentos excel cuando se solicite la descarga de un listado.
+
+
+### 3.4 – Tecnologías de soporte
+**Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put, y delete que expondrá el back-end de nuestra aplicación para que sean consumidas por el front-end.
+
+**Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
 
 
 
