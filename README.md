@@ -415,6 +415,20 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Descripcion** | Permite el alta, baja y modificación de un Administrador mediante su selección en lista o su búsqueda. | 
 
 
+# PLANIFICACIÓN (6)
+### 6.1 – Clasificación y ponderación de casos de uso
+#### 6.1.1 – Criterios
+Importancia para el cliente: Cuantificara lo importante que es el caso de uso para el cliente.
+Criticidad para el negocio: Cuantificara que tan crítico es el caso de uso para que el negocio funcione con normalidad.
+Impacto en la arquitectura: Cuantificara que tan grande fue el cambio en la arquitectura para poder implementar el caso de uso de manera correcta.
+Importancia para el sistema: Cuantificara que tan importante es el caso de uso dentro del flujo normal de trabajo con el sistema e indicará si el caso de uso es imprescindible o una funcionalidad extra.
+Dificultad de implementación: Cuantificara la cantidad de carga horaria que se provee destinar a la investigación e implementación de la funcionalidad utilizada por el caso de uso.
+
+#### 6.1.2 – Priorización cuantitativa
+
+![](https://github.com/ClaudioTilbe/oneforall/blob/b158f9f818cddbf4877bdc87c38fbfe79d072cda/Diagrams/Capitulo%206/Priorizaci%C3%B3n%20Cuantitativa%20T2.png)
+
+
 
 
 
