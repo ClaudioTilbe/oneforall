@@ -428,16 +428,24 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/b158f9f818cddbf4877bdc87c38fbfe79d072cda/Diagrams/Capitulo%206/Priorizaci%C3%B3n%20Cuantitativa%20T2.png)
 
+#### 6.1.3 – Rangos para definir niveles de importancia
+- **Alta:** Desde 100 hasta 68.
+- **Media:** Desde 67 hasta 42.
+- **Baja:** Desde 41 hasta 0.  
 
 
+### 6.2 – Asignación a ciclos de desarrollo
+![](https://github.com/ClaudioTilbe/oneforall/blob/5e8a26ab13e0ef666eec40916dd04d99d5392ae0/Diagrams/Capitulo%206/Asignaci%C3%B3n%20a%20Ciclos%20de%20Desarrollo.png)
 
 
+### 6.3 – GANTT 
+
+- **Planificado**
+![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagrams/Capitulo%206/GANTT%20-%20Previsto.png)
 
 
-
-
-
-
+- **Ejecutado**
+![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagrams/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 
 
