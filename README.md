@@ -4,6 +4,8 @@ OFA es una aplicación web destinada al monitoreo de redes IPv4. Surge para cump
 
 A continuacion presento una sintesis de la documentacion generada para el proyecto.
 
+<br>
+
 # INTRODUCCIÓN (1)
 
 ### 1.1 - Presentación de equipo
@@ -26,6 +28,7 @@ Por otro lado, con OFA se busca también dar la posibilidad a quien administre l
 
 La finalidad del Software es conseguir agilizar la detección de errores en dispositivos dentro de la red para poder solventarlos y a su vez, ser un software fácil de utilizar y configurar por usuarios no tan avanzados en relación a conocimientos de redes. 
 
+<br>
 
 # DESCRIPCIÓN DEL NEGOCIO Y REQUERIMIENTOS (2)
 ### 2.1 – Información sobre el cliente
@@ -51,6 +54,7 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 ### 2.3 – Requerimientos no funcionales
 FURPS+
 
+<br>
 
 # 🛠 TECNOLOGÍAS Y PLATAFORMAS (3)
 
@@ -86,6 +90,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 **Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
 
+<br>
 
 # EVALUACIÓN DE RIESGOS (4)
 ### 4.1 – Identificación de Riesgos
@@ -414,6 +419,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Actor secundario**  |   |
 | **Descripcion** | Permite el alta, baja y modificación de un Administrador mediante su selección en lista o su búsqueda. | 
 
+<br>
 
 # PLANIFICACIÓN (6)
 ### 6.1 – Clasificación y ponderación de casos de uso
@@ -447,6 +453,7 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 - **Ejecutado**
 ![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagrams/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
+<br>
 
 # Modelo Conceptual (7)
 
@@ -543,6 +550,7 @@ Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/a64b85161629fc3efcfa3e6a5c7db9b2f331b1fa/Diagrams/Capitulo%207/Modelo%20Conceptual.png)
 
+<br>
 
 # Análisis y Diseño (8)
 
@@ -561,6 +569,8 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 **(Pendiente. Dandole formato...)** 💬
 
+
+<br>
 
 # ARQUITECTURA Y PATRONES (9)
 
@@ -637,6 +647,7 @@ En nuestro proyecto, hemos seleccionado el patrón Singleton por su capacidad pa
 Singleton será mayormente utilizado en el backend del sistema por sus características, así como también en el “Hub”, clase que tendrá los métodos referentes a SignalR del lado del servidor.
 
 
+<br>
 
 # CAMBIOS, PROBLEMAS Y REPLANIFICACIONES (10)
 
@@ -650,6 +661,7 @@ Singleton será mayormente utilizado en el backend del sistema por sus caracter�
 - Retiro de relación entre estado motor y administrador
 
 
+<br> 
 
 # INVESTIGACIÓN (11)
 
@@ -680,25 +692,29 @@ Partiendo inicialmente como una prueba finalmente  se convirtió en una herramie
 En este apartado se indicará la documentación con la que se abordaron principalmente las tecnologías o conceptos que eran desconocidos hasta antes de comenzar con el desarrollo del software.
 
 - Bootstrap 
-Fuente oficial: https://getbootstrap.com/docs/4.0/getting-started/introduction/
+Fuente oficial: <br>
+https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
 - Chart.js 
-Fuente oficial: https://www.chartjs.org/docs/latest/samples/information.html 
+Fuente oficial: <br>
+https://www.chartjs.org/docs/latest/samples/information.html 
 
-- SignalR 
-Fuente oficial: https://learn.microsoft.com/en-us/aspnet/signalr/overview/older-versions/tutorial-getting-started-with-signalr 
-Realice el siguiente curso para capacitarme en esta tecnología:
+- SignalR  <br>
+Fuente oficial:<br>
+https://learn.microsoft.com/en-us/aspnet/signalr/overview/older-versions/tutorial-getting-started-with-signalr <br>
+Realice el siguiente curso para capacitarme en esta tecnología: <br>
 https://www.udemy.com/course/aplicaciones-web-en-tiempo-real-con-aspnet-signalr/?couponCode=KEEPLEARNING 
 
-- JQuery
-Fuente oficial: https://api.jquery.com/
+- JQuery <br>
+Fuente oficial: https://api.jquery.com/ <br>
 Otras fuentes: https://www.w3schools.com/jquery/default.asp 
  
-- API Rest
-Fuente oficial: https://learn.microsoft.com/es-es/aspnet/core/web-api/?view=aspnetcore-5.0&WT.mc_id=dotnet-35129-website 
-Uso de Swagger:
-https://learn.microsoft.com/es-es/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0
-Otras fuentes:
+- API Rest <br>
+Fuente oficial: <br>
+https://learn.microsoft.com/es-es/aspnet/core/web-api/?view=aspnetcore-5.0&WT.mc_id=dotnet-35129-website  <br>
+Uso de Swagger: <br>
+https://learn.microsoft.com/es-es/aspnet/core/tutorials/web-api-help-pages-using-swagger?view=aspnetcore-5.0 <br>
+Otras fuentes: <br>
 https://www.c-sharpcorner.com/article/asp-net-core-5-0-web-api/ 
 
 
@@ -710,45 +726,111 @@ En este apartado se indicará la documentación con la que se abordaron problema
 La alternativa más favorable resultó ser ejecutar el software nmap a través de código C# como consola y obtener el output. Para esto se utilizó principalmente la clase Process.
 Fuente oficial: https://learn.microsoft.com/es-es/dotnet/api/system.diagnostics.process?view=net-5.0 
 
-- Problema 2 - Manejo de Session en arquitectura MVC
-https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0 
+- Problema 2 - Manejo de Session en arquitectura MVC <br>
+https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0 <br>
 https://stackoverflow.com/questions/55220812/how-to-store-and-retrieve-objects-in-session-state-in-asp-net-core-2-x 
 
 - Problema 3 - Envío de correo a través de código C#
-La manera más sencilla y efectiva que encontré investigando es agregando un using.
+La manera más sencilla y efectiva que encontré investigando es agregando un using.<br>
 https://www.kyocode.com/2019/08/como-enviar-correo-con-c/ 
 
 - Problema 4 - Almacenamiento de imágenes en SQL Server
-Idea de utilizar “VARBINARY(MAX)” como medio de almacenamiento de imágenes:
+Idea de utilizar “VARBINARY(MAX)” como medio de almacenamiento de imágenes:<br>
 https://es.stackoverflow.com/questions/259400/convertir-a-byte-una-imagen-para-guardarla-en-sql-server-desde-c
-Conversión de “IFormFile” desde la view a un array “byte[]” a almacenar en el objeto:
+Conversión de “IFormFile” desde la view a un array “byte[]” a almacenar en el objeto:<br>
 https://stackoverflow.com/questions/36432028/how-to-convert-a-file-into-byte-array-in-memory
 
-- Problema 5 - Consumo de métodos de API Rest (get, post, put y delete)
+- Problema 5 - Consumo de métodos de API Rest (get, post, put y delete)<br>
 https://www.tutorialsteacher.com/webapi/consume-web-api-for-crud-operation 
 
-- Problema 6 - Chequeo de conexión de dispositivos
-https://learn.microsoft.com/es-es/dotnet/api/system.net.networkinformation.ping?view=net-5.0
-https://stackoverflow.com/questions/11800958/using-ping-in-c-sharp
+- Problema 6 - Chequeo de conexión de dispositivos<br>
+https://learn.microsoft.com/es-es/dotnet/api/system.net.networkinformation.ping?view=net-5.0<br>
+https://stackoverflow.com/questions/11800958/using-ping-in-c-sharp<br>
 https://www.c-sharpcorner.com/UploadFile/167ad2/how-to-use-ping-in-C-Sharp/
 
-- Problema 7 - Uso de Thread en C#
+- Problema 7 - Uso de Thread en C#<br>
 https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread?view=net-5.0 
 
-- Problema 8 - Generación dinámica y uso de múltiples Task
-https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0
+- Problema 8 - Generación dinámica y uso de múltiples Task<br>
+https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0<br>
 https://dotnettutorials.net/lesson/how-to-execute-multiple-tasks-in-csharp/
 
-- Problema 9 - Comunicación de variables entre procesos del motor con ConcurrentDictionary
+- Problema 9 - Comunicación de variables entre procesos del motor con ConcurrentDictionary<br>
 https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=net-5.0 
 
-- Problema 10 - Utilización de JWT Token para autenticar usuarios en API Rest
-https://www.c-sharpcorner.com/article/jwt-json-web-token-authentication-in-asp-net-core/ 
-https://www.c-sharpcorner.com/article/jwt-validation-and-authorization-in-net-5-0/
+- Problema 10 - Utilización de JWT Token para autenticar usuarios en API Rest<br>
+https://www.c-sharpcorner.com/article/jwt-json-web-token-authentication-in-asp-net-core/ <br>
+https://www.c-sharpcorner.com/article/jwt-validation-and-authorization-in-net-5-0/<br>
 
 - Problema 11 - Ordenar listados por IP
-Algo que parecía sencillo ordenar con Linq finalmente no lo fue tanto y tuve que recurrir a la búsqueda de otra solución.
+Algo que parecía sencillo ordenar con Linq finalmente no lo fue tanto y tuve que recurrir a la búsqueda de otra solución.<br>
 https://stackoverflow.com/questions/4785218/linq-lambda-orderby-delegate-for-liststring-of-ip-addresses 
+
+### 11.3 – Discusiones
+
+> [!IMPORTANT]
+> Apartado resumido.
+
+#### Discusión 1 - Cómo realizar el escaneo de puertos
+
+- **Alternativas:** 
+    - [ ] Verificación de puertos con TcpClient
+    - [x] Escaneo en Nmap por medio de clase Process
+            
+**Principales fuentes revisadas:** <br>
+https://stackoverflow.com/questions/52569696/c-sharp-port-scanner<br>
+https://github.com/thomdixon/SaltwaterTaffy<br>
+https://learn.microsoft.com/en-us/dotnet/api/system.net.sockets.tcpclient?view=net-5.0<br>
+
+---
+
+#### Discusión 2 - Consumo de API Rest, formato de respuesta
+  
+- **Alternativas:** 
+    - [ ] Respuesta en XML
+    - [x] Respuesta en JSON
+   
+**Principales fuentes revisadas:** <br>
+https://restfulapi.net/json-vs-xml/ <br>
+https://www.geeksforgeeks.org/difference-between-json-and-xml/ <br>
+https://stackoverflow.com/questions/4862310/json-and-xml-comparison <br>
+https://stackoverflow.com/questions/16293791/which-is-more-secured-and-why-json-or-xml <br>
+
+---
+
+#### Discusión 3 - Diseño del sitio web
+
+- **Alternativas:**
+    - [ ]CSS puro
+    - [x]Bootstrap
+    - [ ]Tailwind
+
+**Principales fuentes revisadas:** <br>
+https://www.krishaweb.com/blog/tailwind-css-vs-bootstrap/#:~:text=Tailwind%20CSS%20is%20highly%20flexible,range%20of%20pre%2Ddesigned%20components. <br>
+https://chat.openai.com/share/de259d76-58bd-48df-8f15-34937cad7e0c 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
 
 
 
