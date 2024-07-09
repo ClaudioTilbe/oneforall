@@ -801,13 +801,46 @@ https://stackoverflow.com/questions/16293791/which-is-more-secured-and-why-json-
 #### Discusión 3 - Diseño del sitio web
 
 - **Alternativas:**
-    - [ ]CSS puro
-    - [x]Bootstrap
-    - [ ]Tailwind
+    - [ ] CSS puro
+    - [x] Bootstrap
+    - [ ] Tailwind
 
 **Principales fuentes revisadas:** <br>
 https://www.krishaweb.com/blog/tailwind-css-vs-bootstrap/#:~:text=Tailwind%20CSS%20is%20highly%20flexible,range%20of%20pre%2Ddesigned%20components. <br>
 https://chat.openai.com/share/de259d76-58bd-48df-8f15-34937cad7e0c 
+
+#### Discusión 4 - Donde almacenar información de usuario autenticado en el sitio
+- **Alternativas:** 
+    - [ ] Cookies
+    - [x] Session
+
+**Principales fuentes revisadas:** <br>
+https://www.geeksforgeeks.org/difference-between-session-and-cookies/  <br>
+https://stackoverflow.com/questions/32563236/relation-between-sessions-and-cookies 
+
+<br>
+
+# TESTING Y PRUEBAS DE CALIDAD (12)
+
+### 12.1 – Pruebas funcionales de casos de uso
+Para realizar las pruebas funcionales sobre los casos de uso opte por el modelo iterativo e incremental, debido a que era el modelo que mejor se adapta a las características del proyecto. 
+Ya comenzando con el desarrollo de la solución, a medida que iba avanzando en los ciclos de desarrollo, se fueron testeando mediante pruebas unitarias los distintos componentes que iba codificando. Previo a comenzar con el testing pude identificar que seguramente los puntos con mayor probabilidad de fallo, y mayor dificultad de testeo, se iban a encontrar en el traslado de datos entre los tres grandes bloques: base de datos, back-end y  sitio web; teniendo en cuenta esto me vali de las diversas tecnologías y/o herramientas que pude encontrar más favorables para realizar el testing dentro de cada bloque y en sus conexiones, partiendo también de una manera ordenada desde la base de datos hasta llegar al sitio web.
+
+- **Base de datos.** En este sector se realizaron las pruebas necesarias para corroborar que las verificaciones en cada campo se esten cumpliendo correctamente mediante las inserciones de datos. Por otra parte, también se testean con datos de prueba los distintos procedimientos almacenados para ver su correcto funcionamiento.
+
+- **Back-end.** En los casos que fue necesario, por medio de la depuración, realice un seguimiento de los distintos datos y/o parámetros en líneas puntuales, marcadas con puntos de interrupción. Por otra parte generé una consola de prueba para accionar estas operaciones en mi back-end y verificar que los métodos se efectúen de manera correcta hasta al menos ese punto.
+
+- **Motor.** En el caso del motor nuevamente utilicé la depuración para la detección de errores y el mismo fue modificando su estructura hasta encontrar la más favorable dentro de mis posibilidades. Una vez ya divididas las funciones que el motor tenía que cumplir en varios hilos distintos de trabajo, pude ir analizando mediante la depuración cada proceso para que realice su ciclo de manera correcta; una vez analizados todos los procesos individualmente se volvieron a probar, esta vez efectuando todos al mismo tiempo mediante el encendido del motor.
+
+- **API Rest.** Para realizar el testeo de mi API Rest opté por habilitar Swagger, inicialmente sin haber agregado aún el código necesario para el funcionamiento de los Tokens, de manera que pueda garantizar que las operaciones funcionen correctamente hasta este punto sin verse modificadas por problemas ajenos. 
+
+- **Consumo de API Rest.** Para realizar el testeo sobre el consumo de las operaciones de mi API Rest desde mi sitio web, utilice la herramienta postman. Por medio de esta herramienta pude verificar que mis operaciones por medio de los métodos get, post, put y delete, se pudiesen consumir de manera correcta. 
+
+- **Sitio web.** Para localizar los errores en los distintos sectores de mi sitio web, entiéndase controladores, modelo, e inclusive views, pude utilizar nuevamente la depuración, esta vez de mi sitio web y teniendo ya la API Rest publicada.
+
+- **Front-end.** En los sectores que tenia codigo javascript, me serví del “debugger” para detectar las líneas de código con fallos así como la consola y el inspector, que por otra parte también me sirvió para encontrar fallos HTML y CSS que provocan problemas en mi interfaz gráfica. 
+
+Finalmente, una vez utilizadas estas herramientas para detectar los fallos en los distintos puntos de la solución, resto realizar testing de integración publicando todos los componentes, aún en un ambiente de prueba, para poder comprobar que cada uno de ellos interactúe de manera correcta  con el resto. 
 
 
 
