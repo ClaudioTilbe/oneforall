@@ -475,17 +475,17 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 
 
 ### 6.2 – Asignación a ciclos de desarrollo
-![](https://github.com/ClaudioTilbe/oneforall/blob/5e8a26ab13e0ef666eec40916dd04d99d5392ae0/Diagramas/Capitulo%206/Asignaci%C3%B3n%20a%20Ciclos%20de%20Desarrollo.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/Asignaci%C3%B3n%20a%20Ciclos%20de%20Desarrollo.png)
 
 
 ### 6.3 – GANTT 
 
 - **Planificado**
-![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagramas/Capitulo%206/GANTT%20-%20Previsto.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Previsto.png)
 
 
 - **Ejecutado**
-![](https://github.com/ClaudioTilbe/oneforall/blob/7bf43d666cde1e62eed57cfedb6c26b8db374370/Diagramas/Capitulo%206/GANTT%20-%20Ejecutado.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 <br>
 
@@ -494,7 +494,7 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 ### 7.1 – Diagrama Entidad-Relación 
 #### 7.1.1 – DER
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/d64f73ff3f78ed1042fb9df7339b526b18cb5cd5/Diagramas/Capitulo%207/DER.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%207/DER.png)
 
 
 #### 7.1.2 – Pasaje a Tablas
@@ -582,7 +582,7 @@ Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
 
 ### 7.2 – Modelo Conceptual
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/a64b85161629fc3efcfa3e6a5c7db9b2f331b1fa/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
 
 <br>
 
@@ -612,7 +612,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 #### 9.1.1 – Vista del modelo de casos de uso
 **9.1.1.1 – Diagrama de casos de uso relevantes de la arquitectura**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/332d1f5621994caeaafec930f3687178652c652f/Diagramas/Capitulo%209/CU%20Relevantes%20a%20Arquitectura.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/CU%20Relevantes%20a%20Arquitectura.png)
 
 **9.1.1.1** – Justificacion de los casos de uso relevantes
 - **Logueo.** Es relevante porque es el caso de uso a través del cual un usuario anónimo se identifica, o no, con credenciales ya registradas en el sistema. Luego de iniciar sesión pasará a ser un usuario con acceso a las funciones que corresponda según su tipo de usuario. Este caso de uso es fundamental ya que es el que valida que el usuario anónimo o desconocido pueda ingresar a funciones del sistema.
@@ -649,23 +649,23 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 #### 9.1.2 – Vista de modelo de diseño
 **9.1.2.1 – Descomposicion en sub-sistemas**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/283ad091215ee5e03966d17b8e2c33bf94b9b207/Diagramas/Capitulo%209/Sub-Sistemas.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Sub-Sistemas.png)
 
 **9.1.2.2 – Trazabilidad desde el modelo de casos de uso al modelo de diseño**
-- [Trazabilidad Gestión de operador](https://github.com/ClaudioTilbe/oneforall/blob/cacc3f793eb302fe0b5c6cc8afb2a02286fca978/Diagramas/Capitulo%209/Trazabilidad%20Gesti%C3%B3n%20de%20operador.png)
+- [Trazabilidad Gestión de operador](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Trazabilidad%20Gesti%C3%B3n%20de%20operador.png)
 - ~~Trazabilidad Ajustar Potencia Motor~~
-- [Trazabilidad Gestión de análisis de subred](https://github.com/ClaudioTilbe/oneforall/blob/cacc3f793eb302fe0b5c6cc8afb2a02286fca978/Diagramas/Capitulo%209/Trazabilidad%20Gesti%C3%B3n%20de%20an%C3%A1lisis%20de%20subred.png)
+- [Trazabilidad Gestión de análisis de subred](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Trazabilidad%20Gesti%C3%B3n%20de%20an%C3%A1lisis%20de%20subred.png)
 
 
 **9.1.3 – Vista de modelo de implementación**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/119c3714c6fea852e494ad40d34eaa4dfa81f216/Diagramas/Capitulo%209/Modelo%20de%20implementaci%C3%B3n.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Modelo%20de%20implementaci%C3%B3n.png)
 
 
 
 **9.1.4 – Vista de modelo de distribución**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/8a4c003b21132945ae9bcccfa0ec49cef5c67c13/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
 
 
 ### 9.2 – Patrones de diseño
