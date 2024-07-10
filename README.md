@@ -842,9 +842,14 @@ Ya comenzando con el desarrollo de la solución, a medida que iba avanzando en l
 
 Finalmente, una vez utilizadas estas herramientas para detectar los fallos en los distintos puntos de la solución, resto realizar testing de integración publicando todos los componentes, aún en un ambiente de prueba, para poder comprobar que cada uno de ellos interactúe de manera correcta  con el resto. 
 
+<br>
 
+# ANEXOS (14)
 
+### 14.1 – Manual de usuario
 
+- [Manual de administrador](https://github.com/ClaudioTilbe/oneforall/blob/810145ea19336edb2b33b0aae93a496a316dd863/Manual%20de%20usuario/Manual%20de%20administrador%20(Version%2097-2003).doc)
+- [Manual de operador](https://github.com/ClaudioTilbe/oneforall/blob/810145ea19336edb2b33b0aae93a496a316dd863/Manual%20de%20usuario/Manual%20de%20operador%20(Version%2097-2003).doc)
 
 
 
