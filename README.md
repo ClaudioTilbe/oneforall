@@ -466,7 +466,7 @@ Dificultad de implementación: Cuantificara la cantidad de carga horaria que se 
 
 #### 6.1.2 – Priorización cuantitativa
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/b158f9f818cddbf4877bdc87c38fbfe79d072cda/Diagramas/Capitulo%206/Priorizaci%C3%B3n%20Cuantitativa%20T2.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/02098555d1a3ad2502eb8475dd3b0f1fd3866df4/Diagramas/Capitulo%206/Priorizaci%C3%B3n%20Cuantitativa%20T2.png)
 
 #### 6.1.3 – Rangos para definir niveles de importancia
 - **Alta:** Desde 100 hasta 68.
