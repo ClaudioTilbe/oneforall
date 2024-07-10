@@ -8,19 +8,9 @@ A continuacion presento una sintesis de la documentacion generada para el proyec
 
 # Índice
 
-*[Introduccion](#introducción-1)
+* [Capitulo 1 - Introduccion](#introducción-1)
 
-*[Insignias](#insignias)
-
-*[Índice](#índice)
-
-*[Descripción del proyecto](#descripción-del-proyecto)
-
-*[Estado del proyecto](#Estado-del-proyecto)
-
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
-
-*[Acceso al proyecto](#acceso-proyecto)
+* [Capitulo 2 - Descripción del negocio y requerimientos](#descripción-del-negocio-y-requerimientos-2)
 
 
 
