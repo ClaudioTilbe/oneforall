@@ -85,8 +85,8 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 #### 2.2.2 – Diagrama de casos de uso
 ![](https://github.com/ClaudioTilbe/oneforall/blob/87af895b2bc9d20d4a426be4ab7daa33905dc1fa/Diagramas/Capitulo%202/Diagrama%20de%20CU.png)
 
-### 2.3 – Requerimientos no funcionales
-FURPS+
+### 2.3 – Requerimientos no funcionales (FURPS+)
+![](https://github.com/ClaudioTilbe/oneforall/blob/a06baee9e7e771bb9335acea75c118ccd7bb5b9a/Diagramas/Capitulo%202/FURPS%2B.png)
 
 <br>
 
