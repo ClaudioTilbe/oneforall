@@ -616,7 +616,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/CU%20Relevantes%20a%20Arquitectura.png)
 
-**9.1.1.1** – Justificacion de los casos de uso relevantes
+**9.1.1.1 – Justificacion de los casos de uso relevantes**
 - **Logueo.** Es relevante porque es el caso de uso a través del cual un usuario anónimo se identifica, o no, con credenciales ya registradas en el sistema. Luego de iniciar sesión pasará a ser un usuario con acceso a las funciones que corresponda según su tipo de usuario. Este caso de uso es fundamental ya que es el que valida que el usuario anónimo o desconocido pueda ingresar a funciones del sistema.
 
 - **Deslogueo.** Es relevante porque a través de este caso de uso el usuario previamente autenticado que inicio sesión, podrá cerrarla, y por lo tanto también cerrar el acceso a las funciones del sistema. Este caso de uso es importante para mermar el riesgo lo máximo posible y evitar situaciones desfavorables para la seguridad del sistema y/o el usuario.
@@ -689,7 +689,8 @@ Singleton será mayormente utilizado en el backend del sistema por sus caracter�
 
 ### 10.1 – Cambios realizados 
 
-***En este capitulo solo se indican los cambios realizados, con la finalidad de marcar el porque de algunos apartados "tachados". Este capitulo se extiende con el fundamento detras de cada cambio en el documento de entrega pero no aporta nada a fines practicos en este repositorio.*** 💬
+> [!NOTE]
+> _En este capitulo solo se indican los cambios realizados, con la finalidad de marcar el porque de algunos apartados "tachados". Este capitulo se extiende con el fundamento detras de cada cambio en el documento de entrega pero no aporta nada a fines practicos en este repositorio._ 💬
 
 - Retiro de caso de uso “Ajustar potencia Motor"
 - Retiro del valor “ejecutándose” de estado de analisis de red
@@ -705,47 +706,47 @@ Singleton será mayormente utilizado en el backend del sistema por sus caracter�
 Para la investigación de las distintas tecnologías y algoritmos que componen la solución opte por utilizar varias fuentes y métodos de búsqueda; Inicialmente probando con las fuentes clásicas hasta llegar a algunas más modernas y/o específicas dependiendo del resultado buscado.
 
 
-**Google**
+- **Google**
 La primera instancia para cualquiera de las búsquedas fue google. A partir de aquí pude identificar foros, fuentes oficiales de documentación, repositorios, entre otros. La mayoría de las búsquedas se comenzaron a realizar en inglés en el momento que note la enorme diferencia de resultados y de información extra que podía alcanzar.
 
-**Fuentes oficiales**
+- **Fuentes oficiales**
 Las fuentes oficiales de cada tecnología utilizada y cada tecnología evaluada durante la etapa de planificación, fueron vitales para confeccionar y codificar de manera correcta y con buenas prácticas la solución; además de ser también en parte grandes repositorios con código de ejemplo que en muchos casos fue sumamente útil.
 
-**BIOS**
+- **BIOS**
 Los proyectos generados a lo largo de la carrera fueron fundamentales para el desarrollo del sistema, actuando como grandes repositorios de código y como fuente de información a través de las transparencias.
 
-**Foros**
+- **Foros**
 Algunos foros de confianza previa y descubiertos durante los distintos procesos del proyecto también fueron útiles para solucionar problemas eventuales y puntuales, permitiendo llegar a varias soluciones que además eran discutidas por los distintos usuarios del foro para determinar su eficacia y calidad.
 
-**Repositorios**
+- **Repositorios**
 Más allá de algunas fuentes oficiales que a su vez tenían gran parte de repositorio, se utilizaron páginas puntuales que están definidas como tal y contenían soluciones con fragmentos de código útiles para mi proyecto.
 
-**Inteligencia artificial**
+- **Inteligencia artificial**
 Partiendo inicialmente como una prueba finalmente  se convirtió en una herramienta potente para consultas muy específicas, en las que el contexto era enorme y las palabras clave eran demasiadas para una búsqueda convencional. Fue principalmente utilizada cuando todas las fuentes anteriores fallaban y su información corroborada antes de ser utilizada debido a su poca fiabilidad.
 
 
 ### 11.2 – Aprendizaje de tecnologías
 En este apartado se indicará la documentación con la que se abordaron principalmente las tecnologías o conceptos que eran desconocidos hasta antes de comenzar con el desarrollo del software.
 
-- Bootstrap 
+- **Bootstrap** <br>
 Fuente oficial: <br>
 https://getbootstrap.com/docs/4.0/getting-started/introduction/
 
-- Chart.js 
+- **Chart.js** <br>
 Fuente oficial: <br>
 https://www.chartjs.org/docs/latest/samples/information.html 
 
-- SignalR  <br>
+- **SignalR**  <br>
 Fuente oficial:<br>
 https://learn.microsoft.com/en-us/aspnet/signalr/overview/older-versions/tutorial-getting-started-with-signalr <br>
 Realice el siguiente curso para capacitarme en esta tecnología: <br>
 https://www.udemy.com/course/aplicaciones-web-en-tiempo-real-con-aspnet-signalr/?couponCode=KEEPLEARNING 
 
-- JQuery <br>
+- **JQuery** <br>
 Fuente oficial: https://api.jquery.com/ <br>
 Otras fuentes: https://www.w3schools.com/jquery/default.asp 
  
-- API Rest <br>
+- **API Rest** <br>
 Fuente oficial: <br>
 https://learn.microsoft.com/es-es/aspnet/core/web-api/?view=aspnetcore-5.0&WT.mc_id=dotnet-35129-website  <br>
 Uso de Swagger: <br>
