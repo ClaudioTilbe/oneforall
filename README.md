@@ -743,8 +743,10 @@ Realice el siguiente curso para capacitarme en esta tecnología: <br>
 https://www.udemy.com/course/aplicaciones-web-en-tiempo-real-con-aspnet-signalr/?couponCode=KEEPLEARNING 
 
 - **JQuery** <br>
-Fuente oficial: https://api.jquery.com/ <br>
-Otras fuentes: https://www.w3schools.com/jquery/default.asp 
+Fuente oficial: <br>
+https://api.jquery.com/ <br>
+Otras fuentes: <br>
+https://www.w3schools.com/jquery/default.asp 
  
 - **API Rest** <br>
 Fuente oficial: <br>
@@ -759,48 +761,49 @@ https://www.c-sharpcorner.com/article/asp-net-core-5-0-web-api/
 ### 11.3 – Problemáticas y resolución
 En este apartado se indicará la documentación con la que se abordaron problemas puntuales que fueron surgiendo a lo largo del desarrollo de la solución; algunos artículos son parcialmente útiles al desarrollo de la misma por lo que se extrae únicamente la información necesaria.
 
-- Problema 1 - Uso de Nmap a través de código C#
-La alternativa más favorable resultó ser ejecutar el software nmap a través de código C# como consola y obtener el output. Para esto se utilizó principalmente la clase Process.
-Fuente oficial: https://learn.microsoft.com/es-es/dotnet/api/system.diagnostics.process?view=net-5.0 
+- **Problema 1 - Uso de Nmap a través de código C#** <br>
+La alternativa más favorable resultó ser ejecutar el software nmap a través de código C# como consola y obtener el output. Para esto se utilizó principalmente la clase Process. <br>
+Fuente oficial: <br>
+https://learn.microsoft.com/es-es/dotnet/api/system.diagnostics.process?view=net-5.0 
 
-- Problema 2 - Manejo de Session en arquitectura MVC <br>
+- **Problema 2 - Manejo de Session en arquitectura MVC** <br>
 https://learn.microsoft.com/en-us/aspnet/core/fundamentals/app-state?view=aspnetcore-5.0 <br>
 https://stackoverflow.com/questions/55220812/how-to-store-and-retrieve-objects-in-session-state-in-asp-net-core-2-x 
 
-- Problema 3 - Envío de correo a través de código C#
+- **Problema 3 - Envío de correo a través de código C#** <br>
 La manera más sencilla y efectiva que encontré investigando es agregando un using.<br>
 https://www.kyocode.com/2019/08/como-enviar-correo-con-c/ 
 
-- Problema 4 - Almacenamiento de imágenes en SQL Server
+- **Problema 4 - Almacenamiento de imágenes en SQL Server** <br>
 Idea de utilizar “VARBINARY(MAX)” como medio de almacenamiento de imágenes:<br>
-https://es.stackoverflow.com/questions/259400/convertir-a-byte-una-imagen-para-guardarla-en-sql-server-desde-c
+https://es.stackoverflow.com/questions/259400/convertir-a-byte-una-imagen-para-guardarla-en-sql-server-desde-c<br>
 Conversión de “IFormFile” desde la view a un array “byte[]” a almacenar en el objeto:<br>
 https://stackoverflow.com/questions/36432028/how-to-convert-a-file-into-byte-array-in-memory
 
-- Problema 5 - Consumo de métodos de API Rest (get, post, put y delete)<br>
+- **Problema 5 - Consumo de métodos de API Rest (get, post, put y delete)** <br>
 https://www.tutorialsteacher.com/webapi/consume-web-api-for-crud-operation 
 
-- Problema 6 - Chequeo de conexión de dispositivos<br>
-https://learn.microsoft.com/es-es/dotnet/api/system.net.networkinformation.ping?view=net-5.0<br>
-https://stackoverflow.com/questions/11800958/using-ping-in-c-sharp<br>
+- **Problema 6 - Chequeo de conexión de dispositivos** <br>
+https://learn.microsoft.com/es-es/dotnet/api/system.net.networkinformation.ping?view=net-5.0 <br>
+https://stackoverflow.com/questions/11800958/using-ping-in-c-sharp <br>
 https://www.c-sharpcorner.com/UploadFile/167ad2/how-to-use-ping-in-C-Sharp/
 
-- Problema 7 - Uso de Thread en C#<br>
+- **Problema 7 - Uso de Thread en C#** <br>
 https://learn.microsoft.com/en-us/dotnet/api/system.threading.thread?view=net-5.0 
 
-- Problema 8 - Generación dinámica y uso de múltiples Task<br>
-https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0<br>
+- **Problema 8 - Generación dinámica y uso de múltiples Task** <br>
+https://learn.microsoft.com/en-us/dotnet/api/system.threading.tasks.task?view=net-5.0 <br>
 https://dotnettutorials.net/lesson/how-to-execute-multiple-tasks-in-csharp/
 
-- Problema 9 - Comunicación de variables entre procesos del motor con ConcurrentDictionary<br>
+- **Problema 9 - Comunicación de variables entre procesos del motor con ConcurrentDictionary** <br>
 https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2?view=net-5.0 
 
-- Problema 10 - Utilización de JWT Token para autenticar usuarios en API Rest<br>
+- **Problema 10 - Utilización de JWT Token para autenticar usuarios en API Rest** <br>
 https://www.c-sharpcorner.com/article/jwt-json-web-token-authentication-in-asp-net-core/ <br>
-https://www.c-sharpcorner.com/article/jwt-validation-and-authorization-in-net-5-0/<br>
+https://www.c-sharpcorner.com/article/jwt-validation-and-authorization-in-net-5-0/ <br>
 
-- Problema 11 - Ordenar listados por IP
-Algo que parecía sencillo ordenar con Linq finalmente no lo fue tanto y tuve que recurrir a la búsqueda de otra solución.<br>
+- **Problema 11 - Ordenar listados por IP**
+Algo que parecía sencillo ordenar con Linq finalmente no lo fue tanto y tuve que recurrir a la búsqueda de otra solución. <br>
 https://stackoverflow.com/questions/4785218/linq-lambda-orderby-delegate-for-liststring-of-ip-addresses 
 
 ### 11.3 – Discusiones
