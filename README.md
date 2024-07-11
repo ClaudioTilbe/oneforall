@@ -481,10 +481,12 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 ### 6.3 – GANTT 
 
 - **Planificado**
+- 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Previsto.png)
 
 
 - **Ejecutado**
+- 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 <br>
@@ -520,64 +522,64 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 #### 7.1.3 – RNE
 
 - **Tabla MAIL:**
-Correo: Debe contener "@" y ".com"
-Puerto: Debe estar entre 0 y 65536
+    - Correo: Debe contener "@" y ".com"
+    - Puerto: Debe estar entre 0 y 65536
 
 - **Tabla ADMINISTRADOR:**
-NumeroFuncionario: Mayor a 0 y menor a 10000000
+    - NumeroFuncionario: Mayor a 0 y menor a 10000000
 
 - **Tabla OPERADOR:**
-NumeroFuncionarioSupervisor: Mayor a 0 y menos a 100000000
+    - NumeroFuncionarioSupervisor: Mayor a 0 y menos a 100000000
 
 - **Tabla SUCURSAL:**
-NumeroSucursal: Menor a 10000 y mayor a 0
-NumeroLocal: Mayor a 0 y menor a 100000000
+    - NumeroSucursal: Menor a 10000 y mayor a 0
+    - NumeroLocal: Mayor a 0 y menor a 100000000
 
 - **Tabla DISPOSITIVO:**
-IP: Tiene la estructura X.X.X.X; siendo X distintos números entre 1 y 255
-Prioridad: Puede ser alta, media o baja
-UltimaConexion: No puede tener fecha y hora por delante del presente
-UltimaNotificacion: No puede tener fecha y hora por delante del presente
+    - IP: Tiene la estructura X.X.X.X; siendo X distintos números entre 1 y 255
+    - Prioridad: Puede ser alta, media o baja
+    - UltimaConexion: No puede tener fecha y hora por delante del presente
+    - UltimaNotificacion: No puede tener fecha y hora por delante del presente
 
 - **Tabla GRUPO:**
-Codigo: Identity (1, 1)
+    - Codigo: Identity (1, 1)
 
 - **Tabla REPORTE:**
-Codigo : Identity (1, 1)
-Destino:  Debe contener "@" y ".com"
+ - Codigo : Identity (1, 1)
+    - Destino:  Debe contener "@" y ".com"
 
 - **Tabla MENSAJEVISOR:**
-Id: Identity (1, 1)
-FechaGenerado: No puede tener fecha y hora por delante del presente
+    - Id: Identity (1, 1)
+    - FechaGenerado: No puede tener fecha y hora por delante del presente
 
 - **Tabla ESTADOMOTOR:**
-IDEstado: Identity (1, 1)
-UltimaModificacion: No puede tener fecha y hora por delante del presente
+    - IDEstado: Identity (1, 1)
+    - UltimaModificacion: No puede tener fecha y hora por delante del presente
 
 - **Tabla ANALISISRED:**
-IdAnalisis: Identity (1, 1)
-Subred: Tiene la estructura X.X.X; siendo X distintos números entre 1 y 255
-Estado: Puede estar en pendiente, cancelado, finalizado
-Prioridad: Puede ser baja, media o alta
-NuevosDispositivos: Debe ser mayor o igual a 0
-FechaGenerado: No puede tener fecha y hora por delante del Presente
-FechaFinalizado: No puede tener fecha y hora por delante del Presente
+    - IdAnalisis: Identity (1, 1)
+    - Subred: Tiene la estructura X.X.X; siendo X distintos números entre 1 y 255
+    - Estado: Puede estar en pendiente, cancelado, finalizado
+    - Prioridad: Puede ser baja, media o alta
+    - NuevosDispositivos: Debe ser mayor o igual a 0
+    - FechaGenerado: No puede tener fecha y hora por delante del Presente
+    - FechaFinalizado: No puede tener fecha y hora por delante del Presente
 
 - **Tabla ESCANEOPUERTOS:**
-IdEscaneo: Identity (1, 1)
-Estado: Puede estar en pendiente, ejecutandose, cancelado, finalizado
-Prioridad: Puede ser baja, media o alta
-FechaGenerado: No puede tener fecha y hora por delante del Presente
-FechaFinalizado: No puede tener fecha y hora por delante del Presente
+    - IdEscaneo: Identity (1, 1)
+    - Estado: Puede estar en pendiente, ejecutandose, cancelado, finalizado
+    - Prioridad: Puede ser baja, media o alta
+    - FechaGenerado: No puede tener fecha y hora por delante del Presente
+    - FechaFinalizado: No puede tener fecha y hora por delante del Presente
 
 - **Tabla DIAGRAMARED:**
-FechaSubida: No puede tener fecha y hora por delante del Presente
-DiagramaImagen: Formato Imagen
+    - FechaSubida: No puede tener fecha y hora por delante del Presente
+    - DiagramaImagen: Formato Imagen
 
 - **Tabla MENSAJEAPI:**
-IDMensaje: Identity (1, 1)
-FechaGenerado: No puede tener fecha y hora por delante del Presente
-Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
+    - IDMensaje: Identity (1, 1)
+    - FechaGenerado: No puede tener fecha y hora por delante del Presente
+    - Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
 
 
 ### 7.2 – Modelo Conceptual
