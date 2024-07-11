@@ -95,34 +95,34 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 **Aclaración:** Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como Front-end.
 
 ### 3.1 – Repositorio de datos
-**SQL Server 2019** se utilizará para gestionar la base de datos empleada por el sistema.
+- **SQL Server 2019** se utilizará para gestionar la base de datos empleada por el sistema.
 La base de datos se creará a través de un script en el cual también se definirán una serie de procedimientos almacenados que serán utilizados por la API Rest.
 Por otro lado, la seguridad integrada estará deshabilitada y la seguridad será definida principalmente por un conjunto de usuarios, roles y permisos delimitados por el desarrollador.
 
 ### 3.2 – Back-End
-**API REST**. Será la interfaz que permitirá la comunicación entre nuestro Back-end y Front-end. En la API Rest se alojan una serie de métodos que podrán ser utilizados por nuestra aplicación web y que cumplen la función de utilizar las operaciones de nuestras capas en el Back-end para lograr el procesamiento y finalmente la resolución de los objetivos del usuario al efectuar los diversos casos de uso.
+- **API REST**. Será la interfaz que permitirá la comunicación entre nuestro Back-end y Front-end. En la API Rest se alojan una serie de métodos que podrán ser utilizados por nuestra aplicación web y que cumplen la función de utilizar las operaciones de nuestras capas en el Back-end para lograr el procesamiento y finalmente la resolución de los objetivos del usuario al efectuar los diversos casos de uso.
 
-**ADO.NET** será utilizado en la capa de persistencia para poder acceder a los registros de la base de datos.
+- **ADO.NET** será utilizado en la capa de persistencia para poder acceder a los registros de la base de datos.
 
-**Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
+- **Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
 
 ### 3.3 – Front-End
-**Aplicación web de ASP.NET MVC**. Será el principal componente del Front-end y la tecnología que utilizará nuestro sistema para proveer de un sitio web a nuestros usuarios.
+- **Aplicación web de ASP.NET MVC**. Será el principal componente del Front-end y la tecnología que utilizará nuestro sistema para proveer de un sitio web a nuestros usuarios.
 
-**Bootstrap** será utilizado en la aplicación web para agilizar los tiempos de desarrollo y diseñar una interfaz para el sitio de una manera rápida y efectiva.
+- **Bootstrap** será utilizado en la aplicación web para agilizar los tiempos de desarrollo y diseñar una interfaz para el sitio de una manera rápida y efectiva.
 
-**JQuery** será utilizado en el Front-end para facilitar y agilizar la creación de las páginas web que necesiten ser más dinámicas e interactivas; este factor será más recurrente en aquellas paginas que requieren el uso de SignalR.
+- **JQuery** será utilizado en el Front-end para facilitar y agilizar la creación de las páginas web que necesiten ser más dinámicas e interactivas; este factor será más recurrente en aquellas paginas que requieren el uso de SignalR.
 
-**SignalR** será el componente destinado a simplificar la adición de funcionalidad web en tiempo real a la aplicación.
+- **SignalR** será el componente destinado a simplificar la adición de funcionalidad web en tiempo real a la aplicación.
 
-**Chart.js** es una librería javascript destinada a la creación de gráficos en base a datos; dicha función tendrá la finalidad de agregar esta librería al Front-End.
+- **Chart.js** es una librería javascript destinada a la creación de gráficos en base a datos; dicha función tendrá la finalidad de agregar esta librería al Front-End.
 ClosedXML es una API C# de código abierto para leer, manipular y escribir documentos de Microsoft Excel 2007+. Será utilizada para generar los documentos excel cuando se solicite la descarga de un listado.
 
 
 ### 3.4 – Tecnologías de soporte
-**Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put, y delete que expondrá el back-end de nuestra aplicación para que sean consumidas por el front-end.
+- **Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put, y delete que expondrá el back-end de nuestra aplicación para que sean consumidas por el front-end.
 
-**Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
+- **Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
 
 <br>
 
@@ -458,11 +458,11 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 # PLANIFICACIÓN (6)
 ### 6.1 – Clasificación y ponderación de casos de uso
 #### 6.1.1 – Criterios
-Importancia para el cliente: Cuantificara lo importante que es el caso de uso para el cliente.
-Criticidad para el negocio: Cuantificara que tan crítico es el caso de uso para que el negocio funcione con normalidad.
-Impacto en la arquitectura: Cuantificara que tan grande fue el cambio en la arquitectura para poder implementar el caso de uso de manera correcta.
-Importancia para el sistema: Cuantificara que tan importante es el caso de uso dentro del flujo normal de trabajo con el sistema e indicará si el caso de uso es imprescindible o una funcionalidad extra.
-Dificultad de implementación: Cuantificara la cantidad de carga horaria que se provee destinar a la investigación e implementación de la funcionalidad utilizada por el caso de uso.
+- **Importancia para el cliente:** Cuantificara lo importante que es el caso de uso para el cliente.
+- **Criticidad para el negocio:** Cuantificara que tan crítico es el caso de uso para que el negocio funcione con normalidad.
+- **Impacto en la arquitectura:** Cuantificara que tan grande fue el cambio en la arquitectura para poder implementar el caso de uso de manera correcta.
+- **Importancia para el sistema:** Cuantificara que tan importante es el caso de uso dentro del flujo normal de trabajo con el sistema e indicará si el caso de uso es imprescindible o una funcionalidad extra.
+- **Dificultad de implementación:** Cuantificara la cantidad de carga horaria que se provee destinar a la investigación e implementación de la funcionalidad utilizada por el caso de uso.
 
 #### 6.1.2 – Priorización cuantitativa
 
