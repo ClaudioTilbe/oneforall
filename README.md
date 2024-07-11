@@ -481,12 +481,12 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 ### 6.3 – GANTT 
 
 - **Planificado**
-- 
+  
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Previsto.png)
 
 
 - **Ejecutado**
-- 
+  
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 <br>
@@ -545,7 +545,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
     - Codigo: Identity (1, 1)
 
 - **Tabla REPORTE:**
- - Codigo : Identity (1, 1)
+    - Codigo : Identity (1, 1)
     - Destino:  Debe contener "@" y ".com"
 
 - **Tabla MENSAJEVISOR:**
@@ -593,9 +593,9 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 ### 8.1 – Expansión completa por caso de uso
 #### 8.1.1 – Diagramas y tablas
 
-***Aclaraciones:***
-- _Para facilitar el desarrollo de los casos de uso tomamos por convención que en aquellos momentos que se utilice “Usuario” estamos haciendo referencia a un administrador u operador._
-- _Se confeccionaron diagramas de comunicación para gestión de operador, gestión de análisis de subred y ~~ajustar potencia Motor~~_
+> [!NOTE]
+> - _Para facilitar el desarrollo de los casos de uso tomamos por convención que en aquellos momentos que se utilice “Usuario” estamos haciendo referencia a un administrador u operador._
+> - _Se confeccionaron diagramas de comunicación para gestión de operador, gestión de análisis de subred y ~~ajustar potencia Motor~~_
 
 Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 - Caso de uso Expandido
@@ -675,10 +675,10 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 En el desarrollo de nuestro software, hemos aplicado cuidadosamente patrones de diseño para mejorar su estructura y eficiencia. A continuación, presentamos los patrones que seleccionamos y las razones detrás de cada elección.
 
 
-**Patrón Fabrica**
+**Patrón Fabrica** <br>
 Hemos incorporado el patrón Factory en la capa de backend. Optamos por el patrón Factory para proporcionar una capa de abstracción entre la API Rest y la capa de lógica del backend. Esto garantiza la seguridad y la eficiencia en la gestión de solicitudes, al tiempo que mantiene la lógica del sistema encapsulada, sin exponer detalles concretos a la API REST.
 
-**Patron Singleton**
+**Patron Singleton** <br>
 En nuestro proyecto, hemos seleccionado el patrón Singleton por su capacidad para controlar la creación de instancias de clases de manera precisa. El patrón Singleton asegura que una clase tenga una única instancia y se encarga de crearla solo cuando sea necesario, evitando el desperdicio de recursos. Esto simplifica la gestión y garantiza que cada clase Singleton sea accesible de manera uniforme en toda la aplicación, proporcionando un control efectivo sobre sus estados y operaciones.
 Singleton será mayormente utilizado en el backend del sistema por sus características, así como también en el “Hub”, clase que tendrá los métodos referentes a SignalR del lado del servidor.
 
