@@ -1,0 +1,145 @@
+﻿@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - OFA</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/stylesheet.css" rel="stylesheet" />
+
+
+
+    @*================================= Script ========================================================*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    @*    <script src="https://code.jquery.com/jquery-3.0.0.js"></script>*@
+    <script src="~/lib/signalr/dist/browser/signalr.js"></script>
+
+    <link rel="shortcut icon" type="image/ico" href="~/imagenes/favicon.ico" />
+</head>
+
+<body class="mb-0">
+
+        <header class="pt-1 pb-1 mb-2 pl-2 text-white" style="background-color: black;">
+              <div class="pl-4">
+
+                <img src="@Url.Content("~/Imagenes/LogoBanner.png")" width="450" height="100"  alt="One for all">
+
+              </div>
+        </header>
+
+
+    <div class="row m-1 pb-2">
+        <div class="col-2 p-0">
+
+            <div class="nav flex-column nav-pills w-100 border p-1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" style="background-color: black;" asp-area="" asp-controller="Home" asp-action="IndexMonitoreo">Monitoreo conexiones</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Operadores" asp-action="FormOperadorVisualizarPerfil">Mi perfil</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Mails" asp-action="FormMailActualizar">Configurar mail</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Dispositivos" asp-action="FormDispositivosListar">Dispositivos</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Grupos" asp-action="FormGruposListar">Grupos</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="Reportes" asp-action="FormReportesListar">Reportes</a>
+                <a class="nav-link text-dark" asp-area="" asp-controller="DiagramasRed" asp-action="FormDiagramasRedListar">Diagramas de red</a>
+            </div>
+
+            <div class="nav flex-column nav-pills w-100 pt-4 mt-2 mb-1 border p-1">
+                <h5 class="text-center"><b>Panel de estado</b></h5>
+
+                <a href="@Url.Action("FormDispositivosListarXEstado", "Dispositivos", new { categoria = "Conectados" })" id="linkConectados" role="button" class="btn btn-online mt-1">
+                    <b>
+                        Conectados <span class="bandage-fondoBlanco badge badge-light" id="cantidadConectados">OFF</span>
+                    </b>
+                </a>
+
+                <a href="@Url.Action("FormDispositivosListarXEstado", "Dispositivos", new { categoria = "Alerta" })" id="linkAlerta" role="button" class="btn btn-riesgo mt-1">
+                    <b>
+                        Alerta <span class="bandage-fondoBlanco badge badge-light" id="cantidadAlerta">OFF</span>
+                    </b>
+                </a>
+
+                <a href="@Url.Action("FormDispositivosListarXEstado", "Dispositivos", new { categoria = "Criticos" })" id="linkCriticos" role="button" class="btn btn-critico mt-1">
+                    <b>
+                        Criticos <span class="bandage-fondoBlanco badge badge-light" id="cantidadCriticos">OFF</span>
+                    </b>
+                </a>
+
+                <a href="@Url.Action("FormDispositivosListarXEstado", "Dispositivos", new { categoria = "Desconocidos" })" id="linkDesconocidos" role="button" class="btn btn-desconocido mt-1">
+                    <b>
+                        Desconocidos <span class="bandage-fondoBlanco badge badge-light" id="cantidadDesconocidos">OFF</span>
+                    </b>
+                </a>
+
+                <a href="@Url.Action("FormDispositivosListarXEstado", "Dispositivos", new { categoria = "Todos" })" id="linkTodos" role="button" class="btn btn-todos mt-1">
+                    <b>
+                        Todos <span class="bandage-fondoBlanco badge badge-light" id="cantidadTodos">OFF</span>
+                    </b>
+                </a>
+
+            </div>
+
+           <form method="post" action="@Url.Action("DesLogueo", "Home")">
+                <div class="nav flex-column nav-pills w-100 pt-2 mt-2 border border-dark p-1">
+
+                    <p id="pUsuario" class="text-center"><b>Usuario:</b> @UsuarioLogueado.UsuarioID</p>
+                    <input type="submit" value="Cerrar sesión" class="btn btn-danger" />
+
+
+                </div>
+            </form>
+
+        </div>
+
+
+        <div class="col-10">
+            <main role="main" class="pb-3">
+                <div class="container-fluid p-3 m-0">
+                    @RenderBody()
+                </div>
+            </main>
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="bg-negro text-white">
+
+        <div class="container">
+            <div class="row text-center pt-3">
+
+
+                <div class="col-6">
+                    <h2>One For All</h2>
+                    <p>Aplicación destinada al monitoreo de redes informáticas</p>
+                </div>
+
+                <div class="col-6">
+                    <h3>Derechos de Autor</h3>
+                    <p>&copy; 2024 Claudio Tilbe</p>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>

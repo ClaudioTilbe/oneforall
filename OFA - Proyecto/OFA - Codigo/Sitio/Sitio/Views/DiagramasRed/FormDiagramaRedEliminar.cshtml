@@ -1,0 +1,125 @@
+﻿@model Sitio.Models.DiagramaRed
+
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Eliminar Diagrama de Red";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Eliminar Diagrama de Red</h2>
+    </div>
+
+</div>
+
+<hr /> @*Separador ============================================================================================*@
+
+@if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Mensaje
+    </div>
+}
+
+<div>
+    <h4>Diagrama de Red</h4>
+
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    @* @Html.DisplayNameFor(model => model._Sucursal.NroSucursal): *@
+                    Numero sucursal:
+                </dt>
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.Nombre):
+                </dt>
+
+                <dt class="mb-3">
+                    @* @Html.DisplayNameFor(model => model.FechaSubida): *@
+                    Fecha de subida:
+                </dt>
+
+            </dl>
+        </div>
+
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model._Sucursal.NroSucursal)
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.FechaSubida)
+                </dd>
+
+            </dl>
+    
+        </div>
+
+
+    </div>
+
+    <div>
+
+        <dl class="dl-horizontal mt-2">
+
+            @*Listado Dispositivos*@
+            <dt class="mb-2">
+                @* @Html.DisplayNameFor(model => model.DiagramaImagen)*@
+                Diagrama de red:
+            </dt>
+
+            <dd class="mb-3">
+                @*@Html.DisplayFor(model => model.Conectado)*@
+                @if (!string.IsNullOrEmpty(Model.DiagramaImagenBase64))
+                {
+                    <img src="data:image;base64,@Model.DiagramaImagenBase64" class="border p-3 img-fluid" alt="Imagen" />
+                }
+            </dd>
+        </dl>
+
+    </div>
+
+    <hr /> @*Separador ============================================================================================*@
+
+
+    <div class="alert alert-danger mt-3 mb-3">
+        ¿Esta seguro de que desea eliminar este Diagrama de Red?
+    </div>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group mt-2">
+            <div class="col-md-offset-2 col-md-10 text-center">
+                <input type="submit" value="Eliminar" class="btn btn-danger" />
+            </div>
+        </div>
+    }
+
+</div>
+
+
+
+<script src="~/js/estandar.js"></script>

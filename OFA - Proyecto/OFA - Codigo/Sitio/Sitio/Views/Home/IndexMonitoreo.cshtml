@@ -1,0 +1,184 @@
+﻿@model IEnumerable<Sitio.Models.Dispositivo>
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Monitoreo Dispositivos";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+
+
+
+
+<div class="mt-1 mb-3 d-flex justify-content-between">
+
+    <h2 class="font-weight-bold">Monitoreo de Dispositivos</h2>
+
+    <div>
+        <button data-toggle="collapse" data-target="#demo" class="p-0 border-0 bg-transparent" id="btn-desplegable">
+            <img src="@Url.Content("~/Imagenes/desplegable.png")" alt="Desplegable" width="40" height="40" id="imagen-desplegable" class="">
+        </button>
+    </div>
+
+
+</div>
+
+<div id="demo" class="collapse show"> @* Show para que aparesca desplegado el collapse *@
+
+    <div class="mt-2 mb-3 d-flex justify-content-between">
+
+        <div>
+            <input type="button" id="open" value="Iniciar Sondeo" class="btn btn-success" />
+            <input type="button" id="close" value="Detener Sondeo" disabled="disabled" class="btn btn-danger" />
+        </div>
+
+        <div class="d-inline-flex justify-content-end align-items-center">
+
+            <h5 class="pe-3 m-0">Seleccione el <b>Grupo</b> a Monitorear</h5>
+
+            <div class="form-group m-0">
+
+                <div class="col-md-10">
+
+                    @Html.DropDownList("DDLGrupos" , (SelectList)ViewBag.Grupos, "Todos")
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <table id="sondeoTable" class="table">
+        <thead>
+            <tr>
+                <th class="text-center">IP</th>
+                <th class="text-center">Nombre</th>
+                <th class="text-center">Tipo</th>
+                <th class="text-center">Conectado</th>
+                <th class="text-center">Accesible</th>
+                <th class="text-center">Sector</th>
+            </tr>
+        </thead>
+
+
+        @*<tr class="loading"><td colspan="7">Cargando...</td></tr>*@
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+
+                <tr data-ip="@item.IP">
+                    @* <tr>*@
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IP)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+
+                    <td class="text-center">
+                        @if (item.Conectado)
+                        {
+                            <span class="text-success">Online</span>
+                        }
+                        else
+                        {
+                            <span class="text-danger">Offline</span>
+                        }
+                    </td>
+
+                    <td class="text-center">
+                        @if (item.Accesible)
+                        {
+                            <span class="text-success">Si</span>
+                        }
+                        else
+                        {
+                            <span class="text-danger">No</span>
+                        }
+                    </td>
+
+
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Sector)
+                    </td>
+
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+
+</div>
+
+<h3 class="font-weight-bold">Visor de Mensajes en tiempo Real</h3>
+<div id="visorMensajes">
+    <div class="inner">
+        <ul>
+            <li class="loading">Cargando...</li>
+        </ul>
+    </div>
+</div>
+
+
+
+
+<script src="~/js/monitoreored.js"></script>
+
+
+
+<script>
+
+    $(document).ready(function () {
+        setInterval(function () {
+            //debugger;
+            $.ajax({
+                url: '/Home/ActualizoUsuarioSession',
+                type: 'POST',
+                success: function (result) {
+                    console.log('Datos de sesión actualizados correctamente.');
+                },
+                error: function (error) {
+                    console.error('Error al actualizar los datos de sesión: ' + error.responseText);
+                }
+            });
+        }, 5000); // 10 minutos en milisegundos (600000) (5000 son 5 segundos)
+    });
+
+
+
+
+    $(document).ready(function () {
+        $('#btn-desplegable').click(function () {
+            var imagen = $('#imagen-desplegable');
+            if (imagen.hasClass('rotarArriba')) {
+                imagen.removeClass('rotarArriba');
+                imagen.addClass('rotarAbajo');
+            } else if (imagen.hasClass('rotarAbajo')) {
+                imagen.removeClass('rotarAbajo');
+                imagen.addClass('rotarArriba');
+            } else {
+                imagen.addClass('rotarArriba');
+            }
+        });
+    });
+
+</script>
+

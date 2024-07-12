@@ -1,0 +1,305 @@
+﻿@*@model IEnumerable<Sitio.Models.Dispositivo>*@
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Dashboard";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+
+
+
+
+
+    List<Dispositivo> listaDispositivos = Accessor.HttpContext.Session.GetObjectFromJson<List<Dispositivo>>("listaDispositivos");
+
+    List<List<Dispositivo>> listaFiltradaXSucursal = listaDispositivos
+                            .GroupBy(d => new
+                            {
+                                NumeroSucursal = d.UbSucursal.NroSucursal
+                            })
+                            .Select(g => g.ToList())
+                            .ToList();
+
+    List<List<Tuple<string, int>>> matrizCategorizada = new List<List<Tuple<string, int>>>();
+
+    for (int i = 0; i < listaFiltradaXSucursal.Count; i++)
+    {
+        //Comienzo a Categorizarlos
+        List<Tuple<string, int>> listaResultados = new List<Tuple<string, int>>();
+
+        //Conectados ----------------------------------------------------------------------
+        int conectados = (from unDisp in listaFiltradaXSucursal[i]
+                          where unDisp.Conectado == true
+                          select unDisp).Count();
+
+        listaResultados.Add(new Tuple<string, int>("Conectados", conectados));
+
+        //Criticos ------------------------------------------------------------------------
+        int criticos = (from unDisp in listaFiltradaXSucursal[i]
+                        where unDisp.Conectado == false && unDisp.Permanencia == true
+                        select unDisp).Count();
+
+        listaResultados.Add(new Tuple<string, int>("Criticos", criticos));
+
+        //Alerta ---------------------------------------------------------------------------
+        int alerta = (from unDisp in listaFiltradaXSucursal[i]
+                      where unDisp.Conectado == false && unDisp.Permanencia == false
+                      select unDisp).Count();
+
+        listaResultados.Add(new Tuple<string, int>("Alerta", alerta));
+
+        // //Desconocidos ---------------------------------------------------------------------
+        // int desconocidos = (from unDisp in listaFiltradaXSucursal[i]
+        //                     where unDisp.Nombre == "Desconocido"
+        //                     select unDisp).Count();
+
+        // listaResultados.Add(new Tuple<string, int>("Desconocidos", desconocidos));
+
+        matrizCategorizada.Add(listaResultados);
+
+    }
+
+
+
+
+
+
+    //CODIGO PARA DASHBOARD GENERAL ===================================================================================
+
+
+    //Comienzo a Categorizarlos
+    List<Tuple<string, int>> listaResultadosGeneral = new List<Tuple<string, int>>();
+
+    //Conectados ----------------------------------------------------------------------
+    int conectadosGeneral = (from unDisp in listaDispositivos
+                              where unDisp.Conectado == true
+                              select unDisp).Count();
+
+    listaResultadosGeneral.Add(new Tuple<string, int>("Conectados", conectadosGeneral));
+
+    //Criticos ------------------------------------------------------------------------
+    int criticosGeneral = (from unDisp in listaDispositivos
+                            where unDisp.Conectado == false && unDisp.Permanencia == true
+                            select unDisp).Count();
+
+    listaResultadosGeneral.Add(new Tuple<string, int>("Criticos", criticosGeneral));
+
+    //Alerta ---------------------------------------------------------------------------
+    int alertaGeneral = (from unDisp in listaDispositivos
+                          where unDisp.Conectado == false && unDisp.Permanencia == false
+                          select unDisp).Count();
+
+    listaResultadosGeneral.Add(new Tuple<string, int>("Alerta", alertaGeneral));
+
+    //Desconocidos ---------------------------------------------------------------------
+    int desconocidosGeneral = (from unDisp in listaDispositivos
+                                where unDisp.Nombre == "Desconocido"
+                                select unDisp).Count();
+
+    listaResultadosGeneral.Add(new Tuple<string, int>("Desconocidos", desconocidosGeneral));
+
+    //Todos ----------------------------------------------------------------------------
+    listaResultadosGeneral.Add(new Tuple<string, int>("Todos", listaDispositivos.Count()));
+
+}
+
+
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Visualizacion de Dashboard</h2>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+@*NUEVO CODIGO ==============================================================================================*@
+@if (listaDispositivos == null || listaDispositivos.Count <= 0)
+{
+    @*<p class="ml-4 text-muted">No existen registros para generar los Dashboard.</p>
+      Al final paso el mensaje de error desde mi Controlador*@
+}
+else
+{
+    @*DASHBOARD GENERAL ==============================================================================================*@
+
+    <div class="row border border-success mb-2">
+
+        <div class="col-12 col-md-6 dashboard-row">
+            <canvas id="prioridadesGeneralChart" class="p-3" width="300" height="150"></canvas>
+        </div>
+
+        <div class="col-12 col-md-6">
+            <!-- Puedes agregar contenido adicional para cada gráfico si es necesario -->
+            @*listaFiltradaXSucursal*@
+
+            <div class="m-4">
+                <h3><strong>TOTAL DE DISPOSITIVOS</strong></h3>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    @*DASHBOARD LISTADO ==============================================================================================*@
+
+    @for (int i = 0; i < matrizCategorizada.Count; i++)
+    {
+        <div class="row border mb-2">
+
+            <div class="col-12 col-md-6 dashboard-row">
+                <canvas id="prioridadesChart_@i" class="p-3" width="300" height="150"></canvas>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <!-- Puedes agregar contenido adicional para cada gráfico si es necesario -->
+                @*listaFiltradaXSucursal*@
+
+                <div class="m-4">
+                    <h3><strong>SUCURSAL NUMERO </strong> @listaFiltradaXSucursal[i][0].UbSucursal.NroSucursal.ToString()</h3>
+                    <h5 class="text-muted"><strong>Calle:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.Calle</h5>
+                    <h5 class="text-muted"><strong>Tipo:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.Tipo</h5>
+                    <h5 class="text-muted"><strong>Numero local:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.NumeroLocal</h5>
+
+                    <h5 class="text-muted"><strong>Subredes:</strong>
+                        @if (listaFiltradaXSucursal[i][0].UbSucursal.ListaSubred.Count == 0)
+                        {
+                           <span>Sin subredes asignadas</span>
+                        }
+                        else
+                        {
+                            @for (int j = 0; j < listaFiltradaXSucursal[i][0].UbSucursal.ListaSubred.Count; j++)
+                            {
+                                <span>@listaFiltradaXSucursal[i][0].UbSucursal.ListaSubred[j].Rango</span>
+
+                                @if (j < listaFiltradaXSucursal[i][0].UbSucursal.ListaSubred.Count - 1)
+                                {
+                                    <span>,</span>
+                                }
+                            }
+                        }
+                    </h5>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script>
+            //DASHBOARD LISTADO SCRIPT ===============================================================================
+
+            var ctx_@i = document.getElementById('prioridadesChart_@i').getContext('2d');
+            var myChart_@i = new Chart(ctx_@i, {
+                type: 'doughnut',
+                data: {
+                    labels: @Html.Raw(Json.Serialize(matrizCategorizada[i].Select(x => x.Item1))),
+                    datasets: [{
+                        data: @Html.Raw(Json.Serialize(matrizCategorizada[i].Select(x => x.Item2))),
+
+                        backgroundColor: [
+
+                            'rgba(102, 207, 122, 1)',
+                            'rgba(255, 113, 127, 1)',
+                            'rgba(228, 202, 44, 1)'
+                        ],
+
+                        borderColor: [
+                            'rgba(255, 255, 255, 1)'
+                        ],
+
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: true,
+                    legend: {
+                        position: 'right'
+                    }
+                }
+            });
+        </script>
+    }
+
+
+     
+      <script>
+        //DASHBOARD GENERAL SCRIPT ===============================================================================
+        var ctxGeneral = document.getElementById('prioridadesGeneralChart').getContext('2d');
+        var myChartGeneral = new Chart(ctxGeneral, {
+            type: 'bar',
+            data: {
+                labels: @Html.Raw(Json.Serialize(listaResultadosGeneral.Select(x => x.Item1))),
+                datasets: [{
+                    data: @Html.Raw(Json.Serialize(listaResultadosGeneral.Select(x => x.Item2))),
+
+                    backgroundColor: [
+                        'rgba(102, 207, 122, 1)',
+                        'rgba(255, 113, 127, 1)',
+                        'rgba(228, 202, 44, 1)',
+                        'rgba(185, 185, 185, 1)',
+                        'rgba(97, 160, 252, 1)'
+                    ],
+                    borderColor: 'rgba(255, 255, 255, 1)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    </script>   
+
+
+
+}
+
+@if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+{
+    <div class="row">
+        <div class="alert alert-primary col-12" role="alert">
+            @ViewBag.Mensaje
+        </div>
+    </div>
+}
+
+
+
+<script src="~/js/estandar.js"></script>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,177 @@
+﻿@model Sitio.Models.Operador
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Mi perfil";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+
+    List<Sucursal> listaSucursales = ViewBag.ListaSucursales;
+
+    string contraseñaOculta = new string('*', Model.Contraseña.Length);
+}
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Visualizar perfil Operador</h2>
+    </div>
+
+</div>
+
+
+<div>
+    <hr />
+
+    <div class="mt-4">
+        <h4 class="font-weight-bold">Mi perfil</h4>
+    </div>
+
+
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.UsuarioID):
+                </dt>
+
+            </dl>
+        </div>
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.UsuarioID)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row mt-2">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.Contraseña):
+                </dt>
+
+            </dl>
+        </div>
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @contraseñaOculta
+                    @* @Html.DisplayFor(model => model.Contraseña) *@
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+                </dt>
+
+            </dl>
+        </div>
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.MailAsignado.Correo)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    Numero de funcionario supervisor:
+                </dt>
+
+            </dl>
+        </div>
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    Nombre supervisor:
+                </dt>
+
+            </dl>
+        </div>
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.NombreSupervisor)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="mt-4">
+        <div>
+            <h4 class="font-weight-bold">Sucursales asignadas</h4>
+        </div>
+
+        <div class="mt-4">
+             @if (listaSucursales.Any())
+             {
+                 @foreach (var sucursal in listaSucursales)
+                 {
+                        <div>
+                        <strong>@Html.DisplayFor(model => sucursal.NroSucursal)</strong> - @Html.DisplayFor(model => sucursal.Calle) @Html.DisplayFor(model => sucursal.NumeroLocal)
+                        </div>
+                 }
+            }
+            else
+            {
+                <div>
+                    No hay sucursales asignadas.
+                </div>
+            }
+        </div>
+    </div>
+
+    
+</div>
+
+
+
+<script src="~/js/estandar.js"></script>

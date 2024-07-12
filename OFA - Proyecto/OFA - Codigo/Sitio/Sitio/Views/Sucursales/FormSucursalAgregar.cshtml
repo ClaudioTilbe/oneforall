@@ -1,0 +1,103 @@
+﻿@model Sitio.Models.Sucursal
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Agregar Sucursal";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Agregar Sucursal</h2>
+    </div>
+
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+
+        <div class="form-group">
+           @* @Html.LabelFor(model => model.NroSucursal, htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })*@
+            <p class="control-label col-md-2 font-weight-bold">Numero sucursal</p>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NroSucursal, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tipo, htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tipo, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Departamento, htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Departamento, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Calle, htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Calle, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.NumeroLocal, htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })*@
+            <p class="control-label col-md-2 font-weight-bold">Numero local</p>
+           
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.NumeroLocal, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.Label(null, "Subredes asignadas", htmlAttributes: new { @class = "control-label col-md-2 font-weight-bold" })
+            <div class="col-md-10">
+                <input type="text" name="listaSubredes" class="form-control" />
+                <p class="text-muted">Si desea asignar varias Sucursales ingrese el numero separado por una coma (EJ: 192.168.1, 192.168.2).</p>
+
+            </div>
+        </div>
+
+        <hr class="pb-2 pt-2" />
+
+
+        @if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Mensaje
+            </div>
+        }
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10 text-center">
+                <input type="submit" value="Agregar" class="btn btn-success" />
+            </div>
+        </div>
+
+    </div>
+}
+
+
+
+<script src="~/js/estandar.js"></script>

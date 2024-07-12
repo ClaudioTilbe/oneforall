@@ -1,0 +1,245 @@
+﻿@model IEnumerable<Sitio.Models.Dispositivo>
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Listado Dispositivos";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Listado de Dispositivos</h2>
+    </div>
+
+    <div class="col-6 text-right">
+        <a href="@Url.Action("FormDispositivoAgregar", "Dispositivos")" title="Nuevo Dispositivo">
+            <img alt="Agregar" src="@Url.Content("~/Imagenes/agregar.png")" width="40" height="40">
+        </a>
+    </div>
+</div>
+
+
+
+
+<div class="row mb-3">
+    <div class="col-8">
+        <div class="d-inline-flex"> @*justify-content-end align-items-center *@
+
+            <h5 class="pe-3 m-0"><b>Grupo</b> a filtrar</h5>
+
+            <div class="form-group m-0">
+                <div class="col-md-10">
+                    @Html.DropDownList("DDLGrupos" , (SelectList)ViewBag.Grupos, "Todos", new { onchange = "filtrarDispositivos()" })
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-4 text-right">
+        <input class="form-control mr-sm-2" id="inputBusqueda" type="search" placeholder="Search" aria-label="Search">
+    </div>
+</div>
+
+
+
+
+
+
+@if (!string.IsNullOrEmpty(@ViewBag.MensajeAccion))
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.MensajeAccion
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(@ViewBag.MensajeError))
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.MensajeError
+    </div>
+}
+
+
+<div id="tablaDispositivosContainer">
+<table class="table">
+    <tr class="table-header">
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.IP)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Conectado)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Accesible)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Sector)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Prioridad)
+        </th>
+
+        <th width="160px" class="text-center">
+            Acciones
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.IP)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+
+            <td class="text-center">
+                @if (item.Conectado)
+                {
+                    <span class="text-success">Online</span>
+                }
+                else
+                {
+                    <span class="text-danger">Offline</span>
+                }
+            </td>
+
+            <td class="text-center">
+                @if (item.Accesible)
+                {
+                    <span class="text-success">Si</span>
+                }
+                else
+                {
+                    <span class="text-danger">No</span>
+                }
+            </td>
+
+
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Sector)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Prioridad)
+            </td>
+
+            <td class="text-center">
+
+                <a href="@Url.Action("FormDispositivoBuscar", "Dispositivos", new { item.IP} )" title="Visualizar" class="text-decoration-none">
+                    <img alt="Ver" src="@Url.Content("~/Imagenes/ver.png")" width="30" height="30">
+                </a>
+
+
+                @* Esta funcional (Lo retiro para no agregar un CU innecesario)
+                <a href="@Url.Action("FormReporteAgregar", "Reportes", new { item.IP} )" title="Generar Reporte?" class="text-decoration-none">
+                    <img alt="Generar Reporte" src="@Url.Content("~/Imagenes/correo.png")" width="30" height="30">
+                </a> *@
+
+                <a href="@Url.Action("FormDispositivoModificar", "Dispositivos", new { item.IP} )" title="Modificar" class="text-decoration-none">
+                    <img alt="Modificar" src="@Url.Content("~/Imagenes/modificar.png")" width="30" height="30">
+                </a>
+
+
+                <a href="@Url.Action("FormDispositivoEliminar", "Dispositivos", new { item.IP} )" title="Eliminar" class="text-decoration-none">
+                    <img alt="Eliminar" src="@Url.Content("~/Imagenes/eliminar.png")" width="30" height="30">
+                </a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+</div>
+
+<hr class="pb-2" />
+
+
+<div>
+    <div class="d-inline-flex w-100">
+
+        <div class="alert alert-primary mr-2 mb-0 w-100" role="alert">
+            @ViewBag.Mensaje
+        </div>
+
+        <form action="@Url.Action("DescargarListaDispositivos", "Dispositivos")" method="post" id="formDescargar" class="">
+            <button type="submit" class="p-0 border-0">
+
+                <img src="@Url.Content("~/Imagenes/descargar.png")" alt="Descargar" width="50" height="50">
+
+            </button>
+        </form>
+
+    </div>
+</div>
+
+
+<script src="~/js/estandar.js"></script>
+
+
+<script>
+    function filtrarDispositivos() {
+        var selectedGrupo = $("#DDLGrupos").val();
+
+        if (selectedGrupo === "" || selectedGrupo === null)
+        {
+            selectedGrupo = "Todos";
+        }
+
+
+        $.ajax({
+            url: "@Url.Action("FiltrarDispositivos", "Dispositivos")",
+            type: "GET",
+            data: { grupo: selectedGrupo },
+            success: function (result) {
+                $("#tablaDispositivosContainer").html(result);
+            },
+            error: function (error) {
+                console.error(error);
+            }
+        });
+    }
+
+
+    $(document).ready(function () {
+        $("#inputBusqueda").on("keyup", function () {
+            var searchText = $(this).val().toLowerCase();
+
+            $("table tbody tr").each(function () {
+                var ip = $(this).find("td:eq(0)").text().toLowerCase();
+
+                if (ip.includes(searchText)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+
+            // Mostrar el encabezado de la tabla
+            $(".table-header").show();
+        });
+    });
+
+
+</script>

@@ -1,0 +1,123 @@
+﻿@model Sitio.Models.Administrador
+
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Eliminar Administrador";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+
+    string contraseñaOculta = new string('*', Model.Contraseña.Length);
+}
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Eliminar Administrador</h2>
+    </div>
+</div>
+
+<hr /> @*Separador ============================================================================================*@
+
+@if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.Mensaje
+    </div>
+}
+
+
+<div>
+
+    <div class="row mt-4">
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.UsuarioID):
+                </dt>
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.Contraseña):
+                </dt>
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+                </dt>
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.Nombre):
+                </dt>
+
+                <dt class="mb-3">
+                    @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
+                    Numero funcionario:
+                </dt>
+
+                <dt class="mb-3">
+                    @Html.DisplayNameFor(model => model.Cargo):
+                </dt>
+
+            </dl>
+        </div>
+
+        <div class="col-3">
+            <dl class="dl-horizontal">
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.UsuarioID)
+                </dd>
+
+                <dd class="mb-3">
+                    @contraseñaOculta
+                    @* @Html.DisplayFor(model => model.Contraseña) *@
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.MailAsignado.Correo)
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.Nombre)
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.NumeroFuncionario)
+                </dd>
+
+                <dd class="mb-3">
+                    @Html.DisplayFor(model => model.Cargo)
+                </dd>
+
+            </dl>
+        </div>
+    </div>
+
+    <hr /> @*SEPARADOR ============================================================================================= *@
+
+    <div class="alert alert-danger mt-3 mb-3">
+        ¿Esta seguro de que desea eliminar este Usuario Administrador?
+    </div>
+
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group mt-2">
+            <div class="col-md-offset-2 col-md-10 text-center">
+                <input type="submit" value="Eliminar" class="btn btn-danger" />
+            </div>
+        </div>
+    }
+
+</div>
+
+
+<script src="~/js/estandar.js"></script>

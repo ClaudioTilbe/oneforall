@@ -1,0 +1,169 @@
+﻿@model IEnumerable<Sitio.Models.Dispositivo>
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Listado Dispositivos";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Listado de Dispositivos @ViewBag.Categoria</h2>
+    </div>
+</div>
+
+
+
+<table class="table">
+    <tr>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.IP)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Tipo)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Conectado)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Accesible)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Sector)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Prioridad)
+        </th>
+        @*              <th>
+        @Html.DisplayNameFor(model => model.Permanencia)
+        </th>
+        <th>
+        @Html.DisplayNameFor(model => model.Ultimaconexion)
+        </th>
+        <th>
+        @Html.DisplayNameFor(model => model.UltimaNotificacion)
+        </th>*@
+        <th width="160px" class="text-center">
+            Acciones
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.IP)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Tipo)
+            </td>
+
+
+
+            @* <td class="text-center">
+        @Html.DisplayFor(modelItem => item.Conectado)
+        </td>*@
+
+
+            <td class="text-center">
+                @if (item.Conectado)
+                {
+                    <span class="text-success">Online</span>
+                }
+                else
+                {
+                    <span class="text-danger">Offline</span>
+                }
+            </td>
+
+
+
+            @* <td>
+        @Html.DisplayFor(modelItem => item.Accesible)
+        </td>*@
+
+
+            <td class="text-center">
+                @if (item.Accesible)
+                {
+                    <span class="text-success">Si</span>
+                }
+                else
+                {
+                    <span class="text-danger">No</span>
+                }
+            </td>
+
+
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Sector)
+            </td>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Prioridad)
+            </td>
+
+                @*                   <td>
+            @Html.DisplayFor(modelItem => item.Permanencia)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.Ultimaconexion)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.UltimaNotificacion)
+            </td>*@
+
+
+            <td class="text-center">
+
+                <a href="@Url.Action("FormDispositivoBuscar", "Dispositivos", new { item.IP} )" title="Visualizar" class="text-decoration-none">
+                    <img alt="Ver" src="@Url.Content("~/Imagenes/ver.png")" width="30" height="30">
+                </a>
+
+                @* Esta funcional (Lo retiro para no agregar un CU innecesario)
+                <a href="@Url.Action("FormReporteAgregar", "Reportes", new { item.IP} )" title="Generar Reporte?" class="text-decoration-none">
+                    <img alt="Generar Reporte" src="@Url.Content("~/Imagenes/correo.png")" width="30" height="30">
+                </a> *@
+
+                <a href="@Url.Action("FormDispositivoModificar", "Dispositivos", new { item.IP} )" title="Modificar" class="text-decoration-none">
+                    <img alt="Modificar" src="@Url.Content("~/Imagenes/modificar.png")" width="30" height="30">
+                </a>
+
+
+                <a href="@Url.Action("FormDispositivoEliminar", "Dispositivos", new { item.IP} )" title="Eliminar" class="text-decoration-none">
+                    <img alt="Eliminar" src="@Url.Content("~/Imagenes/eliminar.png")" width="30" height="30">
+                </a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+<hr class="pb-2" />
+
+@if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+{
+    <div class="alert alert-primary" role="alert">
+        @ViewBag.Mensaje
+    </div>
+}
+
+
+
+<script src="~/js/estandar.js"></script>
