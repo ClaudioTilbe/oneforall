@@ -667,7 +667,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 **9.1.4 – Vista de modelo de distribución**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n%20.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/eb21bfa9bcd08a832bad6dd31fcc0170d4beee58/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n.png)
 
 
 ### 9.2 – Patrones de diseño
