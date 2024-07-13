@@ -517,7 +517,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 - **AnalisisRed** ( <ins>IdAnalisis</ins>, RangoSubred, Razon, Estado, Prioridad, NuevosDispositivos, FechaGenerado, FechaFinalizado, UsuarioID)
 - **EscaneoPuertos** ( <ins>IdEscaneo</ins>, DispotitivoIP, Razon, Estado, Prioridad, CadenaSalida, FechaGenerado, FechaFinalizado, UsuarioID)
 - **DiagramaRed** ( <ins>NumeroSucursal</ins>, Nombre, FechaSubida, DiagramaImagen)
-- **MensajeAPI** ( <ins>IDMensaje</ins>, Excepcion, Mensaje, MetodoOrigen, FechaGenerado, Tipo)
+- **MensajeMotor** ( <ins>IDMensaje</ins>, Excepcion, Mensaje, MetodoOrigen, FechaGenerado, Tipo)
 
 #### 7.1.3 – RNE
 
@@ -576,7 +576,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
     - FechaSubida: No puede tener fecha y hora por delante del Presente
     - DiagramaImagen: Formato Imagen
 
-- **Tabla MENSAJEAPI:**
+- **Tabla MENSAJEMOTOR:**
     - IDMensaje: Identity (1, 1)
     - FechaGenerado: No puede tener fecha y hora por delante del Presente
     - Tipo: Puede ser "informativo", "advertencia", "critico" o "no identificado"
