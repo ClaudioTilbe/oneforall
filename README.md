@@ -496,7 +496,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 ### 7.1 – Diagrama Entidad-Relación 
 #### 7.1.1 – DER
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%207/DER.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/e8374b4761639cbda1975a58ca171468df1b73f8/Diagramas/Capitulo%207/DER.png)
 
 
 #### 7.1.2 – Pasaje a Tablas
@@ -584,7 +584,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 ### 7.2 – Modelo Conceptual
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/e8374b4761639cbda1975a58ca171468df1b73f8/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
 
 <br>
 
