@@ -92,7 +92,8 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 
 # 🛠 TECNOLOGÍAS Y PLATAFORMAS (3)
 
-**Aclaración:** Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como Front-end.
+> [!IMPORTANT]
+> Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como la aplicación web que consumira la API Rest.
 
 ### 3.1 – Repositorio de datos
 - **SQL Server 2019** se utilizará para gestionar la base de datos empleada por el sistema.
@@ -103,8 +104,6 @@ Por otro lado, la seguridad integrada estará deshabilitada y la seguridad será
 - **API REST**. Será la interfaz que permitirá la comunicación entre nuestro Back-end y Front-end. En la API Rest se alojan una serie de métodos que podrán ser utilizados por nuestra aplicación web y que cumplen la función de utilizar las operaciones de nuestras capas en el Back-end para lograr el procesamiento y finalmente la resolución de los objetivos del usuario al efectuar los diversos casos de uso.
 
 - **ADO.NET** será utilizado en la capa de persistencia para poder acceder a los registros de la base de datos.
-
-- **Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
 
 ### 3.3 – Front-End
 - **Aplicación web de ASP.NET MVC**. Será el principal componente del Front-end y la tecnología que utilizará nuestro sistema para proveer de un sitio web a nuestros usuarios.
@@ -124,6 +123,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 - **Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
 
+- **Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
+  
 <br>
 
 # EVALUACIÓN DE RIESGOS (4)
