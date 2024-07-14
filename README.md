@@ -90,7 +90,7 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 
 <br>
 
-# 🛠 TECNOLOGÍAS Y PLATAFORMAS (3)
+# TECNOLOGÍAS Y PLATAFORMAS (3)
 
 > [!IMPORTANT]
 > Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como la aplicación web que consumira la API Rest.
