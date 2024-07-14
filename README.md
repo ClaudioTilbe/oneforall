@@ -40,7 +40,7 @@ A continuacion presento una **sintesis** de la documentacion generada para el pr
 <br>
 
 
-# INTRODUCCIÓN (1)
+# :link: INTRODUCCIÓN (1)
 
 ### 1.1 - Presentación de equipo
 El equipo está únicamente conformado por Claudio Tilbe, de nacionalidad uruguaya, desarrollador a cargo de la documentación y codificación de la solución.
@@ -64,7 +64,7 @@ La finalidad del Software es conseguir agilizar la detección de errores en disp
 
 <br>
 
-# DESCRIPCIÓN DEL NEGOCIO Y REQUERIMIENTOS (2)
+# :link: DESCRIPCIÓN DEL NEGOCIO Y REQUERIMIENTOS (2)
 ### 2.1 – Información sobre el cliente
 El software fue desarrollado para una importante cadena de supermercados del país que también cuenta con una serie de depósitos y pequeños locales abocados a otros rubros. En mayor o menor medida cada uno de estos locales cuenta con su respectiva infraestructura informática que será monitoreada a través del software. El mismo se ubicará en un servidor en la sucursal central desde el que podrá ser utilizado en aquellos locales que dispongan de un equipo de operadores. Algunos locales de menor envergadura, que no disponen de un equipo de operadores serán monitoreados desde Central a través de OFA.
 
@@ -90,7 +90,7 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 
 <br>
 
-# TECNOLOGÍAS Y PLATAFORMAS (3)
+# :link: TECNOLOGÍAS Y PLATAFORMAS (3)
 
 > [!IMPORTANT]
 > Se utilizara **.NET 5** como plataforma en común para desarrollar tanto Back-end como la aplicación web que consumira la API Rest.
@@ -127,7 +127,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
   
 <br>
 
-# EVALUACIÓN DE RIESGOS (4)
+# :link: EVALUACIÓN DE RIESGOS (4)
 ### 4.1 – Identificación de Riesgos
 #### 4.1.1 – Riesgos del sistema
 
@@ -213,7 +213,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Plan de contingencia:** Planificar una nueva reunión y re estructurar las secciones de la solución que sean necesarias. |
 
 
-# CASOS DE USO (5)
+# :link: CASOS DE USO (5)
 ### 5.1 – Casos de uso de alto nivel
 
 | Caso de uso  | Logueo |
@@ -456,7 +456,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 <br>
 
-# PLANIFICACIÓN (6)
+# :link: PLANIFICACIÓN (6)
 ### 6.1 – Clasificación y ponderación de casos de uso
 #### 6.1.1 – Criterios
 - **Importancia para el cliente:** Cuantificara lo importante que es el caso de uso para el cliente.
@@ -492,7 +492,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 <br>
 
-# Modelo Conceptual (7)
+# :link: Modelo Conceptual (7)
 
 ### 7.1 – Diagrama Entidad-Relación 
 #### 7.1.1 – DER
@@ -589,7 +589,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 <br>
 
-# Análisis y Diseño (8)
+# :link: Análisis y Diseño (8)
 
 ### 8.1 – Expansión completa por caso de uso
 #### 8.1.1 – Diagramas y tablas
@@ -609,7 +609,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 <br>
 
-# ARQUITECTURA Y PATRONES (9)
+# :link: ARQUITECTURA Y PATRONES (9)
 
 ### 9.1 – SAD
 #### 9.1.1 – Vista del modelo de casos de uso
@@ -686,7 +686,7 @@ Singleton será mayormente utilizado en el backend del sistema por sus caracter�
 
 <br>
 
-# CAMBIOS, PROBLEMAS Y REPLANIFICACIONES (10)
+# :link: CAMBIOS, PROBLEMAS Y REPLANIFICACIONES (10)
 
 ### 10.1 – Cambios realizados 
 
@@ -701,7 +701,7 @@ Singleton será mayormente utilizado en el backend del sistema por sus caracter�
 
 <br> 
 
-# INVESTIGACIÓN (11)
+# :link: INVESTIGACIÓN (11)
 
 ### 11.1 – Fuentes de busqueda e informacion
 Para la investigación de las distintas tecnologías y algoritmos que componen la solución opte por utilizar varias fuentes y métodos de búsqueda; Inicialmente probando con las fuentes clásicas hasta llegar a algunas más modernas y/o específicas dependiendo del resultado buscado.
@@ -861,7 +861,7 @@ https://stackoverflow.com/questions/32563236/relation-between-sessions-and-cooki
 
 <br>
 
-# TESTING Y PRUEBAS DE CALIDAD (12)
+# :link: TESTING Y PRUEBAS DE CALIDAD (12)
 
 ### 12.1 – Pruebas funcionales de casos de uso
 Para realizar las pruebas funcionales sobre los casos de uso opte por el modelo iterativo e incremental, debido a que era el modelo que mejor se adapta a las características del proyecto. 
@@ -885,7 +885,7 @@ Finalmente, una vez utilizadas estas herramientas para detectar los fallos en lo
 
 <br>
 
-# ANEXOS (13)
+# :link: ANEXOS (13)
 
 ### 13.1 – Manual de usuario
 
