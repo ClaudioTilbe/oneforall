@@ -34,6 +34,8 @@ A continuacion presento una **sintesis** de la documentacion generada para el pr
 
 * **[Capitulo 13 - Anexos](#anexos-13)**
 
+* **[Capitulo 14 - Actualizaciones](#anexos-13)**
+
 
 
 
@@ -892,7 +894,14 @@ Finalmente, una vez utilizadas estas herramientas para detectar los fallos en lo
 - [Manual de administrador](https://github.com/ClaudioTilbe/oneforall/blob/810145ea19336edb2b33b0aae93a496a316dd863/Manual%20de%20usuario/Manual%20de%20administrador%20(Version%2097-2003).doc)
 - [Manual de operador](https://github.com/ClaudioTilbe/oneforall/blob/810145ea19336edb2b33b0aae93a496a316dd863/Manual%20de%20usuario/Manual%20de%20operador%20(Version%2097-2003).doc)
 
+<br>
 
+# :link: ACTUALIZACIONES (14)
+
+Este capitulo indicara las actualizaciones que el proyecto a recibido luego de ya haber realizado la entrega final.
+
+### Migracion de .NET 5.0 a .NET 8.0
+Con la finalidad de resolver vulnerabilidades que los Nuggets agregados estaban provocando debido a dependencias, se opto por realizar una migracion de .NET 5.0 a .NET 8.0.
 
 
 
