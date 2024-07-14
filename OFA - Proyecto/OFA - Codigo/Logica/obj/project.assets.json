@@ -1,7 +1,7 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
+    "net8.0": {
       "Microsoft.NETCore.Platforms/3.1.0": {
         "type": "package",
         "compile": {
@@ -149,7 +149,7 @@
       },
       "EntidadesCompartidas/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "compile": {
           "bin/placeholder/EntidadesCompartidas.dll": {}
         },
@@ -159,7 +159,7 @@
       },
       "Persistencia/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
+        "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "EntidadesCompartidas": "1.0.0",
           "System.Data.SqlClient": "4.8.6"
@@ -499,7 +499,7 @@
     }
   },
   "projectFileDependencyGroups": {
-    "net5.0": [
+    "net8.0": [
       "EntidadesCompartidas >= 1.0.0",
       "Persistencia >= 1.0.0"
     ]
@@ -510,32 +510,32 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\OFA - Github\\OFA - Codigo\\Logica\\Logica.csproj",
+      "projectUniqueName": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Logica\\Logica.csproj",
       "projectName": "Logica",
-      "projectPath": "E:\\OFA - Github\\OFA - Codigo\\Logica\\Logica.csproj",
+      "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Logica\\Logica.csproj",
       "packagesPath": "C:\\Users\\ctilbe\\.nuget\\packages\\",
-      "outputPath": "E:\\OFA - Github\\OFA - Codigo\\Logica\\obj\\",
+      "outputPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Logica\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ctilbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "net8.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
-              "projectPath": "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj"
+            "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
+              "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj"
             },
-            "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj"
+            "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj"
             }
           }
         }
@@ -552,8 +552,8 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "net8.0": {
+        "targetAlias": "net8.0",
         "imports": [
           "net461",
           "net462",
@@ -570,7 +570,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

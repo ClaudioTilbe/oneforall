@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x+xzj/dAwsNXHknqV6zUrnx+VGBqlrOkkOI/EU1F9jrSg9+joCk/j3cvxH922Khlg1C0MRJeYONTdvsWbrnq8A==",
+  "dgSpecHash": "D+z7ttN3/s0vFvnHZLAYo7qEnedFaOIwXHT64ecC1YZWbMrXNcXmA7HqT2XSvpZ0h3q2i+7/7O2qHx3GUSVQUg==",
   "success": true,
-  "projectFilePath": "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

@@ -1,12 +1,37 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\OFA - Github\\OFA - Codigo\\Sitio\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FE09A3ED-D048-47E3-B593-2E5572866D8D}|Sitio\\Sitio.csproj|e:\\ofa\\ofa - proyecto (actualizacion .net 8)\\ofa - codigo\\sitio\\sitio\\controllers\\mensajesmotorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FE09A3ED-D048-47E3-B593-2E5572866D8D}|Sitio\\Sitio.csproj|solutionrelative:sitio\\controllers\\mensajesmotorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MensajesMotorController.cs",
+              "DocumentMoniker": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\Controllers\\MensajesMotorController.cs",
+              "RelativeDocumentMoniker": "Sitio\\Controllers\\MensajesMotorController.cs",
+              "ToolTip": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\Controllers\\MensajesMotorController.cs",
+              "RelativeToolTip": "Sitio\\Controllers\\MensajesMotorController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAlwD0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T21:24:07.445Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

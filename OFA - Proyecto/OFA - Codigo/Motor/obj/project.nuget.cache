@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UIOravdJ6JwdQEwPuT4jsfpsqCV01K8bdNXnQ7VMyw1gpX8XrW7AyivrWFSX5NQ4CuXBMhq16XCZ9gUO4Y8gZQ==",
+  "dgSpecHash": "u2KCjviVOA21nyI9T8Z9OxPYF8JM1I5AXc8f0vTgK+BJFULphtOeipz2UNqg9G0F6/A9CxnPcsHZ440F1DQYvA==",
   "success": true,
-  "projectFilePath": "E:\\OFA - Github\\OFA - Codigo\\Motor\\Motor.csproj",
+  "projectFilePath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Motor\\Motor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

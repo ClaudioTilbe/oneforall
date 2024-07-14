@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {}
+    "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
-    "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
+    "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj",
+        "projectUniqueName": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj",
         "projectName": "EntidadesCompartidas",
-        "projectPath": "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj",
+        "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj",
         "packagesPath": "C:\\Users\\ctilbe\\.nuget\\packages\\",
-        "outputPath": "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\obj\\",
+        "outputPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ctilbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -42,8 +42,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "imports": [
             "net461",
             "net462",
@@ -60,36 +60,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {
+    "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
+        "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\ctilbe\\.nuget\\packages\\",
-        "outputPath": "E:\\OFA - Github\\OFA - Codigo\\Persistencia\\obj\\",
+        "outputPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ctilbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
-                "projectPath": "E:\\OFA - Github\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj"
+              "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj": {
+                "projectPath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\EntidadesCompartidas\\EntidadesCompartidas.csproj"
               }
             }
           }
@@ -106,8 +106,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "System.Data.SqlClient": {
               "target": "Package",
@@ -130,7 +130,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

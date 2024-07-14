@@ -248,7 +248,6 @@ namespace Sitio.Hubs
 
         //Variables
         private readonly object _panelStateLock = new object();
-        private volatile bool _updatingPanelEstado;
 
 
         public void OpenPanelEstado()

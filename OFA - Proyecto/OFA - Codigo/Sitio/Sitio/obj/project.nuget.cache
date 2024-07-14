@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6ufXKHnjac/o/I0WOpVvwKTTzC+1KZNe5kLArMXWmoWuZJrOREsZIjhEt0erTm3zuYElLkAhsQqp4pM+goB3Zg==",
+  "dgSpecHash": "1yznFNxa4DVB26MWMzWYHXj5zdb9P1hpUeuFjr034YjTih6Uqp0rUi2hSyAvgVA5lbSBi8A/sOCbo7J8NeTzZw==",
   "success": true,
-  "projectFilePath": "E:\\OFA - Github\\OFA - Codigo\\Sitio\\Sitio\\Sitio.csproj",
+  "projectFilePath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\Sitio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ctilbe\\.nuget\\packages\\chart.js\\3.7.1\\chart.js.3.7.1.nupkg.sha512",
     "C:\\Users\\ctilbe\\.nuget\\packages\\closedxml\\0.102.2\\closedxml.0.102.2.nupkg.sha512",

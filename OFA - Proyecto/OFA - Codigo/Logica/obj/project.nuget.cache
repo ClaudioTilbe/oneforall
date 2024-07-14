@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "y6HYfyrNT+Ax8BMrgM6kRjmYFqlh2kzt5iWE+zGZnXxIvJTdpSkCNxND/4VlYKCqJh4qKf4lxfqIY6Lq9zk2lg==",
+  "dgSpecHash": "lyyCr9nEc9iurS7/WMYFZgsqlARYcsXTzVK8FisjFKkGmWiPhSSM+i0FuEYG0EAthdSwM3kEri8kd56KunSFBQ==",
   "success": true,
-  "projectFilePath": "E:\\OFA - Github\\OFA - Codigo\\Logica\\Logica.csproj",
+  "projectFilePath": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Logica\\Logica.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ctilbe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
