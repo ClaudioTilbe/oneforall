@@ -2,7 +2,7 @@
 
 **OFA** es una aplicación web destinada al monitoreo de redes IPv4. Surge para cumplir con las necesidades de un software moderno y efectivo que se aboque en el monitoreo de la red de la empresa cliente, una importante cadena de supermercados del pais. 
 
-La solucion fue desarrollada como proyecto de fin de carrera para el instituto BIOS. Este proyecto consta de 2 grandes bloques, documentacion y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
+La solucion fue desarrollada como proyecto de fin de carrera para el instituto BIOS, sin ayuda a nivel tecnico y autogestionando los tiempos de trabajo. Este proyecto se extendio a lo largo de poco mas de un año y consta de 2 grandes bloques, documentacion y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
 
 A continuacion presento una **sintesis** de la documentacion generada para el proyecto, asi como tambien se puede encontrar la codificacion del mismo en este repositorio.
 
