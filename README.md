@@ -599,8 +599,8 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 #### 8.1.1 – Diagramas y tablas
 
 > [!NOTE]
-> - _Para facilitar el desarrollo de los casos de uso tomamos por convención que en aquellos momentos que se utilice “Usuario” estamos haciendo referencia a un administrador u operador._
-> - _Se confeccionaron diagramas de comunicación para gestión de operador, gestión de análisis de subred y ~~ajustar potencia Motor~~_
+> _Para facilitar el desarrollo de los casos de uso tomamos por convención que en aquellos momentos que se utilice “Usuario” estamos haciendo referencia a un administrador u operador._ <br>
+> _Se confeccionaron diagramas de comunicación para gestión de operador, gestión de análisis de subred ~~y ajustar potencia Motor~~_.
 
 Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 - Caso de uso Expandido
