@@ -608,9 +608,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 - Contrato de software
 - Diagrama de comunicación (en los casos seleccionados)
 
-**(Pendiente. Dandole formato...)** 💬
-
-- [Logueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Logueo.png)
+[Logueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Logueo.png)
 
 [Deslogueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Deslogueo.png)
  
