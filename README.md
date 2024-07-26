@@ -610,6 +610,70 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 **(Pendiente. Dandole formato...)** 💬
 
+- [Logueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Logueo.png)
+
+[Deslogueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Deslogueo.png)
+ 
+[Visualizar perfil](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Visualizar%20perfil.png)
+
+[Listado de diagramas de red](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20de%20diagramas%20de%20red.png)
+
+[Listado Sucursales](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Sucursales.png)
+
+[Listado Grupos](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Grupos.png)
+
+[Listado Reportes](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Reportes.png)
+
+[Visualizar Logs Motor](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Visualizar%20Logs%20Motor.png)
+
+[Listado analisis de Puertos](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20analisis%20de%20Puertos.png)
+
+[Visualizar Dashboard](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Visualizar%20Dashboard.png)
+
+[Configurar Mail](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Configurar%20Mail.png)
+
+[Listado Operadores](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Operadores.png)
+
+[Listado Dispositivos](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Dispositivos.png)
+
+[Listado analisis de Subred](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20analisis%20de%20Subred.png)
+
+[Listado Dispositivos por estado](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20Dispositivos%20por%20estado.png)
+
+[Iniciar Motor](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Iniciar%20Motor.png)
+
+[Listado administradores](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Listado%20administradores.png)
+
+[Sincronizar sondeo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Sincronizar%20sondeo.png)
+
+[Exportar listado de dispositivos](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Exportar%20listado%20de%20dispositivos.png)
+
+[Gestión Sucursal](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20Sucursal.png)
+
+[Gestión de diagrama de Red](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20diagrama%20de%20Red.png)
+
+[Gestión de Grupo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20Grupo.png)
+
+[Detener Motor](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Detener%20Motor.png)
+
+[Gestión de Reporte](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20Reporte.png)
+
+[Gestión de analisis de puertos](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20analisis%20de%20puertos.png)
+
+[Gestión de análisis de subred](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20an%C3%A1lisis%20de%20subred.png)
+
+[Gestión de Dispositivo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20de%20Dispositivo.png)
+
+[Gestión Operador](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20Operador.png)
+
+[Gestión Administrador](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20Administrador.png)
+
+
+   
+
+
+
+
 
 <br>
 
