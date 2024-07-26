@@ -608,6 +608,10 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 - Contrato de software
 - Diagrama de comunicación (en los casos seleccionados)
 
+[¡Puedes visualizar los diagramas y tablas aqui!](https://github.com/ClaudioTilbe/oneforall/tree/4df0413b1ce7fe50b3b763953729106da80f2014/Diagramas/Capitulo%208)
+
+<!-- 
+
 [Logueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Logueo.png)
 
 [Deslogueo](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Deslogueo.png)
@@ -666,7 +670,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 [Gestión Administrador](https://github.com/ClaudioTilbe/oneforall/blob/072b3367da5e8fef7bb4c9c4d77b06080c6f639d/Diagramas/Capitulo%208/Gesti%C3%B3n%20Administrador.png)
 
-
+-->
    
 
 
