@@ -501,7 +501,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 ### 7.1 – Diagrama Entidad-Relación 
 #### 7.1.1 – DER
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/e8374b4761639cbda1975a58ca171468df1b73f8/Diagramas/Capitulo%207/DER.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/44daee7a556710bcc976ec8c5be6f569f1337edf/Diagramas/Capitulo%207/DER.png)
 
 
 #### 7.1.2 – Pasaje a Tablas
@@ -517,7 +517,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 - **Grupo** ( <ins>Codigo</ins>, NombreGrupo, Descripcion, UsuarioID)
 - **DispositivoEnGrupo** ( <ins>CodigoGrupo, DispositivoIP</ins>)
 - **Reporte** ( <ins>Codigo</ins>, Correo, DispositivoIP, Asunto, Destino, Mensaje) 
-- **MensajeVisor** ( <ins>Id</ins>, DispositivoIP, FechaGenerado, Contenido, UsuarioID)
+- **MensajeVisor** ( <ins>Id</ins>, DispositivoIP, FechaGenerado, Contenido)
 - **EstadoMotor** ( <ins>IDEstado</ins>, Activo, UltimaModificacion, UsuarioReg)
 - **AnalisisRed** ( <ins>IdAnalisis</ins>, RangoSubred, Razon, Estado, Prioridad, NuevosDispositivos, FechaGenerado, FechaFinalizado, UsuarioID)
 - **EscaneoPuertos** ( <ins>IdEscaneo</ins>, DispotitivoIP, Razon, Estado, Prioridad, CadenaSalida, FechaGenerado, FechaFinalizado, UsuarioID)
@@ -589,7 +589,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 
 ### 7.2 – Modelo Conceptual
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/e8374b4761639cbda1975a58ca171468df1b73f8/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/44daee7a556710bcc976ec8c5be6f569f1337edf/Diagramas/Capitulo%207/Modelo%20Conceptual.png)
 
 <br>
 
@@ -738,7 +738,7 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 **9.1.4 – Vista de modelo de distribución**
 
-![](https://github.com/ClaudioTilbe/oneforall/blob/92b8495491898e749bc4996f478353f131f6300f/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n.png)
+![](https://github.com/ClaudioTilbe/oneforall/blob/44daee7a556710bcc976ec8c5be6f569f1337edf/Diagramas/Capitulo%209/Diagrama%20de%20distribuci%C3%B3n.png)
 
 
 ### 9.2 – Patrones de diseño
