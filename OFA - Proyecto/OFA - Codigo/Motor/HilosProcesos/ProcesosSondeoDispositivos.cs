@@ -112,7 +112,7 @@ namespace Motor.HilosProcesos
                         //Alta de MENSAJEVISOR -------------------------------------------------------------------------
                         string mensaje = "La dirección IP " + unDispositivo.IP + " está conectada.";
 
-                        MensajeVisor unMensaje = new MensajeVisor(0, DateTime.Today, mensaje, unDispositivo, adminRoot);
+                        MensajeVisor unMensaje = new MensajeVisor(0, unDispositivo.IP, DateTime.Today, mensaje);
 
                         FabricaLogica.GetLogicaMensajeVisor().Alta(unMensaje, adminRoot);
                         //-----------------------------------------------------------------------------------------------  
@@ -169,7 +169,7 @@ namespace Motor.HilosProcesos
                         //Alta de MENSAJEVISOR -------------------------------------------------------------------------
                         string mensaje = "La dirección IP " + unDispositivo.IP + " no está conectada.";
 
-                        MensajeVisor unMensaje = new MensajeVisor(0, DateTime.Today, mensaje, unDispositivo, adminRoot);
+                        MensajeVisor unMensaje = new MensajeVisor(0, unDispositivo.IP, DateTime.Today, mensaje);
 
                         FabricaLogica.GetLogicaMensajeVisor().Alta(unMensaje, adminRoot);
                         //-----------------------------------------------------------------------------------------------  

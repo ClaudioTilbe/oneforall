@@ -39,3 +39,17 @@ E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\obj\Debug\
 E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\obj\Debug\net8.0\Sitio.pdb
 E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\obj\Debug\net8.0\Sitio.genruntimeconfig.cache
 E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\obj\Debug\net8.0\ref\Sitio.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\System.Data.SqlClient.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\EntidadesCompartidas.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Logica.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Motor.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Persistencia.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\EntidadesCompartidas.pdb
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Logica.pdb
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Motor.pdb
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\bin\Debug\net8.0\Persistencia.pdb

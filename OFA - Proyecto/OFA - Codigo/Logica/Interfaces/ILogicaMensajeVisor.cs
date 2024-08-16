@@ -16,6 +16,8 @@ namespace Logica.Interfaces
 
         List<MensajeVisor> ListarMensajeVisorXDispositivoUltimaH(Dispositivo unDispositivo, Usuario pUsuLogueado);
 
-        List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado);
+        //List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado);
+
+        void BajaXTiempo(Administrador pUsuLogueado);
     }
 }

@@ -11,4 +11,10 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\EntidadesCompartidas\EntidadesCompartidas.csproj" />
+    <ProjectReference Include="..\..\Logica\Logica.csproj" />
+    <ProjectReference Include="..\..\Motor\Motor.csproj" />
+  </ItemGroup>
+
 </Project>

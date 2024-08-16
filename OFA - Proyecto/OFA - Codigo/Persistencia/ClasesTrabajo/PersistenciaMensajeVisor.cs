@@ -32,10 +32,10 @@ namespace Persistencia.ClasesTrabajo
 
             SqlCommand _comando = new SqlCommand("MensajeVisorAlta", _cnn);
             _comando.CommandType = CommandType.StoredProcedure;
-            _comando.Parameters.AddWithValue("@DispositivoIP", unMensaje.ProvieneDispositivo.IP);
+            _comando.Parameters.AddWithValue("@DispositivoIP", unMensaje.DispositivoIP);
             _comando.Parameters.AddWithValue("@FechaGenerado", unMensaje.FechaGenerado);
             _comando.Parameters.AddWithValue("@Contenido", unMensaje.Contenido);
-            _comando.Parameters.AddWithValue("@UsuarioID", unMensaje._Usuario.UsuarioID);
+            //_comando.Parameters.AddWithValue("@UsuarioID", unMensaje._Usuario.UsuarioID);
 
             SqlParameter _ParmRetorno = new SqlParameter("@Retorno", SqlDbType.Int);
             _ParmRetorno.Direction = ParameterDirection.ReturnValue;
@@ -49,8 +49,6 @@ namespace Persistencia.ClasesTrabajo
                 //Revisar Excepciones
                 if ((int)_ParmRetorno.Value == -1)
                     throw new Exception("No existe un dispositivo con esa IP");
-                else if ((int)_ParmRetorno.Value == -2)
-                    throw new Exception("No existe un usuario con ese ID");
                 else if ((int)_ParmRetorno.Value == -2)
                     throw new Exception("Fallo al intentar agregar el mensaje visor");
 
@@ -85,20 +83,11 @@ namespace Persistencia.ClasesTrabajo
                 {
                     while (_lector.Read())
                     {
-                        Usuario usuMensaje = PersistenciaOperador.GetInstancia().Buscar((string)_lector["UsuarioID"], pUsuLogueado);
-
-                        if (usuMensaje == null)
-                        {
-                            usuMensaje = PersistenciaAdministrador.GetInstancia().Buscar((string)_lector["UsuarioID"], pUsuLogueado);
-                        }
-
                         unMensaje = new MensajeVisor
                             ((int)_lector["Id"],
+                            (string)_lector["DispositivoIP"],
                             (DateTime)_lector["FechaGenerado"],
-                            (string)_lector["Contenido"],
-                            unDispositivo,
-                            pUsuLogueado
-                            );
+                            (string)_lector["Contenido"]);
 
                         _listaMensajes.Add(unMensaje);
                     }
@@ -140,11 +129,9 @@ namespace Persistencia.ClasesTrabajo
 
                         unMensaje = new MensajeVisor
                             ((int)_lector["Id"],
+                            (string)_lector["DispositivoIP"],
                             (DateTime)_lector["FechaGenerado"],
-                            (string)_lector["Contenido"],
-                            unDispositivo,
-                            pUsuLogueado
-                            );
+                            (string)_lector["Contenido"]);
 
                         _listaMensajes.Add(unMensaje);
                     }
@@ -165,36 +152,67 @@ namespace Persistencia.ClasesTrabajo
 
 
 
-        public List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado)
+        //public List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado)
+        //{
+        //    SqlConnection _cnn = new SqlConnection(Conexion.Cnn(pUsuLogueado));
+        //    MensajeVisor unMensaje = null;
+        //    List<MensajeVisor> _listaMensajes = new List<MensajeVisor>();
+
+        //    SqlCommand _comando = new SqlCommand("ListarMensajeVisorXUsuarioUltimaH", _cnn);
+        //    _comando.CommandType = CommandType.StoredProcedure;
+        //    _comando.Parameters.AddWithValue("@UsuarioID", pUsuLogueado.UsuarioID);
+
+        //    try
+        //    {
+        //        _cnn.Open();
+        //        SqlDataReader _lector = _comando.ExecuteReader();
+        //        if (_lector.HasRows)
+        //        {
+        //            while (_lector.Read())
+        //            {
+        //                unMensaje = new MensajeVisor
+        //                    ((int)_lector["Id"],
+        //                    (string)_lector["DispositivoIP"],
+        //                    (DateTime)_lector["FechaGenerado"],
+        //                    (string)_lector["Contenido"]);
+
+        //                _listaMensajes.Add(unMensaje);
+        //            }
+        //        }
+        //        _lector.Close();
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new Exception(ex.Message);
+        //    }
+        //    finally
+        //    {
+        //        _cnn.Close();
+        //    }
+
+        //    return _listaMensajes;
+        //}
+
+
+
+        public void BajaXTiempo(Administrador pUsuLogueado)
         {
             SqlConnection _cnn = new SqlConnection(Conexion.Cnn(pUsuLogueado));
-            MensajeVisor unMensaje = null;
-            List<MensajeVisor> _listaMensajes = new List<MensajeVisor>();
 
-            SqlCommand _comando = new SqlCommand("ListarMensajeVisorXUsuarioUltimaH", _cnn);
+            SqlCommand _comando = new SqlCommand("MensajeVisorBajaXTiempo", _cnn);
             _comando.CommandType = CommandType.StoredProcedure;
-            _comando.Parameters.AddWithValue("@UsuarioID", pUsuLogueado.UsuarioID);
+
+            SqlParameter _retorno = new SqlParameter("@Retorno", SqlDbType.Int);
+            _retorno.Direction = ParameterDirection.ReturnValue;
+            _comando.Parameters.Add(_retorno);
 
             try
             {
                 _cnn.Open();
-                SqlDataReader _lector = _comando.ExecuteReader();
-                if (_lector.HasRows)
-                {
-                    while (_lector.Read())
-                    {
-                        unMensaje = new MensajeVisor
-                            ((int)_lector["Id"],
-                            (DateTime)_lector["FechaGenerado"],
-                            (string)_lector["Contenido"],
-                            PersistenciaDispositivo.GetInstancia().Buscar((string)_lector["DispositivoIP"], pUsuLogueado),
-                            pUsuLogueado
-                            );
+                _comando.ExecuteNonQuery();
 
-                        _listaMensajes.Add(unMensaje);
-                    }
-                }
-                _lector.Close();
+                if ((int)_retorno.Value == -1)
+                    throw new Exception("Fallo al intentar eliminar los Mensajes Visor");
             }
             catch (Exception ex)
             {
@@ -204,9 +222,10 @@ namespace Persistencia.ClasesTrabajo
             {
                 _cnn.Close();
             }
-
-            return _listaMensajes;
         }
+
+
+
 
 
     }

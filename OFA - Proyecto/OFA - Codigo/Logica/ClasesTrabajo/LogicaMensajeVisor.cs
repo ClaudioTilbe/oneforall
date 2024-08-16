@@ -38,11 +38,15 @@ namespace Logica.ClasesTrabajo
             return FabricaPersistencia.GetPersistenciaMensajeVisor().ListarMensajeVisorXDispositivoUltimaH(unDispositivo, pUsuLogueado);
         }
 
-        public List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado)
-        {
-            return FabricaPersistencia.GetPersistenciaMensajeVisor().ListarMensajeVisorXUsuarioUltimaH(pUsuLogueado);
-        }
+        //public List<MensajeVisor> ListarMensajeVisorXUsuarioUltimaH(Usuario pUsuLogueado)
+        //{
+        //    return FabricaPersistencia.GetPersistenciaMensajeVisor().ListarMensajeVisorXUsuarioUltimaH(pUsuLogueado);
+        //}
 
+        public void BajaXTiempo(Administrador pUsuLogueado)
+        {
+            FabricaPersistencia.GetPersistenciaMensajeVisor().BajaXTiempo(pUsuLogueado);
+        }
 
     }
 

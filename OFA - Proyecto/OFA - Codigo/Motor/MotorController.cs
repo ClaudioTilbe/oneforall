@@ -50,9 +50,9 @@ namespace Motor
             Thread hiloAnalisisDeRutina = new Thread(DoWorkAnalisisRutinario);//Hilo 5
             hiloAnalisisDeRutina.Start();
 
-            //Envio de Reportes
-            //Thread hiloEnvioReportes = new Thread(DoWorkEnvioReportes);//Hilo 6
-            //hiloEnvioReportes.Start();
+            //Sondeo subreds por Rutina
+            Thread hiloGestionMensajesVisor = new Thread(DoWorkGestionMensajesVisor);//Hilo 6
+            hiloGestionMensajesVisor.Start();
         }
 
 
@@ -86,8 +86,6 @@ namespace Motor
         //Hilo 2
         private async void DoWorkEscaneosSolicitados()
         {
-            //Chequeada ----------------------------------------------------------------------------
-
             ProcesosEscaneosPuertos hiloEscaneosSolicitados = new ProcesosEscaneosPuertos();
 
             await hiloEscaneosSolicitados.EjecutoEscaneosSolicitados();
@@ -98,8 +96,6 @@ namespace Motor
         //Hilo 3
         private async void DoWorkAnalisisSolicitados()
         {
-            //Chequeada ----------------------------------------------------------------------------
-
             ProcesosAnalisisSolicitados hiloAnalisisSolicitados = new ProcesosAnalisisSolicitados();
 
             await hiloAnalisisSolicitados.EjecutoAnalisisSolicitados();
@@ -110,8 +106,6 @@ namespace Motor
         //Hilo 4
         private async void DoWorkSondeoDispositivos()
         {
-            //Chequeada ----------------------------------------------------------------------------
-
             ProcesosSondeoDispositivos hiloSondeosDispositivos = new ProcesosSondeoDispositivos();
 
             await hiloSondeosDispositivos.EjecutoSondeoDispositivos();
@@ -122,13 +116,20 @@ namespace Motor
         //Hilo 5
         private async void DoWorkAnalisisRutinario()
         {
-            //Chequeada ----------------------------------------------------------------------------
-
             ProcesosAnalisisRutinario hiloAnalisisRutinarios = new ProcesosAnalisisRutinario();
 
             await hiloAnalisisRutinarios.EjecutoAnalisisRutinarios();
         }
 
+
+
+        //Hilo 6
+        private void DoWorkGestionMensajesVisor()
+        {
+            ProcesosGestionMensajesVisor hiloGestionMensajesVisor = new ProcesosGestionMensajesVisor();
+
+            hiloGestionMensajesVisor.EjecutoBajaMensajesVisorXDia();
+        }
 
 
         //Hilo 6 (Se mueve la funcionabilidad para el Hilo 4, Sondeo de Dispositivos

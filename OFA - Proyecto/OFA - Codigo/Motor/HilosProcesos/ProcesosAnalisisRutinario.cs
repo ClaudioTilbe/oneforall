@@ -173,7 +173,7 @@ namespace Motor.HilosProcesos
                 //Alta de MENSAJEVISOR -------------------------------------------------------------------------
                 string mensaje = "Se a localizado un nuevo Dispositivo en la siguiente IP " + direccionIp + " ";
 
-                MensajeVisor unMensaje = new MensajeVisor(0, DateTime.Now, mensaje, unDisp, adminRoot);
+                MensajeVisor unMensaje = new MensajeVisor(0, unDisp.IP, DateTime.Now, mensaje);
 
                 FabricaLogica.GetLogicaMensajeVisor().Alta(unMensaje, adminRoot);
                 //-----------------------------------------------------------------------------------------------  

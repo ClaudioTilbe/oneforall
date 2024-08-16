@@ -211,6 +211,7 @@ else
             //DASHBOARD LISTADO SCRIPT ===============================================================================
 
             var ctx_@i = document.getElementById('prioridadesChart_@i').getContext('2d');
+
             var myChart_@i = new Chart(ctx_@i, {
                 type: 'doughnut',
                 data: {
@@ -248,6 +249,7 @@ else
       <script>
         //DASHBOARD GENERAL SCRIPT ===============================================================================
         var ctxGeneral = document.getElementById('prioridadesGeneralChart').getContext('2d');
+
         var myChartGeneral = new Chart(ctxGeneral, {
             type: 'bar',
             data: {

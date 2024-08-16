@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using Sitio.Utility;
 using System.Net;
 using System.ComponentModel.DataAnnotations;
+using System.Text.RegularExpressions;
 
 namespace Sitio.Models
 {
@@ -14,10 +15,11 @@ namespace Sitio.Models
 
         //Atributos
         private int id;
+        private string dispositivoIP;
+
         private DateTime fechaGenerado;
         private string contenido;
 
-        private Dispositivo provieneDispositivo;
 
 
 
@@ -26,6 +28,12 @@ namespace Sitio.Models
         {
             get { return id; }
             set { id = value; }
+        }
+
+        public string DispositivoIP
+        {
+            get { return dispositivoIP; }
+            set { dispositivoIP = value; }
         }
 
         public DateTime FechaGenerado
@@ -41,21 +49,16 @@ namespace Sitio.Models
             set { contenido = value; }
         }
 
-        public Dispositivo ProvieneDispositivo
-        {
-            get { return provieneDispositivo; }
-            set { provieneDispositivo = value; }
-        }
 
 
 
         //Constructores
-        public MensajeVisor(int pId, DateTime pFechaGenerado, string pContenido, Dispositivo pProvieneDispositivo)
+        public MensajeVisor(int pId, string pDispositivoIP, DateTime pFechaGenerado, string pContenido)
         {
             Id = pId;
+            DispositivoIP = pDispositivoIP;
             FechaGenerado = pFechaGenerado;
             Contenido = pContenido;
-            ProvieneDispositivo = pProvieneDispositivo;
         }
 
         public MensajeVisor()
@@ -67,17 +70,19 @@ namespace Sitio.Models
         //Validar Contenido de Objeto
         public void Validar()
         {
+            Regex exp = new Regex(@"^(\d{1,3}\.){3}\d{1,3}$");
+
             if (this.Id < 0)
                 throw new Exception("Error en el id de mensaje visor");
+
+            if (exp.IsMatch(this.DispositivoIP.Trim()) == false)
+                throw new Exception("Error en el dispositivo asignado de mensaje visor.");
 
             if (this.FechaGenerado > DateTime.Now)
                 throw new Exception("Error en fecha generado de mensaje visor");
 
             if ((this.Contenido.Trim().Length > 200) || (this.Contenido.Trim().Length < 10))
                 throw new Exception("Error en el contenido de mensaje visor");
-
-            if (this.ProvieneDispositivo == null)
-                throw new Exception("Error en el dispositivo asignado de mensaje visor.");
         }
 
     }

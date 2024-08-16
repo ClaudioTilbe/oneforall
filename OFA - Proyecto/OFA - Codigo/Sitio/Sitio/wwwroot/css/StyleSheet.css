@@ -147,3 +147,16 @@ td.offline {
 .nav-link:hover {
     background-color: rgba(0, 0, 0, 0.1); /* Color negro con una opacidad del 50% */
 }
+
+/*Background de Home*/
+/*.background-black {
+    background-color: black;
+}*/
+
+/*Iconos de menu vertical*/
+.icon-style {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+

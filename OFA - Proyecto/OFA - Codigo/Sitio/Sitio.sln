@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Motor", "..\Motor\Motor.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIRest", "..\APIRest\APIRest.csproj", "{59285FE1-ED84-46F6-A78C-77607F195D74}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingConsole", "..\TestingConsole\TestingConsole.csproj", "{19300578-83A0-472D-9A95-D2FBE1B02CA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{59285FE1-ED84-46F6-A78C-77607F195D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59285FE1-ED84-46F6-A78C-77607F195D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59285FE1-ED84-46F6-A78C-77607F195D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19300578-83A0-472D-9A95-D2FBE1B02CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19300578-83A0-472D-9A95-D2FBE1B02CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19300578-83A0-472D-9A95-D2FBE1B02CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19300578-83A0-472D-9A95-D2FBE1B02CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

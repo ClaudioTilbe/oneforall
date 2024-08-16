@@ -17,6 +17,62 @@
       "PackagePath": "staticwebassets\\Imagenes\\Logotipo2.png"
     },
     {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\administrador.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\administrador.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\analisisred.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\analisisred.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\correo.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\correo.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\diagramared.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\diagramared.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\dispositivos.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\dispositivos.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\escaneopuertos.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\escaneopuertos.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\grafico.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\grafico.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\grupo.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\grupo.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\house.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\house.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\interruptor.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\interruptor.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\operador.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\operador.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\reporte.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\reporte.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\sucursal.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\sucursal.png"
+    },
+    {
+      "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\Menu vertical\\usuario.png",
+      "PackagePath": "staticwebassets\\Imagenes\\Menu vertical\\usuario.png"
+    },
+    {
       "Id": "E:\\OFA\\OFA - Proyecto (Actualizacion .NET 8)\\OFA - Codigo\\Sitio\\Sitio\\wwwroot\\Imagenes\\agregar.png",
       "PackagePath": "staticwebassets\\Imagenes\\agregar.png"
     },

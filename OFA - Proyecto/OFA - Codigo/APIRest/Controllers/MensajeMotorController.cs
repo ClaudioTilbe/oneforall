@@ -32,7 +32,7 @@ namespace APIRest.Controllers
 
 
         [HttpGet("")]
-        public IActionResult GetMensajesMotorAPI()
+        public IActionResult GetMensajesMotor()
         {
             Usuario usuarioLog;
 

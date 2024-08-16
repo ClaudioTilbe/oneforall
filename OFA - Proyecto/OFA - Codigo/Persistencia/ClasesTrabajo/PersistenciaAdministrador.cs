@@ -160,14 +160,16 @@ namespace Persistencia.ClasesTrabajo
                 else if ((int)_retorno.Value == -3)
                     throw new Exception("Fallo al intentar eliminar el usuario a nivel de BD");
                 else if ((int)_retorno.Value == -4)
-                    throw new Exception("Fallo al intentar eliminar los Mensajes visor del Usuario");
-                else if ((int)_retorno.Value == -5)
                     throw new Exception("Fallo al intentar eliminar los Analisis de red asociados al Administrador");
-                else if ((int)_retorno.Value == -6)
+                else if ((int)_retorno.Value == -5)
                     throw new Exception("Fallo al intentar eliminar los Escaneos de puertos asociados al Administrador");
+                else if ((int)_retorno.Value == -6)
+                    throw new Exception("Fallo al intentar desasignar los dispositivos en grupos");
                 else if ((int)_retorno.Value == -7)
-                    throw new Exception("Fallo al intentar eliminar el Administrador");
+                    throw new Exception("Fallo al intentar eliminar los grupos");
                 else if ((int)_retorno.Value == -8)
+                    throw new Exception("Fallo al intentar eliminar el Administrador");
+                else if ((int)_retorno.Value == -9)
                     throw new Exception("Fallo al intentar eliminar el Usuario");
 
 

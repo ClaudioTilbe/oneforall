@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace EntidadesCompartidas
@@ -11,11 +12,12 @@ namespace EntidadesCompartidas
 
         //Atributos
         private int id;
+        private string dispositivoIP;
         private DateTime fechaGenerado;
         private string contenido;
 
-        private Dispositivo provieneDispositivo;
-        private Usuario _usuario;
+        //private Dispositivo provieneDispositivo;
+        //private Usuario _usuario;
 
 
 
@@ -29,6 +31,20 @@ namespace EntidadesCompartidas
                     throw new Exception("Error en el ID de Mensaje Visor");
                 else
                     id = value;
+            }
+        }
+
+        public string DispositivoIP
+        {
+            get { return dispositivoIP; }
+            set
+            {
+                Regex exp = new Regex(@"^(\d{1,3}\.){3}\d{1,3}$");
+
+                if (exp.IsMatch(value.Trim()) == false)
+                    throw new Exception("Error en la IP del Dispositivo");
+                else
+                    dispositivoIP = value;
             }
         }
 
@@ -56,6 +72,7 @@ namespace EntidadesCompartidas
             }
         }
 
+        /*
         public Dispositivo ProvieneDispositivo
         {
             get { return provieneDispositivo; }
@@ -79,17 +96,18 @@ namespace EntidadesCompartidas
                     _usuario = value;
             }
         }
-
+        */
 
 
         //Constructores
-        public MensajeVisor(int pId, DateTime pFechaGenerado, string pContenido, Dispositivo pProvieneDispositivo, Usuario pusuario)
+        public MensajeVisor(int pId, string pDispositivoIP, DateTime pFechaGenerado, string pContenido)
         {
             Id = pId;
+            DispositivoIP = pDispositivoIP;
             FechaGenerado = pFechaGenerado;
             Contenido = pContenido;
-            ProvieneDispositivo = pProvieneDispositivo;
-            _Usuario = pusuario;
+            //ProvieneDispositivo = pProvieneDispositivo;
+            //_Usuario = pusuario;
         }
 
         public MensajeVisor()

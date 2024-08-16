@@ -170,10 +170,10 @@ Go
 Create Table MensajeVisor
 (
 	Id int Not Null Primary Key Identity(1,1),
-	DispositivoIP varchar(20) Not Null Foreign Key References Dispositivo(IP),
+	DispositivoIP varchar(20) Not Null,
 	FechaGenerado DateTime not null,
     Contenido varchar(200) not null Check (LEN(Contenido) >= 10),
-    UsuarioID varchar(20) not null Foreign Key References Usuario(UsuarioID)
+    --UsuarioID varchar(20) not null Foreign Key References Usuario(UsuarioID)
 )
 Go
 
@@ -416,27 +416,18 @@ Begin
 				return -3
 			End
 
-
-			Delete From MensajeVisor Where UsuarioID = @UsuID
+			Delete From AnalisisRed Where UsuarioID = @UsuID
 			if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
 				return -4
 			End
 			
-	        
-			Delete From AnalisisRed Where UsuarioID = @UsuID
-			if (@@ERROR <> 0)
-			Begin
-				RollBack Transaction
-				return -5
-			End
-			
 			Delete From EscaneoPuertos Where UsuarioID = @UsuID
 			if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
-				return -6
+				return -5
 			End
 			
 			
@@ -445,7 +436,7 @@ Begin
             if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
-				return -9
+				return -6
 			End
 		
 			
@@ -453,7 +444,7 @@ Begin
 			if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
-				return -10
+				return -7
 			End
 			
 			
@@ -461,7 +452,7 @@ Begin
 			if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
-				return -7
+				return -8
 			End
 
 
@@ -469,7 +460,7 @@ Begin
 			if (@@ERROR <> 0)
 			Begin
 				RollBack Transaction
-				return -8
+				return -9
 			End
 
 		Commit Transaction
@@ -1633,24 +1624,19 @@ GO
 
 ------------------------------------------------ MensajeVisor -------------------------------------------------------
     
-Create Procedure MensajeVisorAlta @DispositivoIP varchar(20), @FechaGenerado DateTime, @Contenido varchar(200), 
-@UsuarioID varchar(20)
+Create Procedure MensajeVisorAlta @DispositivoIP varchar(20), @FechaGenerado DateTime, @Contenido varchar(200)
 As
 Begin
-
 	   If Not Exists (select * from Dispositivo where IP = @DispositivoIP)
-	        return -1
-	        
-	   If Not Exists (select * from Usuario where UsuarioID = @UsuarioID)
-	        return -2
+	        return -1  
 				
-		Insert MensajeVisor (DispositivoIP, FechaGenerado, Contenido, UsuarioID)
-		values (@DispositivoIP, @FechaGenerado, @Contenido, @UsuarioID)
+		Insert MensajeVisor (DispositivoIP, FechaGenerado, Contenido)
+		values (@DispositivoIP, @FechaGenerado, @Contenido)
 
 		If @@ERROR = 0
 			return 1
 		else
-			return -3
+			return -2
 End
 go
     
@@ -1673,21 +1659,34 @@ go
 
 
 
-Create Procedure MensajeVisorBajaXTodos As
+Create Procedure MensajeVisorBajaXTiempo As
 Begin 
-		Delete From MensajeVisor
+			
+		Delete From MensajeVisor  WHERE FechaGenerado < DATEADD(HOUR, -24, GETDATE())
 
 		If @@ERROR = 0
-				return 1
+			return 1
 		else
-				return -2
+			return -1
 End
 go
 
 
 
+--Uso para testeos
+--Create Procedure MensajeVisorBajaXTodos As
+--Begin 
+--	Delete From MensajeVisor
 
-    
+--	If @@ERROR = 0
+--			return 1
+--	else
+--			return -1
+--End
+--go
+
+
+
 
 Create Procedure ListarMensajeVisorXDispositivo @DispositivoIP varchar(20) As
 Begin 
@@ -1701,13 +1700,13 @@ GO
 
 
 
-Create Procedure ListarMensajeVisorXUsuario @DispositivoIP varchar(20), @UsuarioID varchar(20) As
-Begin 
-	Select * 
-	From MensajeVisor
-	Where UsuarioID = @UsuarioID
-End
-GO 
+--Create Procedure ListarMensajeVisorXUsuario @DispositivoIP varchar(20), @UsuarioID varchar(20) As
+--Begin 
+--	Select * 
+--	From MensajeVisor
+--	Where UsuarioID = @UsuarioID
+--End
+--GO 
 
 
 
@@ -1722,27 +1721,13 @@ GO
 
 
 
-Create Procedure ListarMensajeVisorXUsuarioUltimaH @UsuarioID varchar(20) As
-Begin 
-	Select * 
-	From MensajeVisor
-	Where UsuarioID = @UsuarioID  and FechaGenerado >= DATEADD(MINUTE, -60, GETDATE())
-End
-GO 
-
-
-
-
-Create Procedure MensajeVisorBaja As
-Begin
-		Delete From MensajeVisor
-		If @@ERROR = 0
-			return 1
-		else
-			return -2
-End
-go
-
+--Create Procedure ListarMensajeVisorXUsuarioUltimaH @UsuarioID varchar(20) As
+--Begin 
+--	Select * 
+--	From MensajeVisor
+--	Where UsuarioID = @UsuarioID  and FechaGenerado >= DATEADD(MINUTE, -60, GETDATE())
+--End
+--GO 
 
 
 ------------------------------------------------ EstadoMotor -------------------------------------------------------
@@ -2115,7 +2100,7 @@ GRANT EXEC ON DispositivoBaja TO SPOperador;
 GRANT EXEC ON DispositivoAlta TO SPOperador;
 GRANT EXEC ON MailModificar TO SPOperador;
 GRANT EXEC ON BuscarOperador TO SPOperador;
-GRANT EXEC ON ListarMensajeVisorXUsuarioUltimaH TO SPOperador;
+--GRANT EXEC ON ListarMensajeVisorXUsuarioUltimaH TO SPOperador;
 GRANT EXEC ON ListadoReportesXCorreo TO SPOperador;
 GRANT EXEC ON ReporteAlta TO SPOperador;
 GRANT EXEC ON ReporteBaja TO SPOperador;
@@ -2156,3 +2141,8 @@ Go
 Exec AdministradorAlta 'administrador', 'administrador123', 'administrador123@hotmail.com', 'Claudio Tilbe', 42545, 'Administrador'
 Go
 
+--MensajeVisor =========================================================================================
+--VACIO
+
+Insert MensajeVisor values('192.168.5.20', GETDATE(), 'Se a localizado un nuevo Dispositivo en la siguiente IP 192.168.5.20 ')
+Go

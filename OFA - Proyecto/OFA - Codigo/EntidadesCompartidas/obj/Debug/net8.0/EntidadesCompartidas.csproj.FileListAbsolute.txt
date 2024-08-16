@@ -1,0 +1,11 @@
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\bin\Debug\net8.0\EntidadesCompartidas.deps.json
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\bin\Debug\net8.0\EntidadesCompartidas.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\bin\Debug\net8.0\EntidadesCompartidas.pdb
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.GeneratedMSBuildEditorConfig.editorconfig
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.AssemblyInfoInputs.cache
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.AssemblyInfo.cs
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.csproj.CoreCompileInputs.cache
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\refint\EntidadesCompartidas.dll
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\EntidadesCompartidas.pdb
+E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\EntidadesCompartidas\obj\Debug\net8.0\ref\EntidadesCompartidas.dll
