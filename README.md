@@ -969,8 +969,15 @@ Finalmente, una vez utilizadas estas herramientas para detectar los fallos en lo
 Este capitulo indicara las actualizaciones que el proyecto a recibido luego de ya haber realizado la entrega final.
 
 ### Migracion de .NET 5.0 a .NET 8.0
-Con la finalidad de resolver vulnerabilidades que los Nuggets agregados estaban provocando debido a dependencias, se opto por realizar una migracion de .NET 5.0 a .NET 8.0.
+* Con la finalidad de resolver vulnerabilidades que los Nuggets agregados estaban provocando debido a dependencias, se opto por realizar una migracion de .NET 5.0 a .NET 8.0.
 
+### Mejoras estructurales
+* Se realizaron cambios en la estructura de las relaciones entre entidades para optimizar su manejo, logrando una organización más limpia y comprensible. Esto facilita la legibilidad del código y mejora su eficiencia, permitiendo un mantenimiento y escalabilidad más sencilla.
+
+### Mejoras en Front-end
+* Implementación de varias optimizaciones en la UI para mejorar la experiencia del usuario
+* Reorganización y optimización del código HTML y CSS para una estructura más limpia y eficiente
+* Adaptación de todos los formularios a un diseño completamente responsivo, garantizando una visualización óptima en diferentes dispositivos
 
 
 
