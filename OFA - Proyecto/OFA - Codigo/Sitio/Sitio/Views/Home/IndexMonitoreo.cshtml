@@ -18,7 +18,7 @@
 
 
 
-<div class="mt-1 mb-3 d-flex justify-content-between">
+<div class="mb-3 d-flex justify-content-between">
 
     <h2 class="font-weight-bold">Monitoreo de Dispositivos</h2>
 
@@ -33,18 +33,18 @@
 
 <div id="demo" class="collapse show"> @* Show para que aparesca desplegado el collapse *@
 
-    <div class="mt-2 mb-3 d-flex justify-content-between">
+   @*  <div class="mt-2 mb-3 d-flex justify-content-between">
 
         <div>
-            <input type="button" id="open" value="Iniciar Sondeo" class="btn btn-success" />
-            <input type="button" id="close" value="Detener Sondeo" disabled="disabled" class="btn btn-danger" />
+            <input type="button" id="open" value="Iniciar Sondeo" class="btn btn-success mb-2" />
+            <input type="button" id="close" value="Detener Sondeo" disabled="disabled" class="btn btn-danger mb-2 mr-2" />
         </div>
 
         <div class="d-inline-flex justify-content-end align-items-center">
 
             <h5 class="pe-3 m-0">Seleccione el <b>Grupo</b> a Monitorear</h5>
 
-            <div class="form-group m-0">
+            <div class="form-group m-0 d-inline-flex justify-content-end">
 
                 <div class="col-md-10">
 
@@ -56,75 +56,105 @@
 
 
         </div>
+
+
+    </div> *@
+
+    <div class="row mt-2 mb-3">
+        
+        <div class="col-6">
+            <input type="button" id="open" value="Iniciar Sondeo" class="btn btn-success mb-2 mb-lg-0" />
+            <input type="button" id="close" value="Detener Sondeo" disabled="disabled" class="btn btn-danger mr-2 mb-2 mb-lg-0" />
+        </div>
+
+        <div class="col-6">
+
+            <div class="row">
+
+                <div class="col-12 col-md-9 text-right mb-2 mb-lg-0">
+                    <h5 class="pe-3 m-0">Seleccione el <b>Grupo</b> a Monitorear</h5>
+                </div>
+
+                <div class="col-12 col-md-3 text-right">
+
+                    @Html.DropDownList("DDLGrupos", (SelectList)ViewBag.Grupos, "Todos", new { @class = "w-100" })
+
+                </div>
+
+            </div>
+
+        </div>
+
+
     </div>
 
+   <div class="row">
 
-
-
-    <table id="sondeoTable" class="table">
-        <thead>
-            <tr>
-                <th class="text-center">IP</th>
-                <th class="text-center">Nombre</th>
-                <th class="text-center">Tipo</th>
-                <th class="text-center">Conectado</th>
-                <th class="text-center">Accesible</th>
-                <th class="text-center">Sector</th>
-            </tr>
-        </thead>
-
-
-        @*<tr class="loading"><td colspan="7">Cargando...</td></tr>*@
-        <tbody>
-
-            @foreach (var item in Model)
-            {
-
-                <tr data-ip="@item.IP">
-                    @* <tr>*@
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.IP)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Nombre)
-                    </td>
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Tipo)
-                    </td>
-
-                    <td class="text-center">
-                        @if (item.Conectado)
-                        {
-                            <span class="text-success">Online</span>
-                        }
-                        else
-                        {
-                            <span class="text-danger">Offline</span>
-                        }
-                    </td>
-
-                    <td class="text-center">
-                        @if (item.Accesible)
-                        {
-                            <span class="text-success">Si</span>
-                        }
-                        else
-                        {
-                            <span class="text-danger">No</span>
-                        }
-                    </td>
-
-
-                    <td class="text-center">
-                        @Html.DisplayFor(modelItem => item.Sector)
-                    </td>
-
+        <table id="sondeoTable" class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">IP</th>
+                    <th class="text-center">Nombre</th>
+                    <th class="text-center d-none d-md-table-cell">Tipo</th>
+                    <th class="text-center">Conectado</th>
+                    <th class="text-center d-none d-lg-table-cell">Accesible</th>
+                    <th class="text-center d-none d-lg-table-cell">Sector</th>
                 </tr>
-            }
+            </thead>
 
-        </tbody>
 
-    </table>
+            @*<tr class="loading"><td colspan="7">Cargando...</td></tr>*@
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+
+                    <tr data-ip="@item.IP">
+                        @* <tr>*@
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.IP)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td class="text-center d-none d-md-table-cell">
+                            @Html.DisplayFor(modelItem => item.Tipo)
+                        </td>
+
+                        <td class="text-center">
+                            @if (item.Conectado)
+                            {
+                                <span class="text-success">Online</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">Offline</span>
+                            }
+                        </td>
+
+                        <td class="text-center d-none d-lg-table-cell">
+                            @if (item.Accesible)
+                            {
+                                <span class="text-success">Si</span>
+                            }
+                            else
+                            {
+                                <span class="text-danger">No</span>
+                            }
+                        </td>
+
+
+                        <td class="text-center d-none d-lg-table-cell">
+                            @Html.DisplayFor(modelItem => item.Sector)
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+    </div>
 
 </div>
 

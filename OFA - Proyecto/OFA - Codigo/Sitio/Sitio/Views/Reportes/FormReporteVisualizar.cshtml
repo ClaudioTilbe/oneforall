@@ -15,145 +15,87 @@
 }
 
 
-<div class="d-flex">
-    <div class="mr-4">
-        <h2 class="font-weight-bold">Visualizar Reporte</h2>
+
+<h2 class="font-weight-bold mb-4">Visualizar Reporte</h2>
+
+
+
+<hr /> @*Separador ============================================================================================*@
+
+<div class="row mt-4">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Codigo):
     </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Codigo)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.MailOrigen.Correo):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.MailOrigen.Correo)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Direccion IP:
+        @*@Html.DisplayNameFor(model => model.DispositivoAsociado.IP)*@
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.DispositivoAsociado.IP)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Asunto):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Asunto)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Destino):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Destino)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Mensaje):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Mensaje)
+    </div>
+
 </div>
 
 
-<div>
-    <hr />
-
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Codigo):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Codigo)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.MailOrigen.Correo):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.MailOrigen.Correo)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Direccion IP:
-                    @*@Html.DisplayNameFor(model => model.DispositivoAsociado.IP)*@
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.DispositivoAsociado.IP)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Asunto):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Asunto)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Destino):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Destino)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Mensaje):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Mensaje)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-
-</div>
 
 
 

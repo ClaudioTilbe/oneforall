@@ -84,6 +84,30 @@ td.offline {
     max-height: 450px;
 }
 
+/*Grafico responsivo*/
+.chart-container {
+    position: relative;
+    width: 100%; /* Asegura que el gráfico ocupe todo el ancho disponible */
+    height: 35vh; /* Fija una altura relativa al viewport */
+    min-height: 300px; /* Altura mínima para asegurar legibilidad en pantallas pequeñas */
+    max-height: 600px; /* Altura máxima para evitar que crezca demasiado en pantallas grandes */
+}
+
+/* Media query para ajustar el tamaño en pantallas pequeñas */
+@media (max-width: 900px) {
+    .chart-container {
+        width: 100%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-container {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
 
 
 /*Animacion de parpadeo de Color*/

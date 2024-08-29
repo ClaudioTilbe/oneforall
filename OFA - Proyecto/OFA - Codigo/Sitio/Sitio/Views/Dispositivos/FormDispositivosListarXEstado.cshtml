@@ -15,11 +15,8 @@
 
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Listado de Dispositivos @ViewBag.Categoria</h2>
-    </div>
-</div>
+
+<h2 class="font-weight-bold mb-4">Listado de Dispositivos @ViewBag.Categoria</h2>
 
 
 
@@ -28,22 +25,22 @@
         <th class="text-center">
             @Html.DisplayNameFor(model => model.IP)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-sm-table-cell">
             @Html.DisplayNameFor(model => model.Nombre)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Tipo)
         </th>
         <th class="text-center">
             @Html.DisplayNameFor(model => model.Conectado)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-xl-table-cell">
             @Html.DisplayNameFor(model => model.Accesible)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-xl-table-cell">
             @Html.DisplayNameFor(model => model.Sector)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Prioridad)
         </th>
         @*              <th>
@@ -67,10 +64,10 @@
             <td class="text-center">
                 @Html.DisplayFor(modelItem => item.IP)
             </td>
-            <td class="text-center">
+            <td class="text-center d-none d-sm-table-cell">
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Tipo)
             </td>
 
@@ -99,7 +96,7 @@
         </td>*@
 
 
-            <td class="text-center">
+            <td class="text-center d-none d-xl-table-cell">
                 @if (item.Accesible)
                 {
                     <span class="text-success">Si</span>
@@ -111,10 +108,10 @@
             </td>
 
 
-            <td class="text-center">
+            <td class="text-center d-none d-xl-table-cell">
                 @Html.DisplayFor(modelItem => item.Sector)
             </td>
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Prioridad)
             </td>
 

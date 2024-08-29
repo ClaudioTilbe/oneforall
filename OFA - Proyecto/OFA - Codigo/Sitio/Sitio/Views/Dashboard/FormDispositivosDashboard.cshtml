@@ -112,19 +112,7 @@
 
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizacion de Dashboard</h2>
-    </div>
-
-</div>
-
-
-
-
-
-
-
+<h2 class="font-weight-bold mb-4">Visualizacion de Dashboard</h2>
 
 
 
@@ -141,15 +129,19 @@ else
 
     <div class="row border border-success mb-2">
 
-        <div class="col-12 col-md-6 dashboard-row">
-            <canvas id="prioridadesGeneralChart" class="p-3" width="300" height="150"></canvas>
+        <div class="col-12 col-md-6">
+
+            <div class="chart-container">
+                <canvas id="prioridadesGeneralChart" class="p-3"></canvas>
+            </div>
+
         </div>
 
         <div class="col-12 col-md-6">
             <!-- Puedes agregar contenido adicional para cada gráfico si es necesario -->
             @*listaFiltradaXSucursal*@
 
-            <div class="m-4">
+            <div class="m-4 text-center">
                 <h3><strong>TOTAL DE DISPOSITIVOS</strong></h3>
 
             </div>
@@ -165,8 +157,12 @@ else
     {
         <div class="row border mb-2">
 
-            <div class="col-12 col-md-6 dashboard-row">
-                <canvas id="prioridadesChart_@i" class="p-3" width="300" height="150"></canvas>
+            <div class="col-12 col-md-6">
+
+                <div class="chart-container">
+                   <canvas id="prioridadesChart_@i" class="p-3"></canvas>
+                </div>
+
             </div>
 
             <div class="col-12 col-md-6">
@@ -174,7 +170,7 @@ else
                 @*listaFiltradaXSucursal*@
 
                 <div class="m-4">
-                    <h3><strong>SUCURSAL NUMERO </strong> @listaFiltradaXSucursal[i][0].UbSucursal.NroSucursal.ToString()</h3>
+                    <h3 class="text-center mb-2"><strong>SUCURSAL NUMERO </strong> @listaFiltradaXSucursal[i][0].UbSucursal.NroSucursal.ToString()</h3>
                     <h5 class="text-muted"><strong>Calle:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.Calle</h5>
                     <h5 class="text-muted"><strong>Tipo:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.Tipo</h5>
                     <h5 class="text-muted"><strong>Numero local:</strong> @listaFiltradaXSucursal[i][0].UbSucursal.NumeroLocal</h5>
@@ -235,7 +231,7 @@ else
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: true,
+                    maintainAspectRatio: false,
                     legend: {
                         position: 'right'
                     }
@@ -270,7 +266,7 @@ else
             },
             options: {
                 responsive: true,
-                maintainAspectRatio: true,
+                maintainAspectRatio: false,
                 plugins: {
                     legend: {
                         display: false

@@ -13,147 +13,100 @@
     Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
 }
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizar Grupo</h2>
-    </div>
 
-</div>
+
+<h2 class="font-weight-bold mb-4">Visualizar Grupo</h2>
 
 
 
 <hr /> @*Separador ============================================================================================*@
 
 <div class="row mt-4">
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dt class="mb-3">
-                @Html.DisplayNameFor(model => model.Codigo):
-            </dt>
-
-        </dl>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Codigo):
     </div>
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dd class="mb-3">
-                @Html.DisplayFor(model => model.Codigo)
-            </dd>
-
-        </dl>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Codigo)
     </div>
+
 </div>
 
 <div class="row mt-2">
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dt class="mb-3">
-                @*@Html.DisplayNameFor(model => model.NombreGrupo)*@
-                Nombre grupo:
-            </dt>
-
-        </dl>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @*@Html.DisplayNameFor(model => model.NombreGrupo)*@
+        Nombre grupo:
     </div>
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dd class="mb-3">
-                @Html.DisplayFor(model => model.NombreGrupo)
-            </dd>
-
-        </dl>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.NombreGrupo)
     </div>
+
 </div>
 
 <div class="row mt-2">
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dt class="mb-3">
-                @Html.DisplayNameFor(model => model.Descripcion):
-            </dt>
-
-        </dl>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Descripcion):
     </div>
-    <div class="col-3">
-        <dl class="dl-horizontal">
 
-            <dd class="mb-3">
-                @Html.DisplayFor(model => model.Descripcion)
-            </dd>
-
-        </dl>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Descripcion)
     </div>
+
 </div>
 
+<div class="row mt-2">
 
-
-
-
-
-
-
-<dl class="dl-horizontal mt-2">
-       
-    @*Listado Dispositivos*@
-    <dt>
+    <div class="col-12 font-weight-bold mb-1">
         @Html.DisplayNameFor(model => model.Dispositivos):
-    </dt>
+    </div>
 
-    <dd>
-        <div class="col-md-10 pt-3 pl-0">
+    <div class="col-12">
+        <table id="example" class="table table-striped table-hover border w-100" >
 
-            @*<h4>Dispositivos asociados</h4>*@
+            <tr>
 
-            <table id="example" class="table table-striped table-hover border" style="width:100%">
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.Dispositivos[0].IP)
+                </th>
+                <th class="text-center">
+                    @Html.DisplayNameFor(model => model.Dispositivos[0].Nombre)
+                </th>
+                <th class="text-center d-none d-lg-table-cell">
+                    @Html.DisplayNameFor(model => model.Dispositivos[0].Tipo)
+                </th>
+                <th class="text-center d-none d-lg-table-cell">
+                    @Html.DisplayNameFor(model => model.Dispositivos[0].Sector)
+                </th>
+            </tr>
 
+
+            @foreach (var item in Model.Dispositivos)
+            {
                 <tr>
 
-                    <th>
-                        @Html.DisplayNameFor(model => model.Dispositivos[0].IP)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Dispositivos[0].Nombre)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Dispositivos[0].Tipo)
-                    </th>
-                    <th>
-                        @Html.DisplayNameFor(model => model.Dispositivos[0].Sector)
-                    </th>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.IP)
+                    </td>
+                    <td class="text-center">
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td class="text-center d-none d-lg-table-cell">
+                        @Html.DisplayFor(modelItem => item.Tipo)
+                    </td>
+                    <td class="text-center d-none d-lg-table-cell">
+                        @Html.DisplayFor(modelItem => item.Sector)
+                    </td>
                 </tr>
+            }
 
+        </table>
+    </div>
 
-                @foreach (var item in Model.Dispositivos)
-                {
-                    <tr>
-
-                        <td>
-                            @Html.DisplayFor(modelItem => item.IP)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Nombre)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Tipo)
-                        </td>
-                        <td>
-                            @Html.DisplayFor(modelItem => item.Sector)
-                        </td>
-                    </tr>
-                }
-
-            </table>
-
-        </div>
-
-    </dd>
-
-</dl>
-
-
+</div>
 
 
 

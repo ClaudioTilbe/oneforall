@@ -15,12 +15,10 @@
 }
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Eliminar Diagrama de Red</h2>
-    </div>
 
-</div>
+<h2 class="font-weight-bold mb-4">Eliminar Diagrama de Red</h2>
+
+
 
 <hr /> @*Separador ============================================================================================*@
 
@@ -31,94 +29,86 @@
     </div>
 }
 
-<div>
-    <h4>Diagrama de Red</h4>
+
+<h4>Diagrama de Red</h4>
 
 
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @* @Html.DisplayNameFor(model => model._Sucursal.NroSucursal): *@
-                    Numero sucursal:
-                </dt>
+<div class="row mt-4">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Nombre):
-                </dt>
-
-                <dt class="mb-3">
-                    @* @Html.DisplayNameFor(model => model.FechaSubida): *@
-                    Fecha de subida:
-                </dt>
-
-            </dl>
-        </div>
-
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model._Sucursal.NroSucursal)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Nombre)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaSubida)
-                </dd>
-
-            </dl>
-    
-        </div>
-
-
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @* @Html.DisplayNameFor(model => model._Sucursal.NroSucursal): *@
+        Numero sucursal:
     </div>
 
-    <div>
-
-        <dl class="dl-horizontal mt-2">
-
-            @*Listado Dispositivos*@
-            <dt class="mb-2">
-                @* @Html.DisplayNameFor(model => model.DiagramaImagen)*@
-                Diagrama de red:
-            </dt>
-
-            <dd class="mb-3">
-                @*@Html.DisplayFor(model => model.Conectado)*@
-                @if (!string.IsNullOrEmpty(Model.DiagramaImagenBase64))
-                {
-                    <img src="data:image;base64,@Model.DiagramaImagenBase64" class="border p-3 img-fluid" alt="Imagen" />
-                }
-            </dd>
-        </dl>
-
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model._Sucursal.NroSucursal)
     </div>
-
-    <hr /> @*Separador ============================================================================================*@
-
-
-    <div class="alert alert-danger mt-3 mb-3">
-        ¿Esta seguro de que desea eliminar este Diagrama de Red?
-    </div>
-
-
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="form-group mt-2">
-            <div class="col-md-offset-2 col-md-10 text-center">
-                <input type="submit" value="Eliminar" class="btn btn-danger" />
-            </div>
-        </div>
-    }
 
 </div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Nombre):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @* @Html.DisplayNameFor(model => model.FechaSubida): *@
+        Fecha de subida:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaSubida)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @* @Html.DisplayNameFor(model => model.DiagramaImagen)*@
+        Diagrama de red:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @if (!string.IsNullOrEmpty(Model.DiagramaImagenBase64))
+        {
+            <img src="data:image;base64,@Model.DiagramaImagenBase64" class="border p-3 img-fluid" alt="Imagen" />
+        }
+    </div>
+
+</div>
+
+  
+
+<hr /> @*Separador ============================================================================================*@
+
+
+<div class="alert alert-danger mt-3 mb-3">
+    ¿Esta seguro de que desea eliminar este Diagrama de Red?
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mt-2">
+        <div class="col-md-offset-2 col-md-10 text-center">
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+        </div>
+    </div>
+}
+
 
 
 

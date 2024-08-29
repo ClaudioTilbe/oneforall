@@ -49,17 +49,17 @@
         <th class="text-center">
             @Html.DisplayNameFor(model => model.UsuarioID)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.MailAsignado.Correo)
         </th>
         <th class="text-center">
             @Html.DisplayNameFor(model => model.Nombre)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
             Numero funcionario
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Cargo)
         </th> 
 
@@ -76,7 +76,7 @@
                 @Html.DisplayFor(modelItem => item.UsuarioID)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.MailAsignado.Correo)
             </td>
 
@@ -84,11 +84,11 @@
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.NumeroFuncionario)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Cargo)
             </td>
 

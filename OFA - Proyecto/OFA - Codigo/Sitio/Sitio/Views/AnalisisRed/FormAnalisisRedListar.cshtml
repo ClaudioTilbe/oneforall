@@ -59,7 +59,7 @@
             @Html.DisplayNameFor(model => model.Razon)
         </th>*@
 
-        <th class="text-center">
+        <th class="text-center d-none d-md-table-cell">
             @Html.DisplayNameFor(model => model.Estado)
         </th>
 
@@ -67,22 +67,22 @@
             @Html.DisplayNameFor(model => model.Prioridad)
         </th>*@
 
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @*@Html.DisplayNameFor(model => model.NuevosDispositivos)*@
             Nuevos dispositivos
         </th>
 
-        <th class="text-center">
+        <th class="text-center d-none d-md-table-cell">
             @*@Html.DisplayNameFor(model => model.FechaGenerado)*@
             Generado
         </th>
 
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @* @Html.DisplayNameFor(model => model.FechaFinalizado)*@
             Finalizado
         </th>
 
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
              @Html.DisplayNameFor(model => model.AdministradorReg.UsuarioID)
         </th>
 
@@ -107,7 +107,7 @@
                 @Html.DisplayFor(modelItem => item.Razon)
             </td>*@
 
-            <td class="text-center">
+            <td class="text-center d-none d-md-table-cell">
                 @Html.DisplayFor(modelItem => item.Estado)
             </td>
 
@@ -115,15 +115,15 @@
                 @Html.DisplayFor(modelItem => item.Prioridad)
             </td>*@
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.NuevosDispositivos)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-md-table-cell">
                 @Html.DisplayFor(modelItem => item.FechaGenerado)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @if (item.FechaFinalizado != null)
                 {
                     @Html.DisplayFor(modelItem => item.FechaFinalizado)
@@ -134,7 +134,7 @@
                 }
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.AdministradorReg.UsuarioID)
             </td>
 

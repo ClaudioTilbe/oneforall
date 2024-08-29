@@ -15,11 +15,10 @@
 }
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Eliminar Grupo</h2>
-    </div>
-</div>
+
+<h2 class="font-weight-bold mb-4">Eliminar Grupo</h2>
+
+
 
 <hr /> @*Separador ============================================================================================*@
 
@@ -30,126 +29,126 @@
     </div>
 }
 
-<div>
 
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
+<div class="row mt-4">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Codigo)
-                </dt>
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.NombreGrupo)*@
-                    Nombre grupo
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Descripcion)
-                </dt>
-
-            </dl>
-        </div>
-
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Codigo)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NombreGrupo)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Descripcion)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Codigo)
     </div>
 
-
-
-    <dl class="dl-horizontal mt-2">
-
-        @*Listado Dispositivos*@
-        <dt>
-            @Html.DisplayNameFor(model => model.Dispositivos)
-        </dt>
-
-        <dd>
-            <div class="col-md-10 pt-3 pl-0">
-
-                @*<h4>Dispositivos asociados</h4>*@
-
-                <table id="example" class="table table-striped table-hover border" style="width:100%">
-
-                    <tr>
-
-                        <th>
-                            @Html.DisplayNameFor(model => model.Dispositivos[0].IP)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Dispositivos[0].Nombre)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Dispositivos[0].Tipo)
-                        </th>
-                        <th>
-                            @Html.DisplayNameFor(model => model.Dispositivos[0].Sector)
-                        </th>
-                    </tr>
-
-
-                    @foreach (var item in Model.Dispositivos)
-                    {
-                        <tr>
-
-                            <td>
-                                @Html.DisplayFor(modelItem => item.IP)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Nombre)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Tipo)
-                            </td>
-                            <td>
-                                @Html.DisplayFor(modelItem => item.Sector)
-                            </td>
-                        </tr>
-                    }
-
-                </table>
-
-            </div>
-
-        </dd>
-
-    </dl>
-
-    <hr /> @*Separador ============================================================================================*@
-
-    <div class="alert alert-danger mt-3 mb-3">
-        ¿Esta seguro de que desea eliminar este Grupo?
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Codigo)
     </div>
-
-
-    @using (Html.BeginForm())
-    {
-        @Html.AntiForgeryToken()
-
-        <div class="form-group mt-2">
-            <div class="col-md-offset-2 col-md-10 text-center">
-                <input type="submit" value="Eliminar Grupo" class="btn btn-danger" />
-            </div>
-        </div>
-    }
 
 </div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @*@Html.DisplayNameFor(model => model.NombreGrupo)*@
+        Nombre grupo
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.NombreGrupo)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Descripcion)
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Descripcion)
+    </div>
+
+</div>
+
+
+<div class="row mt-2">
+
+    <div class="col-12 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Dispositivos)
+    </div>
+
+    <div class="col-12">
+        <div class="col-md-10 pt-3 pl-0">
+
+            @*<h4>Dispositivos asociados</h4>*@
+
+            <table id="example" class="table table-striped table-hover border" style="width:100%">
+
+                <tr>
+
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Dispositivos[0].IP)
+                    </th>
+                    <th class="text-center">
+                        @Html.DisplayNameFor(model => model.Dispositivos[0].Nombre)
+                    </th>
+                    <th class="text-center d-none d-lg-table-cell">
+                        @Html.DisplayNameFor(model => model.Dispositivos[0].Tipo)
+                    </th>
+                    <th class="text-center d-none d-lg-table-cell">
+                        @Html.DisplayNameFor(model => model.Dispositivos[0].Sector)
+                    </th>
+                </tr>
+
+
+                @foreach (var item in Model.Dispositivos)
+                {
+                    <tr>
+
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.IP)
+                        </td>
+                        <td class="text-center">
+                            @Html.DisplayFor(modelItem => item.Nombre)
+                        </td>
+                        <td class="text-center d-none d-lg-table-cell">
+                            @Html.DisplayFor(modelItem => item.Tipo)
+                        </td>
+                        <td class="text-center d-none d-lg-table-cell">
+                            @Html.DisplayFor(modelItem => item.Sector)
+                        </td>
+                    </tr>
+                }
+
+            </table>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+
+<hr /> @*Separador ============================================================================================*@
+
+<div class="alert alert-danger mt-3 mb-3">
+    ¿Esta seguro de que desea eliminar este Grupo?
+</div>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group mt-2">
+        <div class="col-md-offset-2 col-md-10 text-center">
+            <input type="submit" value="Eliminar Grupo" class="btn btn-danger" />
+        </div>
+    </div>
+}
+
+
 
 
 

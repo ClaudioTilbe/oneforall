@@ -13,106 +13,68 @@
     Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
 }
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizar Diagrama de Red</h2>
+
+
+<h2 class="font-weight-bold mb-4">Visualizar Diagrama de Red</h2>
+
+
+<hr /> @*Separador ============================================================================================*@
+
+
+<div class="row mt-4">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @*@Html.DisplayNameFor(model => model._Sucursal.NroSucursal)*@
+        Numero sucursal:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model._Sucursal.NroSucursal)
     </div>
 
 </div>
 
-<div>
-    <hr />
+<div class="row mt-2">
 
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model._Sucursal.NroSucursal)*@
-                    Numero sucursal:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model._Sucursal.NroSucursal)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Nombre):
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Nombre):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Nombre)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Nombre)
     </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.FechaSubida)*@
-                    Fecha de subida:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaSubida)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-    
-
-
-    <div class="mt-2 ">
-
-        <dl class="dl-horizontal">
-
-            <dt class="mb-2">
-                @*@Html.DisplayNameFor(model => model.DiagramaImagen)*@
-                Diagrama de red:
-            </dt>
-
-            <dd class="mb-3">
-
-                @if (!string.IsNullOrEmpty(Model.DiagramaImagenBase64))
-                {
-                    <img src="data:image;base64,@Model.DiagramaImagenBase64" class="border p-3 img-fluid" alt="Imagen" />
-                }
-            </dd>
-        </dl>
-
-    </div>
-
 
 </div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @*@Html.DisplayNameFor(model => model.FechaSubida)*@
+        Fecha de subida:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaSubida)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 font-weight-bold mb-1">
+        @*@Html.DisplayNameFor(model => model.DiagramaImagen)*@
+        Diagrama de red:
+    </div>
+
+    <div class="col-12">
+        @if (!string.IsNullOrEmpty(Model.DiagramaImagenBase64))
+        {
+            <img src="data:image;base64,@Model.DiagramaImagenBase64" class="border p-3 img-fluid" alt="Imagen" />
+        }
+    </div>
+
+</div>
+  
 
 
 

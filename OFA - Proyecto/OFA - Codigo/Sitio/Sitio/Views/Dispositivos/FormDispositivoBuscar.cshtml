@@ -13,236 +13,117 @@
     Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
 }
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizar Dispositivo</h2>
-    </div>
 
-</div>
+
+<h2 class="font-weight-bold mb-4">Visualizar Dispositivo</h2>
+
+
 
 <div>
 
     <hr /> @*Separador ============================================================================================*@
 
     <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.IP):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.IP):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.IP)
+        </div>
 
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.IP)
-                </dd>
+    </div>
 
-            </dl>
+    <div class="row mt-2">
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Nombre):
+        </div>
+
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Nombre)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Nombre):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Tipo):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Nombre)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Tipo)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Tipo):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Conectado):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Tipo)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Conectado)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Conectado):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Accesible):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Conectado)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Accesible)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Accesible):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Sector):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Accesible)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Sector)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Sector):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Prioridad):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Sector)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Prioridad)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Prioridad):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @Html.DisplayNameFor(model => model.Permanencia):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Prioridad)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Permanencia)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Permanencia):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @*@Html.DisplayNameFor(model => model.Ultimaconexion)*@
+             Ultima conexion:
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Permanencia)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.Ultimaconexion)
         </div>
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.Ultimaconexion)*@
-                    Ultima conexion:
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+             @*@Html.DisplayNameFor(model => model.UltimaNotificacion)*@
+             Ultima notificacion:
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Ultimaconexion)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.UltimaNotificacion)*@
-                    Ultima notificacion:
-                </dt>
-
-            </dl>
-        </div>
-
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.UltimaNotificacion)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+             @Html.DisplayFor(model => model.UltimaNotificacion)
         </div>
     </div>
 

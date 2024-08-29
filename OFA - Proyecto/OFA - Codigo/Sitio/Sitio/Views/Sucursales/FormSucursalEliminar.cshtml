@@ -15,11 +15,8 @@
 }
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Eliminar Sucursal</h2>
-    </div>
-</div>
+<h2 class="font-weight-bold mb-4">Eliminar Sucursal</h2>
+
 
 <hr /> @*Separador ============================================================================================*@
 
@@ -32,61 +29,70 @@
 
 <div>
 
+
     <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @* @Html.DisplayNameFor(model => model.NroSucursal): *@
-                    Numero sucursal
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Tipo):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Departamento):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Calle):
-                </dt>
-
-                <dt class="mb-3">
-                    @* @Html.DisplayNameFor(model => model.NumeroLocal): *@
-                    Numero local
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @* @Html.DisplayNameFor(model => model.NroSucursal): *@
+            Numero sucursal:
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NroSucursal)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Tipo)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Departamento)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Calle)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NumeroLocal)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NroSucursal)
         </div>
+
     </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Tipo):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.Tipo)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Departamento):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.Departamento)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Calle):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.Calle)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @* @Html.DisplayNameFor(model => model.NumeroLocal): *@
+            Numero local:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NumeroLocal)
+        </div>
+
+    </div>
+
+
 
 
     <hr /> @*Separador ============================================================================================*@

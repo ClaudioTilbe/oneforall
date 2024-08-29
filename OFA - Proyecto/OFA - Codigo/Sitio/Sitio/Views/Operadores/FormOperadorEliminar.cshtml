@@ -16,11 +16,10 @@
 }
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Eliminar Operador</h2>
-    </div>
-</div>
+
+<h2 class="font-weight-bold mb-4">Eliminar Operador</h2>
+
+
 
 <hr /> @*Separador ============================================================================================*@
 
@@ -34,80 +33,91 @@
 
 <div>
 
+
     <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.UsuarioID):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Contraseña):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.MailAsignado.Correo):
-                </dt>
-
-                <dt class="mb-3">
-                   @* @Html.DisplayNameFor(model => model.NombreSupervisor):*@
-                   Nombre de supervisor:
-                </dt>
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.NumeroFuncionarioSupervisor):*@
-                    Numero funcionario se supervisor:
-                </dt>
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.SucursalesAsignadas):*@
-                    Sucursales asignadas:
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.UsuarioID):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.UsuarioID)
-                </dd>
-
-                <dd class="mb-3">
-                    @contraseñaOculta
-                    @* @Html.DisplayFor(model => model.Contraseña) *@
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.MailAsignado.Correo)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NombreSupervisor)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
-                </dd>
-
-                <dd class="mb-3">
-                    <ul class="pl-1">
-                        @foreach (var item in Model.SucursalesAsignadas)
-                        {
-                            @*<li>@Html.DisplayFor(modelItem => item)</li>*@
-                            <div>
-                                <b>-</b> <span>@item.NroSucursal</span>
-                                <span>@item.Calle</span>
-                            </div>
-                        }
-                    </ul>
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.UsuarioID)
         </div>
+
     </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Contraseña):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @contraseñaOculta
+            @* @Html.DisplayFor(model => model.Contraseña) *@
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.MailAsignado.Correo)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @* @Html.DisplayNameFor(model => model.NombreSupervisor):*@
+            Nombre de supervisor:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NombreSupervisor)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @*@Html.DisplayNameFor(model => model.NumeroFuncionarioSupervisor):*@
+            Numero funcionario se supervisor:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @*@Html.DisplayNameFor(model => model.SucursalesAsignadas):*@
+            Sucursales asignadas:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @foreach (var item in Model.SucursalesAsignadas)
+            {
+                @*<li>@Html.DisplayFor(modelItem => item)</li>*@
+                <div>
+                    <b>-</b> <span>@item.NroSucursal</span>
+                    <span>@item.Calle</span>
+                </div>
+            }
+        </div>
+
+    </div>
+
+
 
     <hr /> @*SEPARADOR ============================================================================================= *@
 

@@ -51,14 +51,14 @@
         <th class="text-center">
             @Html.DisplayNameFor(model => model.UsuarioID)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-md-table-cell">
             @Html.DisplayNameFor(model => model.MailAsignado.Correo)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @* @Html.DisplayNameFor(model => model.NombreSupervisor) *@
             Nombre supervisor
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @* @Html.DisplayNameFor(model => model.NumeroFuncionarioSupervisor) *@
             Numero funcionario supervisor
         </th>
@@ -80,15 +80,15 @@
                 @Html.DisplayFor(modelItem => item.UsuarioID)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-md-table-cell">
                 @Html.DisplayFor(modelItem => item.MailAsignado.Correo)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.NombreSupervisor)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.NumeroFuncionarioSupervisor)
             </td>
 

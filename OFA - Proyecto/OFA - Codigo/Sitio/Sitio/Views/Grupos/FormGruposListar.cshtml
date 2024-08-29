@@ -45,23 +45,22 @@
 
 
 
-
 <table class="table">
     <tr>
-      @*<th class="text-center">
+        @*<th class="text-center">
             @Html.DisplayNameFor(model => model.Codigo)
         </th> *@
         <th class="text-center">
             @*@Html.DisplayNameFor(model => model.NombreGrupo)*@
             Nombre grupo
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Descripcion)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Dispositivos)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-xl-table-cell">
             @Html.DisplayNameFor(model => model._Usuario.UsuarioID)
         </th>
 
@@ -74,22 +73,22 @@
     {
 
         <tr>
-          @*<td class="text-center">
+            @*<td class="text-center">
                 @Html.DisplayFor(modelItem => item.Codigo)
             </td> *@
             <td class="text-center">
                 @Html.DisplayFor(modelItem => item.NombreGrupo)
                 @Html.HiddenFor(modelItem => item.Codigo)
             </td>
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Descripcion)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Dispositivos.Count)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-xl-table-cell">
                 @Html.DisplayFor(modelItem => item._Usuario.UsuarioID)
             </td>
 
@@ -112,6 +111,7 @@
     }
 
 </table>
+
 
 <hr class="pb-2" />
 

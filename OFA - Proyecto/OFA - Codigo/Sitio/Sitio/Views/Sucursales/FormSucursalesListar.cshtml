@@ -52,16 +52,16 @@
             @*@Html.DisplayNameFor(model => model.NroSucursal)*@
             Numero sucursal
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-md-table-cell">
             @Html.DisplayNameFor(model => model.Tipo)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @Html.DisplayNameFor(model => model.Departamento)
         </th>
         <th class="text-center">
             @Html.DisplayNameFor(model => model.Calle)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @*@Html.DisplayNameFor(model => model.NumeroLocal)*@
             Numero local
         </th>
@@ -79,11 +79,11 @@
                 @Html.DisplayFor(modelItem => item.NroSucursal)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-md-table-cell">
                 @Html.DisplayFor(modelItem => item.Tipo)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.Departamento)
             </td>
 
@@ -91,7 +91,7 @@
                 @Html.DisplayFor(modelItem => item.Calle)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.NumeroLocal)
             </td>
 

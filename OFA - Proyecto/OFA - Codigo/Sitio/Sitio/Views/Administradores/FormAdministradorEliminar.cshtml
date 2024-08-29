@@ -17,11 +17,9 @@
 }
 
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Eliminar Administrador</h2>
-    </div>
-</div>
+
+<h2 class="font-weight-bold mb-4">Eliminar Administrador</h2>
+
 
 <hr /> @*Separador ============================================================================================*@
 
@@ -35,69 +33,81 @@
 
 <div>
 
+
     <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.UsuarioID):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Contraseña):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.MailAsignado.Correo):
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Nombre):
-                </dt>
-
-                <dt class="mb-3">
-                    @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
-                    Numero funcionario:
-                </dt>
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Cargo):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.UsuarioID):
         </div>
 
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.UsuarioID)
-                </dd>
-
-                <dd class="mb-3">
-                    @contraseñaOculta
-                    @* @Html.DisplayFor(model => model.Contraseña) *@
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.MailAsignado.Correo)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Nombre)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NumeroFuncionario)
-                </dd>
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Cargo)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.UsuarioID)
         </div>
+
     </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Contraseña):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @contraseñaOculta
+            @* @Html.DisplayFor(model => model.Contraseña) *@
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.MailAsignado.Correo)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Nombre):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.Nombre)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
+            Numero funcionario:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NumeroFuncionario)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Cargo):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.Cargo)
+        </div>
+
+    </div>
+
 
     <hr /> @*SEPARADOR ============================================================================================= *@
 

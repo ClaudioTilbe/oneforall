@@ -17,136 +17,86 @@
 }
 
 
-<div class="d-flex">
-    <div class="mr-4">
-        <h2 class="font-weight-bold">Visualizar Operador</h2>
-    </div>
-</div>
+
+<h2 class="font-weight-bold mb-4">Visualizar Operador</h2>
+
 
 
 <div>
-
-    <hr />
+    <hr /> @*Separador ============================================================================================*@
 
     <div class="mt-4">
         <h4 class="font-weight-bold">Informacion de Operador</h4>
     </div>
 
     <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.UsuarioID):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.UsuarioID):
         </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.UsuarioID)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.UsuarioID)
         </div>
+
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Contraseña):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Contraseña):
         </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dd class="mb-3">
-                    @contraseñaOculta
-                    @* @Html.DisplayFor(model => model.Contraseña) *@
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @contraseñaOculta
+            @* @Html.DisplayFor(model => model.Contraseña) *@
         </div>
+
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.MailAsignado.Correo):
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.MailAsignado.Correo):
         </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.MailAsignado.Correo)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.MailAsignado.Correo)
         </div>
+
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    Numero de funcionario supervisor:
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            Numero de funcionario supervisor:
         </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
         </div>
+
     </div>
 
     <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dt class="mb-3">
-                    Nombre supervisor:
-                </dt>
-
-            </dl>
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            Nombre supervisor:
         </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
 
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NombreSupervisor)
-                </dd>
-
-            </dl>
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NombreSupervisor)
         </div>
+
     </div>
-
-
 
 
     <div class="mt-2">
-        <div>
+        <div class="col-12 font-weight-bold mb-1 p-0">
             <h4 class="font-weight-bold">Sucursales asignadas</h4>
         </div>
 
-        <div class="mt-4">
+        <div class="col-12 p-0">
             @if (Model.SucursalesAsignadas.Any())
              {
                 @foreach (var sucursal in Model.SucursalesAsignadas)

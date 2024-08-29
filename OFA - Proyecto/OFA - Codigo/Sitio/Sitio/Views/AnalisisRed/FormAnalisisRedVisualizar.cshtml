@@ -13,209 +13,123 @@
     Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
 }
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizar Analisis de Red</h2>
+
+<h2 class="font-weight-bold mb-4">Visualizar Analisis de Red</h2>
+
+
+
+<hr /> @*Separador ============================================================================================*@
+
+
+<div class="row mt-4">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.IDAnalisis):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.IDAnalisis)
     </div>
 
 </div>
 
-<div>
-    
-    <hr />
+<div class="row mt-2">
 
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.IDAnalisis):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.IDAnalisis)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @* @Html.DisplayNameFor(model => model.SubredAnalizada): *@
+        Subred analizada:
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @* @Html.DisplayNameFor(model => model.SubredAnalizada): *@
-                    Subred analizada:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.SubredAnalizada)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.SubredAnalizada)
     </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Razon):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Razon)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Estado):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Estado)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Prioridad):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Prioridad)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Nuevos dispositivos:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.NuevosDispositivos)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Fecha generado:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaGenerado)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Fecha finalizado:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaFinalizado)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Creador:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.AdministradorReg.UsuarioID)
-                </dd>
-
-            </dl>
-        </div>
-    </div>
-
 
 </div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Razon):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Razon)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Estado):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Estado)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Prioridad):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Prioridad)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Nuevos dispositivos:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.NuevosDispositivos)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Fecha generado:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaGenerado)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Fecha finalizado:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaFinalizado)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Creador:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.AdministradorReg.UsuarioID)
+    </div>
+
+</div>
+
 
 
 

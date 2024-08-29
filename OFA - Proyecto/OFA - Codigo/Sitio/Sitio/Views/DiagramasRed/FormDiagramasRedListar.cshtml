@@ -55,11 +55,11 @@
         <th class="text-center">
             @Html.DisplayNameFor(model => model.Nombre)
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-lg-table-cell">
             @*@Html.DisplayNameFor(model => model.FechaSubida)*@
             Fecha de subida
         </th>
-        <th class="text-center">
+        <th class="text-center d-none d-md-table-cell">
             @*@Html.DisplayNameFor(model => model.DiagramaImagen)*@
             Diagrama de red
         </th>
@@ -81,12 +81,11 @@
                 @Html.DisplayFor(modelItem => item.Nombre)
             </td>
 
-            <td class="text-center">
+            <td class="text-center d-none d-lg-table-cell">
                 @Html.DisplayFor(modelItem => item.FechaSubida)
             </td>
 
-
-            <td class="text-center">
+            <td class="text-center d-none d-md-table-cell">
                 @if (!string.IsNullOrEmpty(item.DiagramaImagenBase64))
                 {
                     <img src="data:image;base64,@item.DiagramaImagenBase64" class="tamañoChicoDiagramas" alt="Imagen" />

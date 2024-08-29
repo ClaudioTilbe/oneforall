@@ -13,211 +13,125 @@
     Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
 }
 
-<div class="row mb-3">
-    <div class="col-6">
-        <h2 class="font-weight-bold">Visualizar Escaneo de puertos</h2>
+
+
+<h2 class="font-weight-bold mb-4">Visualizar Escaneo de puertos</h2>
+
+
+<hr /> @*Separador ============================================================================================*@
+
+
+<div class="row mt-4">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.IDEscaneo):
     </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.IDEscaneo)
+    </div>
+
 </div>
 
-<div>
+<div class="row mt-2">
 
-    <hr />
-
-    <div class="row mt-4">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.IDEscaneo):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.IDEscaneo)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.DispositivoObjetivo.IP):
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.DispositivoObjetivo.IP):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.DispositivoObjetivo.IP)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.DispositivoObjetivo.IP)
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
+</div>
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Razon):
-                </dt>
+<div class="row mt-2">
 
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Razon)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Razon):
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Estado):
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Estado)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Razon)
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
+</div>
 
-                <dt class="mb-3">
-                    @Html.DisplayNameFor(model => model.Prioridad):
-                </dt>
+<div class="row mt-2">
 
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.Prioridad)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Estado):
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Cadena de salida:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    <pre>
-                       @*  @Html.DisplayFor(model => model.CadenaSalida) *@
-                        @{
-                            var cadenaSinEspacios = Model.CadenaSalida.TrimStart();
-                            @cadenaSinEspacios
-                        }
-                    </pre>
-                </dd> 
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Estado)
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
+</div>
 
-                <dt class="mb-3">
-                    Fecha generado:
-                </dt>
+<div class="row mt-2">
 
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaGenerado)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Prioridad):
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
-
-                <dt class="mb-3">
-                    Fecha finalizado:
-                </dt>
-
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.FechaFinalizado)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Prioridad)
     </div>
 
-    <div class="row mt-2">
-        <div class="col-3">
-            <dl class="dl-horizontal">
+</div>
 
-                <dt class="mb-3">
-                    Creador:
-                </dt>
+<div class="row mt-2">
 
-            </dl>
-        </div>
-        <div class="col-6">
-            <dl class="dl-horizontal">
-
-                <dd class="mb-3">
-                    @Html.DisplayFor(model => model.AdministradorReg.UsuarioID)
-                </dd>
-
-            </dl>
-        </div>
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Cadena de salida:
     </div>
 
+    <div class="col-12 col-md-3">
+        <pre>
+            @*  @Html.DisplayFor(model => model.CadenaSalida) *@
+            @{
+                var cadenaSinEspacios = Model.CadenaSalida.TrimStart();
+                @cadenaSinEspacios
+            }
+        </pre>
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Fecha generado:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaGenerado)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Fecha finalizado:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.FechaFinalizado)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        Creador:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.AdministradorReg.UsuarioID)
+    </div>
 
 </div>
 
