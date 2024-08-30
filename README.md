@@ -1,42 +1,42 @@
 ![](./Imagenes/header.png)
 
-**OFA** es una aplicación web destinada al monitoreo de redes IPv4. Surge para cumplir con las necesidades de un software moderno y efectivo que se aboque en el monitoreo de la red de la empresa cliente, una importante cadena de supermercados del pais. 
+**OFA** es una aplicación web destinada al monitoreo de redes IPv4. Surge para cumplir con las necesidades de un software moderno y efectivo que se aboque en el monitoreo de la red de la empresa cliente, una importante cadena de supermercados del país. 
 
-La solucion fue desarrollada como proyecto de fin de carrera para el instituto BIOS, sin ayuda a nivel tecnico y autogestionando los tiempos de trabajo. Este proyecto se extendio a lo largo de poco mas de un año y consta de 2 grandes bloques, documentacion y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
+La solución fue desarrollada como proyecto de fin de carrera para el instituto BIOS, sin ayuda a nivel técnico y autogestionando los tiempos de trabajo. Este proyecto se extendió a lo largo de poco más de un año y consta de 2 grandes bloques, documentación y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
 
-A continuacion presento una **sintesis** de la documentacion generada para el proyecto, asi como tambien se puede encontrar la codificacion del mismo en este repositorio.
+A continuación presento una **sintesis** de la documentación generada para el proyecto, así como también se puede encontrar la codificación del mismo en este repositorio.
 
 <br>
 
 # Índice
 
-* **[Capitulo 1 - Introduccion](#link-introducción-1)**
+* **[Capítulo 1 - Introduccion](#link-introducción-1)**
 
-* **[Capitulo 2 - Descripción del negocio y requerimientos](#link-descripción-del-negocio-y-requerimientos-2)**
+* **[Capítulo 2 - Descripción del negocio y requerimientos](#link-descripción-del-negocio-y-requerimientos-2)**
 
-* **[Capitulo 3 - Tecnologías y plataformas](#link-tecnologías-y-plataformas-3)**
+* **[Capítulo 3 - Tecnologías y plataformas](#link-tecnologías-y-plataformas-3)**
 
-* **[Capitulo 4 - Evaluación de riesgos](#link-evaluación-de-riesgos-4)**
+* **[Capítulo 4 - Evaluación de riesgos](#link-evaluación-de-riesgos-4)**
 
-* **[Capitulo 5 - Casos de uso](#link-casos-de-uso-5)**
+* **[Capítulo 5 - Casos de uso](#link-casos-de-uso-5)**
 
-* **[Capitulo 6 - Planificación](#link-planificación-6)**
+* **[Capítulo 6 - Planificación](#link-planificación-6)**
 
-* **[Capitulo 7 - Modelo conceptual](#link-modelo-conceptual-7)**
+* **[Capítulo 7 - Modelo conceptual](#link-modelo-conceptual-7)**
 
-* **[Capitulo 8 - Análisis y diseño](#link-análisis-y-diseño-8)**
+* **[Capítulo 8 - Análisis y diseño](#link-análisis-y-diseño-8)**
 
-* **[Capitulo 9 - Arquitectura y patrones](#link-arquitectura-y-patrones-9)**
+* **[Capítulo 9 - Arquitectura y patrones](#link-arquitectura-y-patrones-9)**
 
-* **[Capitulo 10 - Cambios, problemas y replanificaciones](#link-cambios-problemas-y-replanificaciones-10)**
+* **[Capítulo 10 - Cambios, problemas y replanificaciones](#link-cambios-problemas-y-replanificaciones-10)**
 
-* **[Capitulo 11 - Investigación](#link-investigación-11)**
+* **[Capítulo 11 - Investigación](#link-investigación-11)**
 
-* **[Capitulo 12 - Testing y pruebas de calidad](#link-testing-y-pruebas-de-calidad-12)**
+* **[Capítulo 12 - Testing y pruebas de calidad](#link-testing-y-pruebas-de-calidad-12)**
 
-* **[Capitulo 13 - Anexos](#link-anexos-13)**
+* **[Capítulo 13 - Anexos](#link-anexos-13)**
 
-* **[Capitulo 14 - Actualizaciones](#link-actualizaciones-14)**
+* **[Capítulo 14 - Actualizaciones](#link-actualizaciones-14)**
 
 
 
@@ -56,21 +56,21 @@ Una cadena de supermercados mayoristas nacional que cuenta con varias sucursales
 
 Actualmente trabajo en el área de soporte e infraestructura perteneciente al cliente.
 Dentro de esta área hay varias tareas y funciones a desempeñar, de entre las mismas destaca el monitoreo de dispositivos de red, esencial a la hora de detectar anomalías en el flujo normal de trabajo. Detectar problemas de conexión en dispositivos a tiempo puede ser la diferencia entre un problema minúsculo o un mal mayor, especialmente si hablamos de servidores o similares.
-Con esta premisa y con la idea de brindar un Software que permita monitorear, organizar y alertar al usuario en caso de incidentes surge OFA. Esta aplicación web, por medio de varias funcionalidades, va a permitir el monitoreo de la red, no solo desde la sucursal central hacia el resto de la Red, sino también desde cada respectivo grupo de operadores vinculado una determinada sucursal y/u otras subredes contiguas.
+Con esta premisa y con la idea de brindar un software que permita monitorear, organizar y alertar al usuario en caso de incidentes, surge OFA. Esta aplicación web, por medio de varias funcionalidades, va a permitir el monitoreo de la red, no solo desde la sucursal central hacia el resto de la Red, sino también desde cada respectivo grupo de operadores vinculado a una determinada sucursal y/u otras subredes contiguas.
 OFA tiene un sistema por el cual identifica el riesgo según el estado y características de un dispositivo, y alerta, notifica o ignora basado en cómo el usuario haya configurado ese determinado dispositivo.
-La distribución de usuarios y el hecho de brindar acceso a cada grupo de operadores al monitoreo de su propia sucursal da como ventaja una configuración más precisa del Software, ya que comprenden el contexto, finalidades y funciones de cada dispositivo informático en sus subredes.
-También existe la posibilidad de programar tareas, como análisis de una determinada subred y análisis de puertos de un dispositivo señalado, dando así la posibilidad de identificar el estado de cada puerto y que servicio específicamente corre por el mismo. Por otro lado, en OFA estará presente la posibilidad de visualizar una serie de estadísticas por medio de un Dashboard con distintos gráficos que podrán ser de ayuda al usuario. Y para contribuir con este tipo de apartados gráficos también brindará, en otra sección de la aplicación web, una funcionalidad para que el usuario pueda subir y alojar en el servidor el diagrama de red correspondiente a su sucursal, siendo visible luego tanto para él como para cualquier administrador.
+La distribución de usuarios y el hecho de brindar acceso a cada grupo de operadores al monitoreo de su propia sucursal da como ventaja una configuración más precisa del software, ya que comprenden el contexto, finalidades y funciones de cada dispositivo informático en sus subredes.
+También existe la posibilidad de programar tareas, como análisis de una determinada subred y análisis de puertos de un dispositivo señalado, dando así la posibilidad de identificar el estado de cada puerto y qué servicio específicamente corre por el mismo. Por otro lado, en OFA estará presente la posibilidad de visualizar una serie de estadísticas por medio de un Dashboard con distintos gráficos que podrán ser de ayuda al usuario. Y para contribuir con este tipo de apartados gráficos también brindará, en otra sección de la aplicación web, una funcionalidad para que el usuario pueda subir y alojar en el servidor el diagrama de red correspondiente a su sucursal, siendo visible luego tanto para él como para cualquier administrador.
 
 Se busca que el funcionario encargado del soporte de un conjunto de dispositivos informáticos tenga una herramienta para poder diagnosticar y analizar un problema dentro de la red lo más rápido posible para poder accionar según lo sea conveniente.
 Por otro lado, con OFA se busca también dar la posibilidad a quien administre la infraestructura, de tener una ventana al estado de cada una de las subredes que están siendo organizadas y administradas por cada respectivo grupo de funcionarios.
 
-La finalidad del Software es conseguir agilizar la detección de errores en dispositivos dentro de la red para poder solventarlos y a su vez, ser un software fácil de utilizar y configurar por usuarios no tan avanzados en relación a conocimientos de redes. 
+La finalidad del software es conseguir agilizar la detección de errores en dispositivos dentro de la red para poder solventarlos y, a su vez, ser un software fácil de utilizar y configurar por usuarios no tan avanzados en relación a conocimientos de redes. 
 
 <br>
 
 # :link: DESCRIPCIÓN DEL NEGOCIO Y REQUERIMIENTOS (2)
 ### 2.1 – Información sobre el cliente
-El software fue desarrollado para una importante cadena de supermercados del país que también cuenta con una serie de depósitos y pequeños locales abocados a otros rubros. En mayor o menor medida cada uno de estos locales cuenta con su respectiva infraestructura informática que será monitoreada a través del software. El mismo se ubicará en un servidor en la sucursal central desde el que podrá ser utilizado en aquellos locales que dispongan de un equipo de operadores. Algunos locales de menor envergadura, que no disponen de un equipo de operadores serán monitoreados desde Central a través de OFA.
+El software fue desarrollado para una importante cadena de supermercados del país que también cuenta con una serie de depósitos y pequeños locales abocados a otros rubros. En mayor o menor medida, cada uno de estos locales cuenta con su respectiva infraestructura informática que será monitoreada a través del software. El mismo se ubicará en un servidor en la sucursal central desde el que podrá ser utilizado en aquellos locales que dispongan de un equipo de operadores. Algunos locales de menor envergadura, que no disponen de un equipo de operadores serán monitoreados desde Central a través de OFA.
 
 Por otra parte, hay equipos de operadores que monitorean más de una subred, ya sea porque la sucursal dispone de más de una subred o porque se les asigna el monitoreo de infraestructura de locales físicamente cercanos.
 
@@ -82,7 +82,7 @@ Por otra parte, hay equipos de operadores que monitorean más de una subred, ya 
 #### 2.2.1 – Identificación y descripción de actores
 **Operador:** Será un funcionario de la empresa vinculado al área de soporte e infraestructura informática. Cumplirá con el rol de monitorear la red y mantener organizados los dispositivos conectados por medio de la aplicación web.
 
-**Administrador:** Será un funcionario de la empresa orientado al área de la infraestructura informática. Cumplirá con el rol de monitorear la red, gestionar los usuarios de la aplicación y podrá utilizar las funcionalidades de análisis de la misma.
+**Administrador:** Será un funcionario de la empresa orientado al área de la infraestructura informática. Cumplirá con el rol de monitorear la red, gestionar a los usuarios de la aplicación y podrá utilizar las funciones de análisis de la misma.
 
 **Usuario (Referencia):** Nos haremos de este término para indicar cuando un caso de uso puede tener tanto un operador o un administrador como actor.
 
@@ -114,21 +114,21 @@ Por otro lado, la seguridad integrada estará deshabilitada y la seguridad será
 
 - **Bootstrap** será utilizado en la aplicación web para agilizar los tiempos de desarrollo y diseñar una interfaz para el sitio de una manera rápida y efectiva.
 
-- **JQuery** será utilizado en el Front-end para facilitar y agilizar la creación de las páginas web que necesiten ser más dinámicas e interactivas; este factor será más recurrente en aquellas paginas que requieren el uso de SignalR.
+- **JQuery** será utilizado en el Front-end para facilitar y agilizar la creación de las páginas web que necesiten ser más dinámicas e interactivas; este factor será más recurrente en aquellas páginas que requieren el uso de SignalR.
 
 - **SignalR** será el componente destinado a simplificar la adición de funcionalidad web en tiempo real a la aplicación.
 
 - **Chart.js** es una librería javascript destinada a la creación de gráficos en base a datos; dicha función tendrá la finalidad de agregar esta librería al Front-End.
-ClosedXML es una API C# de código abierto para leer, manipular y escribir documentos de Microsoft Excel 2007+. Será utilizada para generar los documentos excel cuando se solicite la descarga de un listado.
+ClosedXML es una API C# de código abierto para leer, manipular y escribir documentos de Microsoft Excel 2007+. Será utilizada para generar los documentos EXCEL cuando se solicite la descarga de un listado.
 
 
 ### 3.4 – Tecnologías de soporte
-- **Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put, y delete que expondrá el back-end de nuestra aplicación para que sean consumidas por el front-end.
+- **Postman** es una plataforma que permite y hace más sencilla la creación y el uso de APIs; permitiendo hacer pruebas y comprobar el correcto funcionamiento de las mismas. Será utilizada para validar el funcionamiento de los métodos get, post, put y delete que expondrá el back-end de nuestra aplicación para que sean consumidos por el front-end.
 
 - **Swagger** es un conjunto de herramientas de software de código abierto para diseñar, construir, documentar y utilizar servicios web RESTful. Será utilizada para validar el correcto funcionamiento de los métodos de nuestra API Rest.
 
 - **Nmap** es un software de código abierto que será el responsable de procesar las peticiones de rastreo de puertos cuando el usuario así lo solicite mediante un análisis.
-  
+  
 <br>
 
 # :link: EVALUACIÓN DE RIESGOS (4)
@@ -152,7 +152,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Probabilidad de Ocurrencia:** Baja | 
 | **Impacto en el sistema:** Alto  | 
 | **Estrategia de mitigación:** Estructurar la solución con una seguridad robusta. Investigar posibles vulnerabilidades de las tecnologías utilizadas. Realizar pruebas de Pentesting contra el sistema una vez finalizado.  | 
-| **Plan de contingencia:** Analizar el ataque para ubicar puntos débiles en el sistema. Fortalecer y reforzar en materia de seguridad él o los sectores afectados por el ataque. | 
+| **Plan de contingencia:** Analizar el ataque para ubicar puntos débiles en el sistema. Fortalecer y reforzar en materia de seguridad a él o los sectores afectados por el ataque. | 
 
 ---
 
@@ -162,7 +162,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Probabilidad de Ocurrencia:** Baja | 
 | **Impacto en el sistema:** Alto  | 
 | **Estrategia de mitigación:**  Realizar pruebas al finalizar el desarrollo del sistema en algún equipo para poder brindar una recomendación de base a fundamentos sobre un ajuste óptimo con un hardware definido. Efectuar pruebas luego del deploy para ajustar los recursos que va a consumir a un nivel que no exceda las capacidades del servidor.  | 
-| **Plan de contingencia:** Realizar un análisis de consumo de recursos apoyado en herramientas del sistema operativo y/o software externo con licencias de uso gratuito. Disminuir la potencia del sistema y por lo tanto los recursos consumidos por el mismo. En caso de no obtener resultados óptimos consultar la posibilidad de mejorar el hardware del servidor.  | 
+| **Plan de contingencia:** Realizar un análisis de consumo de recursos apoyado en herramientas del sistema operativo y/o software externo con licencias de uso gratuito. Disminuir la potencia del sistema y por lo tanto los recursos consumidos por el mismo. En caso de no obtener resultados óptimos, consultar la posibilidad de mejorar el hardware del servidor.  | 
 
 ---
 
@@ -184,7 +184,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Probabilidad de Ocurrencia:** Alta | 
 | **Impacto en el sistema:** Media  | 
 | **Estrategia de mitigación:** Capacitación e investigación constante. | 
-| **Plan de contingencia:** Revisiones en retrospectiva mensualmente analizando el sistema en busca de mejoras teniendo en cuenta la progresión en términos de conocimiento del desarrollador. |
+| **Plan de contingencia:** Revisiones en retrospectiva mensualmente, analizando el sistema en busca de mejoras teniendo en cuenta la progresión en términos de conocimiento del desarrollador. |
 
 ---
 
@@ -214,7 +214,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | **Probabilidad de Ocurrencia:** Baja | 
 | **Impacto en el sistema:** Medio  | 
 | **Estrategia de mitigación:** Establecer una buena comunicación con el cliente. Proporcionar recomendaciones con respecto a la estructura y funcionalidades de la solución. | 
-| **Plan de contingencia:** Planificar una nueva reunión y re estructurar las secciones de la solución que sean necesarias. |
+| **Plan de contingencia:** Planificar una nueva reunión y reestructurar las secciones de la solución que sean necesarias. |
 
 
 # :link: CASOS DE USO (5)
@@ -224,7 +224,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador  |
 | **Actor secundario**  |   |
-| **Descripcion** | Inicio de sesión con su cuenta asignada. |
+| **Descripción** | Inicio de sesión con su cuenta asignada. |
 
 ---
 
@@ -232,7 +232,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador  |
 | **Actor secundario**  |   |
-| **Descripcion** | Cerrar sesión con su cuenta asignada. |
+| **Descripción** | Cerrar sesión con su cuenta asignada. |
 
 ---
 
@@ -240,7 +240,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador  |
 | **Actor secundario**  |   |
-| **Descripcion** | El Usuario puede visualizar la información de su propio perfil. En caso de ser Administrador podrá visualizar el perfil de otros.|
+| **Descripción** | El Usuario puede visualizar la información de su propio perfil. En caso de ser Administrador podrá visualizar el perfil de otros.|
 
 ---
 
@@ -248,7 +248,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra un listado con los diagramas de red subidos por cada usuario.|
+| **Descripción** | Muestra un listado con los diagramas de red subidos por cada usuario.|
 
 ---
 
@@ -256,7 +256,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de sucursales con la respectiva información de cada una. |
+| **Descripción** | Muestra una lista de sucursales con la respectiva información de cada una. |
 
 ---
 
@@ -264,7 +264,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | El usuario accede a un listado con sus Grupos creados. |
+| **Descripción** | El usuario accede a un listado con sus Grupos creados. |
 
 ---
 
@@ -272,7 +272,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de Reportes con la respectiva información de cada uno. |
+| **Descripción** | Muestra una lista de Reportes con la respectiva información de cada uno. |
 
 ---
 
@@ -280,7 +280,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite visualizar errores no previstos que puedan darse dentro del Motor. |
+| **Descripción** | Permite visualizar errores no previstos que puedan darse dentro del Motor. |
 
 ---
 
@@ -288,7 +288,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de análisis de puertos efectuados y por efectuar con la respectiva información de cada uno. |
+| **Descripción** | Muestra una lista de análisis de puertos efectuados y por efectuar con la respectiva información de cada uno. |
 
 ---
 
@@ -296,7 +296,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra un conjunto de estadísticas presentadas como distintos gráficos. |
+| **Descripción** | Muestra un conjunto de estadísticas presentadas como distintos gráficos. |
 
 ---
 
@@ -304,7 +304,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | El usuario podrá configurar el mail desde el que se envían los reportes. |
+| **Descripción** | El usuario podrá configurar el mail desde el que se envían los reportes. |
 
 ---
 
@@ -312,7 +312,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de Operadores con la respectiva información de cada uno, al seleccionar alguno muestra las subredes a su cargo. |
+| **Descripción** | Muestra una lista de Operadores con la respectiva información de cada uno, al seleccionar alguno muestra las subredes a su cargo. |
 
 ---
 
@@ -320,7 +320,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista total de dispositivos a cargo, con su información, una serie de acciones y con filtro por subred, grupo o sucursal. |
+| **Descripción** | Muestra una lista total de dispositivos a cargo, con su información, una serie de acciones y con filtro por subred, grupo o sucursal. |
 
 ---
 
@@ -328,7 +328,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de análisis de subred efectuados y por efectuar con la respectiva información de cada uno. |
+| **Descripción** | Muestra una lista de análisis de subred efectuados y por efectuar con la respectiva información de cada uno. |
 
 ---
 
@@ -336,7 +336,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | El Usuario selecciona en un panel un tipo de estado de Dispositivos para que se le liste.|
+| **Descripción** | El Usuario selecciona en un panel un tipo de estado de Dispositivos para que se le liste.|
 
 ---
 
@@ -344,7 +344,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** |  Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite iniciar los trabajos realizados por el Motor. |
+| **Descripción** | Permite iniciar los trabajos realizados por el Motor. |
 
 ---
 
@@ -352,7 +352,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** |  Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Muestra una lista de Administradores con la respectiva información de cada uno. |
+| **Descripción** | Muestra una lista de Administradores con la respectiva información de cada uno. |
 
 ---
 
@@ -360,7 +360,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el monitoreo de una lista de dispositivos, que pueden ser filtrados por grupo, actualizando sus datos en tiempo real. |
+| **Descripción** | Permite el monitoreo de una lista de dispositivos, que pueden ser filtrados por grupo, actualizando sus datos en tiempo real. |
 
 ---
 
@@ -368,7 +368,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Deja de actualizar las funciones de monitoreo en pantalla con datos en tiempo real. |
+| **Descripción** | Deja de actualizar las funciones de monitoreo en pantalla con datos en tiempo real. |
 
 ---
 
@@ -376,7 +376,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite exportar en formato xlsx (Excel) un listado de dispositivos seleccionados. |
+| **Descripción** | Permite exportar en formato xlsx (Excel) un listado de dispositivos seleccionados. |
 
 ---
 
@@ -384,7 +384,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de una sucursal mediante su selección en lista o su búsqueda.|
+| **Descripción** | Permite el alta, baja y modificación de una sucursal mediante su selección en lista o su búsqueda.|
 
 ---
 
@@ -392,7 +392,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite subir un diagrama de red visible para si mismo y los administradores. También permite eliminarlo. |
+| **Descripción** | Permite subir un diagrama de red visible para si mismo y los administradores. También permite eliminarlo. |
 
 ---
 
@@ -400,7 +400,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de un Grupo mediante su selección en lista o su búsqueda. |
+| **Descripción** | Permite el alta, baja y modificación de un Grupo mediante su selección en lista o su búsqueda. |
 
 ---
 
@@ -408,7 +408,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite detener los trabajos realizados por el Motor. |
+| **Descripción** | Permite detener los trabajos realizados por el Motor. |
 
 ---
 
@@ -416,7 +416,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador, Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de un Reporte mediante su selección en lista o selección de dispositivo para Generar. | 
+| **Descripción** | Permite el alta, baja y modificación de un Reporte mediante su selección en lista o selección de dispositivo para Generar. | 
 
 ---
 
@@ -424,7 +424,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | El Administrador puede programar como tarea un análisis de puertos de un dispositivo conocido. | 
+| **Descripción** | El Administrador puede programar como tarea un análisis de puertos de un dispositivo conocido. | 
 
 ---
 
@@ -432,7 +432,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | El Administrador puede programar como tarea un análisis indicando una subred. | 
+| **Descripción** | El Administrador puede programar como tarea un análisis indicando una subred. | 
 
 ---
 
@@ -440,7 +440,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Operador,  Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de un dispositivo mediante su selección en lista o su búsqueda. | 
+| **Descripción** | Permite el alta, baja y modificación de un dispositivo mediante su selección en lista o su búsqueda. | 
 
 ---
 
@@ -448,7 +448,7 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de un Operador mediante su selección en lista o su búsqueda. | 
+| **Descripción** | Permite el alta, baja y modificación de un Operador mediante su selección en lista o su búsqueda. | 
 
 ---
 
@@ -456,18 +456,18 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 | ------------- | ------------- |
 | **Actor principal** | Administrador |
 | **Actor secundario**  |   |
-| **Descripcion** | Permite el alta, baja y modificación de un Administrador mediante su selección en lista o su búsqueda. | 
+| **Descripción** | Permite el alta, baja y modificación de un Administrador mediante su selección en lista o su búsqueda. | 
 
 <br>
 
 # :link: PLANIFICACIÓN (6)
 ### 6.1 – Clasificación y ponderación de casos de uso
 #### 6.1.1 – Criterios
-- **Importancia para el cliente:** Cuantificara lo importante que es el caso de uso para el cliente.
-- **Criticidad para el negocio:** Cuantificara que tan crítico es el caso de uso para que el negocio funcione con normalidad.
-- **Impacto en la arquitectura:** Cuantificara que tan grande fue el cambio en la arquitectura para poder implementar el caso de uso de manera correcta.
-- **Importancia para el sistema:** Cuantificara que tan importante es el caso de uso dentro del flujo normal de trabajo con el sistema e indicará si el caso de uso es imprescindible o una funcionalidad extra.
-- **Dificultad de implementación:** Cuantificara la cantidad de carga horaria que se provee destinar a la investigación e implementación de la funcionalidad utilizada por el caso de uso.
+- **Importancia para el cliente:** Cuantificará lo importante que es el caso de uso para el cliente.
+- **Criticidad para el negocio:** Cuantificará qué tan crítico es el caso de uso para que el negocio funcione con normalidad.
+- **Impacto en la arquitectura:** Cuantificará que tan grande fue el cambio en la arquitectura para poder implementar el caso de uso de manera correcta.
+- **Importancia para el sistema:** Cuantificará qué tan importante es el caso de uso dentro del flujo normal de trabajo con el sistema e indicará si el caso de uso es imprescindible o una funcionalidad extra.
+- **Dificultad de implementación:** Cuantificará la cantidad de carga horaria que se provee destinada a la investigación e implementación de la funcionalidad utilizada por el caso de uso.
 
 #### 6.1.2 – Priorización cuantitativa
 
@@ -476,22 +476,22 @@ ClosedXML es una API C# de código abierto para leer, manipular y escribir docum
 #### 6.1.3 – Rangos para definir niveles de importancia
 - **Alta:** Desde 100 hasta 68.
 - **Media:** Desde 67 hasta 42.
-- **Baja:** Desde 41 hasta 0.  
+- **Baja:** Desde 41 hasta 0.  
 
 
 ### 6.2 – Asignación a ciclos de desarrollo
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/Asignaci%C3%B3n%20a%20Ciclos%20de%20Desarrollo.png)
 
 
-### 6.3 – GANTT 
+### 6.3 – GANTT 
 
 - **Planificado**
-  
+  
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Previsto.png)
 
 
 - **Ejecutado**
-  
+  
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%206/GANTT%20-%20Ejecutado.png)
 
 <br>
@@ -687,36 +687,36 @@ Los diagramas y/o tablas a continuación seguirán el siguiente formato:
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/4ca1a5f70e8d6e2ea84d7834481e9795174e54aa/Diagramas/Capitulo%209/CU%20Relevantes%20a%20Arquitectura.png)
 
-**9.1.1.1 – Justificacion de los casos de uso relevantes**
-- **Logueo.** Es relevante porque es el caso de uso a través del cual un usuario anónimo se identifica, o no, con credenciales ya registradas en el sistema. Luego de iniciar sesión pasará a ser un usuario con acceso a las funciones que corresponda según su tipo de usuario. Este caso de uso es fundamental ya que es el que valida que el usuario anónimo o desconocido pueda ingresar a funciones del sistema.
+**9.1.1.1 - Justificación de los casos de uso relevantes**
+- **Logueo.** Es relevante porque es el caso de uso a través del cual un usuario anónimo se identifica, o no, con credenciales ya registradas en el sistema. Luego de iniciar sesión, pasará a ser un usuario con acceso a las funciones que correspondan según su tipo de usuario. Este caso de uso es fundamental, ya que es el que valida que el usuario anónimo o desconocido pueda ingresar a funciones del sistema.
 
-- **Deslogueo.** Es relevante porque a través de este caso de uso el usuario previamente autenticado que inicio sesión, podrá cerrarla, y por lo tanto también cerrar el acceso a las funciones del sistema. Este caso de uso es importante para mermar el riesgo lo máximo posible y evitar situaciones desfavorables para la seguridad del sistema y/o el usuario.
+- **Deslogueo.** Es relevante porque a través de este caso de uso, el usuario previamente autenticado que inicie sesión podrá cerrarla, y por lo tanto también cerrar el acceso a las funciones del sistema. Este caso de uso es importante para mermar el riesgo lo máximo posible y evitar situaciones desfavorables para la seguridad del sistema y/o el usuario.
 
 - **Gestión de diagrama de red.** Es relevante porque permite la alta y baja de los diagramas de red de cada sucursal, así como también visualizarlos en detalle.
 
-- **Gestión de análisis de subred.** Es relevante porque permite el alta de nuevos análisis de red, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
+- **Gestión de análisis de subred.** Es relevante porque permite el alta de nuevos análisis de red, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis, el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
 
-- **Configurar mail.** Es relevante porque permite la configuración del mail, que será vital a la hora de que el back-end envíe los correos pertinentes según los reportes que hayan sido configurados por el usuario en cuestión. 
+- **Configurar mail.** Es relevante porque permite la configuración del mail, que será vital a la hora de que el back-end envíe los correos pertinentes según los reportes que hayan sido configurados por el usuario en cuestión. 
 
-- **Gestión de análisis de puertos.** Es relevante porque permite el alta de nuevos escaneos de puertos, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis de puertos el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
+- **Gestión de análisis de puertos.** Es relevante porque permite el alta de nuevos escaneos de puertos, así como también la eliminación, cancelación y visualización en detalle de análisis previamente registrados. A partir del registro de un nuevo análisis de puertos, el back-end del sistema podrá utilizar los datos en el mismo para efectuar el análisis que corresponda y haya sido solicitado por el administrador.
 
-- **Gestión de grupo.** Es relevante porque este caso de uso posee las funcionalidades, en cuanto a grupos, de alta, baja, modificar y visualizar en detalle; que a su vez son importantes para la manipulación de una entidad destinada a agrupar dispositivos y presentar una vista sobre dispositivos más específicos que se desean monitorear. 
+- **Gestión de grupo.** Es relevante porque este caso de uso posee las funcionalidades, en cuanto a grupos, de alta, baja, modificar y visualizar en detalle; que a su vez son importantes para la manipulación de una entidad destinada a agrupar dispositivos y presentar una vista sobre dispositivos más específicos que se desean monitorear. 
 
-- **Gestión de dispositivo.** Es relevante porque es el caso de uso que permite gestionar los dispositivos a través del alta, baja, modificar y visualizar en detalle. Siendo los dispositivos una de las entidades principales, que abarca gran cantidad de casos de uso, es pertinente que disponga de herramientas que permitan una manipulación y gestión total sobre la entidad.
+- **Gestión de dispositivo.** Es relevante porque es el caso de uso que permite gestionar los dispositivos a través de alta, baja, modificar y visualizar en detalle. Siendo los dispositivos una de las entidades principales, que abarca gran cantidad de casos de uso, es pertinente que disponga de herramientas que permitan una manipulación y gestión total sobre la entidad.
 
-- **Gestión de reporte.** Es relevante ya que gestiona por medio de alta, baja, modificar y visualizar en detalle, los reportes. Por medio de esta entidad el sistema puede identificar para qué dispositivos tiene que enviar un mail notificando sobre su estado.
+- **Gestión de reporte.** Es relevante, ya que gestiona por medio de alta, baja, modificar y visualizar en detalle, los reportes. Por medio de esta entidad, el sistema puede identificar para qué dispositivos tiene que enviar un mail notificando sobre su estado.
 
 - **Iniciar Motor.** Es relevante porque permite iniciar el motor del sistema, que se encarga del sondeo de dispositivos, de ejecutar los análisis de red, ejecutar los escaneos de puertos y enviar los correos según las configuraciones de reportes que haya registrado.
 
-- **Visualizar Logs Motor.** Es relevante ya que permite visualizar a los administradores aquellos errores que hayan ocurrido durante procesos en el motor que hayan provocado algún error.
+- **Visualizar Logs Motor.** Es relevante, ya que permite visualizar a los administradores aquellos errores que hayan ocurrido durante procesos en el motor que hayan provocado algún error.
 
-- **Gestión de sucursales.** Es relevante ya que permite el alta, baja, modificar y visualizar en detalle de sucursales; entidad destinada a ser un punto de referencia geográfico y de ubicación de dispositivos.
+- **Gestión de sucursales.** Es relevante, ya que permite el alta, baja, modificar y visualizar en detalle de sucursales; entidad destinada a ser un punto de referencia geográfico y de ubicación de dispositivos.
 
 - **Gestión de administrador.** Es relevante porque permite el alta, baja, modificar y visualizar en detalle de administradores. Los administradores son tipos de usuarios que se abocan en la completa administración, tanto de la red por medio del sistema, como de los distintos usuarios que pueden y podrán tener acceso en un futuro al sistema desde las varias sucursales existentes.
 
 - **Gestión de operador.** Es relevante porque permite el alta, baja, modificar y visualizar en detalle de operadores. Los operadores son tipos de usuarios que se dedican al monitoreo y revisión de una o varias de las subredes existentes.
 
-- **Detener Motor.** Es fundamental tener la posibilidad de detener los procesos del motor para frenar el consumo de recursos del servidor en situaciones puntuales, para tener un metodo de reinicio del motor, y para poder, en caso de que se estén ocasionando errores, solventar los mismos antes de un nuevo inicio.
+- **Detener Motor.** Es fundamental tener la posibilidad de detener los procesos del motor para frenar el consumo de recursos del servidor en situaciones puntuales, para tener un método de reinicio del motor, y para poder, en caso de que se estén ocasionando errores, solventar los mismos antes de un nuevo inicio.
 
 
 #### 9.1.2 – Vista de modelo de diseño
