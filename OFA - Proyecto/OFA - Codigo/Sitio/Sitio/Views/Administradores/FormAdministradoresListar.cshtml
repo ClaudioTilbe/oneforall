@@ -1,0 +1,122 @@
+﻿@model IEnumerable<Sitio.Models.Administrador>
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Listado Administradores";
+
+    //Quito esto y using de session?
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+
+<div class="row mb-3">
+    <div class="col-6">
+        <h2 class="font-weight-bold">Listado de Administradores</h2>
+    </div>
+
+    <div class="col-6 text-right">
+        <a href="@Url.Action("FormAdministradorAgregar", "Administradores")" title="Nuevo Administrador">
+            <img alt="Agregar" src="@Url.Content("~/Imagenes/agregar.png")" width="40" height="40">
+        </a>
+    </div>
+</div>
+
+
+@if (!string.IsNullOrEmpty(@ViewBag.MensajeAccion))
+{
+    <div class="alert alert-success" role="alert">
+        @ViewBag.MensajeAccion
+    </div>
+}
+
+@if (!string.IsNullOrEmpty(@ViewBag.MensajeError))
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.MensajeError
+    </div>
+}
+
+
+<table class="table">
+    <tr>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.UsuarioID)
+        </th>
+        <th class="text-center d-none d-lg-table-cell">
+            @Html.DisplayNameFor(model => model.MailAsignado.Correo)
+        </th>
+        <th class="text-center">
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th class="text-center d-none d-lg-table-cell">
+            @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
+            Numero funcionario
+        </th>
+        <th class="text-center d-none d-lg-table-cell">
+            @Html.DisplayNameFor(model => model.Cargo)
+        </th> 
+
+        <th width="160px" class="text-center">
+            Acciones
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        <tr>
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.UsuarioID)
+            </td>
+
+            <td class="text-center d-none d-lg-table-cell">
+                @Html.DisplayFor(modelItem => item.MailAsignado.Correo)
+            </td>
+
+            <td class="text-center">
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+
+            <td class="text-center d-none d-lg-table-cell">
+                @Html.DisplayFor(modelItem => item.NumeroFuncionario)
+            </td>
+
+            <td class="text-center d-none d-lg-table-cell">
+                @Html.DisplayFor(modelItem => item.Cargo)
+            </td>
+
+            <td class="text-center">
+
+                <a href="@Url.Action("FormAdministradorVisualizar", "Administradores", new { item.UsuarioID} )" title="Visualizar" class="text-decoration-none">
+                    <img alt="Ver" src="@Url.Content("~/Imagenes/ver.png")" width="30" height="30">
+                </a>
+
+                <a href="@Url.Action("FormAdministradorModificar", "Administradores", new { item.UsuarioID} )" title="Modificar" class="text-decoration-none">
+                    <img alt="Modificar" src="@Url.Content("~/Imagenes/modificar.png")" width="30" height="30">
+                </a>
+
+                <a href="@Url.Action("FormAdministradorEliminar", "Administradores", new { item.UsuarioID} )" title="Eliminar" class="text-decoration-none">
+                    <img alt="Eliminar" src="@Url.Content("~/Imagenes/eliminar.png")" width="30" height="30">
+                </a>
+
+            </td>
+        </tr>
+    }
+
+</table>
+
+<hr class="pb-2" />
+
+<div class="alert alert-primary" role="alert">
+    @ViewBag.Mensaje
+</div>
+
+
+<script src="~/js/estandar.js"></script>

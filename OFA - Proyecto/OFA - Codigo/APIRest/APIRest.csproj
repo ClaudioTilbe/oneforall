@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <UserSecretsId>94da6130-0b26-4795-8f93-5fafba828194</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.6.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EntidadesCompartidas\EntidadesCompartidas.csproj" />
+    <ProjectReference Include="..\Logica\Logica.csproj" />
+    <ProjectReference Include="..\Motor\Motor.csproj" />
+  </ItemGroup>
+
+</Project>

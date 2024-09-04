@@ -1,0 +1,110 @@
+﻿@model Sitio.Models.Administrador
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Visualizar Administrador";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+
+    string contraseñaOculta = new string('*', Model.Contraseña.Length);
+}
+
+
+
+<h2 class="font-weight-bold mb-4">Visualizar Administrador</h2>
+
+
+<hr /> @*Separador ============================================================================================*@
+
+<div class="mt-4 mb-4">
+    <h4 class="font-weight-bold">Informacion de Administrador</h4>
+</div>
+
+
+
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.UsuarioID):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.UsuarioID)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Contraseña):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @contraseñaOculta
+        @* @Html.DisplayFor(model => model.Contraseña) *@
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.MailAsignado.Correo)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Nombre):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Nombre)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @*@Html.DisplayNameFor(model => model.NumeroFuncionario)*@
+        Numero funcionario:
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.NumeroFuncionario)
+    </div>
+
+</div>
+
+<div class="row mt-2">
+
+    <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+        @Html.DisplayNameFor(model => model.Cargo):
+    </div>
+
+    <div class="col-12 col-md-3">
+        @Html.DisplayFor(model => model.Cargo)
+    </div>
+
+</div>
+
+
+
+
+
+<script src="~/js/estandar.js"></script>
