@@ -1,0 +1,247 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Sitio
+build_property.RootNamespace = Sitio
+build_property.ProjectDir = E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = E:\OFA\OFA - Proyecto (Actualizacion .NET 8)\OFA - Codigo\Sitio\Sitio
+build_property._RazorSourceGeneratorDebug = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradorAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yQWdyZWdhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradorEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yRWxpbWluYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradoresListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yZXNMaXN0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradorModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yTW9kaWZpY2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradorVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yVmlzdWFsaXphci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Administradores/FormAdministradorVisualizarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYWRvcmVzXEZvcm1BZG1pbmlzdHJhZG9yVmlzdWFsaXphclBlcmZpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/AnalisisRed/FormAnalisisRedGenerar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hbGlzaXNSZWRcRm9ybUFuYWxpc2lzUmVkR2VuZXJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/AnalisisRed/FormAnalisisRedListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hbGlzaXNSZWRcRm9ybUFuYWxpc2lzUmVkTGlzdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/AnalisisRed/FormAnalisisRedVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQW5hbGlzaXNSZWRcRm9ybUFuYWxpc2lzUmVkVmlzdWFsaXphci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dashboard/FormDispositivosDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEZvcm1EaXNwb3NpdGl2b3NEYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/DiagramasRed/FormDiagramaRedAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ3JhbWFzUmVkXEZvcm1EaWFncmFtYVJlZEFncmVnYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/DiagramasRed/FormDiagramaRedBuscar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ3JhbWFzUmVkXEZvcm1EaWFncmFtYVJlZEJ1c2Nhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/DiagramasRed/FormDiagramaRedEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ3JhbWFzUmVkXEZvcm1EaWFncmFtYVJlZEVsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/DiagramasRed/FormDiagramasRedListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlhZ3JhbWFzUmVkXEZvcm1EaWFncmFtYXNSZWRMaXN0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivoAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b0FncmVnYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivoBuscar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b0J1c2Nhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivoEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b0VsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivoModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b01vZGlmaWNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivosListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b3NMaXN0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Dispositivos/FormDispositivosListarXEstado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzcG9zaXRpdm9zXEZvcm1EaXNwb3NpdGl2b3NMaXN0YXJYRXN0YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/EscaneoPuertos/FormEscaneoPuertosGenerar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjYW5lb1B1ZXJ0b3NcRm9ybUVzY2FuZW9QdWVydG9zR2VuZXJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/EscaneoPuertos/FormEscaneoPuertosVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjYW5lb1B1ZXJ0b3NcRm9ybUVzY2FuZW9QdWVydG9zVmlzdWFsaXphci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/EscaneoPuertos/FormEscaneosPuertosListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNjYW5lb1B1ZXJ0b3NcRm9ybUVzY2FuZW9zUHVlcnRvc0xpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/EstadoMotor/FormEstadoMotorPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvTW90b3JcRm9ybUVzdGFkb01vdG9yUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Grupos/FormGrupoAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEZvcm1HcnVwb0FncmVnYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Grupos/FormGrupoEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEZvcm1HcnVwb0VsaW1pbmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Grupos/FormGrupoModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEZvcm1HcnVwb01vZGlmaWNhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Grupos/FormGruposListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEZvcm1HcnVwb3NMaXN0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Grupos/FormGrupoVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR3J1cG9zXEZvcm1HcnVwb1Zpc3VhbGl6YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Home/IndexMonitoreo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleE1vbml0b3Jlby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Home/Logueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2d1ZW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Mails/FormMailActualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpbHNcRm9ybU1haWxBY3R1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/MensajesMotor/FormMensajesMotorListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVuc2FqZXNNb3RvclxGb3JtTWVuc2FqZXNNb3Rvckxpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadorAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3JBZ3JlZ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadorEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3JFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadoresListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3Jlc0xpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadorModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3JNb2RpZmljYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadorVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3JWaXN1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Operadores/FormOperadorVisualizarPerfil.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3BlcmFkb3Jlc1xGb3JtT3BlcmFkb3JWaXN1YWxpemFyUGVyZmlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Reportes/FormReporteAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRm9ybVJlcG9ydGVBZ3JlZ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Reportes/FormReporteEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRm9ybVJlcG9ydGVFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Reportes/FormReporteModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRm9ybVJlcG9ydGVNb2RpZmljYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Reportes/FormReportesListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRm9ybVJlcG9ydGVzTGlzdGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Reportes/FormReporteVisualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZXNcRm9ybVJlcG9ydGVWaXN1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/MPAdministrador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1QQWRtaW5pc3RyYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/MPLogueo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1QTG9ndWVvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/MPOperador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1QT3BlcmFkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/_TablaDispositivosPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9UYWJsYURpc3Bvc2l0aXZvc1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Sucursales/FormSucursalAgregar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VjdXJzYWxlc1xGb3JtU3VjdXJzYWxBZ3JlZ2FyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Sucursales/FormSucursalEliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VjdXJzYWxlc1xGb3JtU3VjdXJzYWxFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Sucursales/FormSucursalesListar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VjdXJzYWxlc1xGb3JtU3VjdXJzYWxlc0xpc3Rhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/Sucursales/FormSucursalModificar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VjdXJzYWxlc1xGb3JtU3VjdXJzYWxNb2RpZmljYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/OFA/OFA - Proyecto (Actualizacion .NET 8)/OFA - Codigo/Sitio/Sitio/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,125 @@
+﻿@model Sitio.Models.Operador
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+@using Sitio.Utility; 
+
+
+@{
+    ViewBag.Title = "Visualizar Operador";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+
+    string contraseñaOculta = new string('*', Model.Contraseña.Length);
+}
+
+
+
+<h2 class="font-weight-bold mb-4">Visualizar Operador</h2>
+
+
+
+<div>
+    <hr /> @*Separador ============================================================================================*@
+
+    <div class="mt-4">
+        <h4 class="font-weight-bold">Informacion de Operador</h4>
+    </div>
+
+    <div class="row mt-4">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.UsuarioID):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.UsuarioID)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.Contraseña):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @contraseñaOculta
+            @* @Html.DisplayFor(model => model.Contraseña) *@
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            @Html.DisplayNameFor(model => model.MailAsignado.Correo):
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.MailAsignado.Correo)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            Numero de funcionario supervisor:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NumeroFuncionarioSupervisor)
+        </div>
+
+    </div>
+
+    <div class="row mt-2">
+
+        <div class="col-12 col-md-3 font-weight-bold mb-1 mb-md-0">
+            Nombre supervisor:
+        </div>
+
+        <div class="col-12 col-md-3">
+            @Html.DisplayFor(model => model.NombreSupervisor)
+        </div>
+
+    </div>
+
+
+    <div class="mt-2">
+        <div class="col-12 font-weight-bold mb-1 p-0">
+            <h4 class="font-weight-bold">Sucursales asignadas</h4>
+        </div>
+
+        <div class="col-12 p-0">
+            @if (Model.SucursalesAsignadas.Any())
+             {
+                @foreach (var sucursal in Model.SucursalesAsignadas)
+                {
+                    <div>
+                        <strong>@Html.DisplayFor(model => sucursal.NroSucursal)</strong> - @Html.DisplayFor(model => sucursal.Calle) @Html.DisplayFor(model => sucursal.NumeroLocal)
+                    </div>
+                }
+             }
+            else
+            {
+                <div>
+                    No hay sucursales asignadas.
+                </div>
+            }
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+<script src="~/js/estandar.js"></script>
