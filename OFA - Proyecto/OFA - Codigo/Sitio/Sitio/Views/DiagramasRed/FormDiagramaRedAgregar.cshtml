@@ -1,0 +1,81 @@
+﻿@model Sitio.Models.DiagramaRed
+
+@*Necesarios para utilizar la Session*@
+@using Microsoft.AspNetCore.Http;
+@inject IHttpContextAccessor Accessor
+
+@using Sitio.Utility; @* Codigo para facilitar seleccion de Layout para Views *@
+
+@{
+    ViewBag.Title = "Agregar Diagrama de Red";
+
+    var UsuarioLogueado = Accessor.HttpContext.Session.GetObjectFromJson<Usuario>("UsuarioLog");
+
+    Layout = LayoutForViewHelper.GetLayoutForView(UsuarioLogueado);
+}
+
+
+
+<h2 class="font-weight-bold mb-4">Agregar Diagrama de Red</h2>
+
+
+
+@using (Html.BeginForm("FormDiagramaRedAgregar", "DiagramasRed", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+
+        <hr />
+
+        @*Prueba ---------------------------------------------------------------------------------*@
+        <div class="form-group">
+            @Html.Label(null ,"Sucursales Disponibles", htmlAttributes: new { @class = "control-label col-md-4 font-weight-bold" })
+
+            <div class="col-md-10">
+                @*@Html.DropDownListFor(model => model._Sucursal.NroSucursal, (SelectList)ViewBag.SucursalesDisp)*@
+                @Html.DropDownListFor(model => model._Sucursal.NroSucursal, (SelectList)ViewBag.SucursalesDisp)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nombre, htmlAttributes: new { @class = "control-label col-md-4 font-weight-bold" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nombre, new { htmlAttributes = new { @class = "form-control" } })
+            </div>
+        </div>
+
+        <div class="form-group">
+                 @*@Html.LabelFor(model => model.DiagramaImagen, htmlAttributes: new { @class = "control-label col-md-4 font-weight-bold" })*@            <div class="col-md-10">
+                <label class="control-label col-md-4 font-weight-bold pl-0">Diagrama de Red</label>
+                <input type="file" id="imagenInput" name="DiagramaImagen" class="form-control-file" accept=".png" />
+                <p class="text-muted">La imagen debe estar en formato <strong>png.</strong></p>
+            </div>
+        </div>
+
+
+        <hr class="pb-2 pt-2" />
+
+
+        
+        @if (!string.IsNullOrEmpty(@ViewBag.Mensaje))
+        {
+            <div class="alert alert-danger" role="alert">
+                @ViewBag.Mensaje
+            </div>
+        }
+
+
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10 text-center">
+                <input type="submit" value="Agregar" class="btn btn-success" />
+            </div>
+        </div>
+
+    </div>
+}
+
+
+
+<script src="~/js/estandar.js"></script>

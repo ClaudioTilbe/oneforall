@@ -1,0 +1,186 @@
+﻿
+
+.loginInputTextCenter {
+    text-align: center;
+}
+
+.gradient-custom {
+    /* fallback for old browsers */
+    background: #6a11cb;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+
+
+}
+
+.bg-GrisOscuro {
+    background-color: #212529;
+}
+
+.bg-negro {
+    background-color: #000000;
+}
+
+
+.btn-online {
+    background-color: #66cf7a;
+    color: white;
+}
+
+.btn-riesgo {
+    background-color: #e4ca2c;
+    color: white;
+}
+
+.btn-desconocido {
+    background-color: #b9b9b9;
+    color: white;
+}
+
+.btn-critico {
+    background-color: #ff717f;
+    color: white;
+}
+
+.btn-todos {
+    background-color: #61a0fc;
+    color: white;
+}
+
+#btn-desplegable {
+    outline: none !important;
+}
+
+#btn-desplegable:hover {
+    filter: brightness(80%);
+}
+
+
+.font-small-grid {
+    font-size: 0,8rem;
+}
+
+td.online {
+    color: green;
+    font-weight: bold;
+}
+
+td.offline {
+    color: red;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* dashboard.css */
+
+/* Estilo para las filas del dashboard */
+.dashboard-row {
+    max-height: 450px;
+}
+
+/*Grafico responsivo*/
+.chart-container {
+    position: relative;
+    width: 100%; /* Asegura que el gráfico ocupe todo el ancho disponible */
+    height: 35vh; /* Fija una altura relativa al viewport */
+    min-height: 300px; /* Altura mínima para asegurar legibilidad en pantallas pequeñas */
+    max-height: 600px; /* Altura máxima para evitar que crezca demasiado en pantallas grandes */
+}
+
+/* Media query para ajustar el tamaño en pantallas pequeñas */
+@media (max-width: 900px) {
+    .chart-container {
+        width: 100%;
+        height: 25vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .chart-container {
+        width: 100%;
+        height: 20vh;
+    }
+}
+
+
+
+/*Animacion de parpadeo de Color*/
+.parpadeoVerde {
+    animation: parpadeoVerdeAnimation 1s;
+}
+
+@keyframes parpadeoVerdeAnimation {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(154, 240, 117);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.parpadeoRojo {
+    animation: parpadeoRojoAnimation 1s;
+}
+
+@keyframes parpadeoRojoAnimation {
+    0% {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: rgb(255, 148, 148);
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+
+.tamañoChicoDiagramas {
+    max-width: 200px;
+    max-height: 300px;
+}
+
+.rotarArriba {
+    transform: rotate(180deg);
+    transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+.rotarAbajo {
+    transform: rotate(0deg);
+    transition: transform 0.3s; /* Agrega una transición suave */
+}
+
+.nav-link {
+    transition: background-color 0.3s ease;*/ /* Transición suave durante 0.3 segundos */
+}
+
+/*Hover de menu vertical*/
+.nav-link:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Color negro con una opacidad del 50% */
+}
+
+/*Background de Home*/
+/*.background-black {
+    background-color: black;
+}*/
+
+/*Iconos de menu vertical*/
+.icon-style {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
