@@ -966,10 +966,10 @@ Finalmente, una vez utilizadas estas herramientas para detectar los fallos en lo
 
 # :link: ACTUALIZACIONES (14)
 
-Este capitulo indicara las actualizaciones que el proyecto a recibido luego de ya haber realizado la entrega final.
+Este capítulo indicará las actualizaciones que el proyecto ha recibido luego de ya haber realizado la entrega final.
 
-### Migracion de .NET 5.0 a .NET 8.0
-* Con la finalidad de resolver vulnerabilidades que los Nuggets agregados estaban provocando debido a dependencias, se opto por realizar una migracion de .NET 5.0 a .NET 8.0.
+### Migración de .NET 5.0 a .NET 8.0
+* Con la finalidad de resolver vulnerabilidades que los Nuggets agregados estaban provocando debido a dependencias, se optó por realizar una migración de .NET 5.0 a .NET 8.0.
 
 ### Mejoras estructurales
 * Se realizaron cambios en la estructura de las relaciones entre entidades para optimizar su manejo, logrando una organización más limpia y comprensible. Esto facilita la legibilidad del código y mejora su eficiencia, permitiendo un mantenimiento y escalabilidad más sencilla.
@@ -979,6 +979,9 @@ Este capitulo indicara las actualizaciones que el proyecto a recibido luego de y
 * Reorganización y optimización del código HTML y CSS para una estructura más limpia y eficiente
 * Adaptación de todos los formularios a un diseño completamente responsivo, garantizando una visualización óptima en diferentes dispositivos
 
+### Correcciones de seguridad
+* Se implementó .gitignore para prevenir la exposición de datos sensibles, como los perfiles de publicación, entre otros.
+* Se escaneó el proyecto y la documentación con [FOCA](https://github.com/ElevenPaths/FOCA), evitando la filtración de datos sensibles a través de metadatos.
 
 
 
