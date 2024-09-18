@@ -38,7 +38,7 @@ A continuación presento una **sintesis** de la documentación generada para el 
 
 * **[Capítulo 14 - Actualizaciones](#link-actualizaciones-14)**
 
-* **[Capítulo 15 - Un vistazo a la aplicación](#link-actualizaciones-14)**
+* **[Capítulo 15 - Un vistazo a la aplicación](#link-un-vistazo-a-la-aplicacion-15)**
 
 
 
