@@ -988,7 +988,7 @@ Este capítulo indicará las actualizaciones que el proyecto ha recibido luego d
 
 # :link: UN VISTAZO A LA APLICACION (15)
 
-A modo de disponer de una presentacion donde se pueda apreciar de forma grafica el funcionamiento de la aplicacion me resulto util incluir este capitulo.
+A modo de disponer de una presentación donde se pueda apreciar de forma gráfica el funcionamiento de la aplicación, me resultó útil incluir este capítulo. 
 
 ## Login 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Login.png)
@@ -997,7 +997,7 @@ A modo de disponer de una presentacion donde se pueda apreciar de forma grafica 
 
 ## Monitoreo de dispositivos
 
-A travez del boton "Iniciar sondeo" el cliente se conecta al Hub de SignalR, comenzando a recibir de esta manera la actualizacion del estado de conexion de los dispositivos. En este caso la aplicacion percibe la desconexion del dispositivo 192.168.1.10.
+A través del botón "Iniciar sondeo", el cliente se conecta al Hub de SignalR, comenzando a recibir de esta manera la actualización del estado de conexión de los dispositivos en tiempo real. En este caso la aplicación percibe la desconexión del dispositivo 192.168.1.10.
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Monitoreo%20de%20Dispositivos.gif)
 
@@ -1005,7 +1005,7 @@ A travez del boton "Iniciar sondeo" el cliente se conecta al Hub de SignalR, com
 
 ## Alta de dispositivo
 
-En este ejemplo se puede apreciar el proceso para dar de alta un dispositivo. Luego simplemente se revisa su estado en la aplicacion y se corrobora en la consola con un "Ping -t". 
+En este ejemplo se puede apreciar el proceso para dar de alta un dispositivo. Luego simplemente se revisa su estado en la aplicación y se corrobora en la consola con un "Ping -t". 
 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Alta%20Dispositivo.gif)
 
