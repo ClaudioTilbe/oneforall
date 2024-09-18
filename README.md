@@ -4,7 +4,7 @@
 
 La solución fue desarrollada como proyecto de fin de carrera para el instituto BIOS, sin ayuda a nivel técnico y autogestionando los tiempos de trabajo. Este proyecto se extendió a lo largo de poco más de un año y consta de 2 grandes bloques, documentación y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
 
-A continuación presento una **sintesis** de la documentación generada para el proyecto, así como también se puede encontrar la codificación del mismo en este repositorio.
+A continuación presento una **sintesis** de la documentación generada para el proyecto, así como también se puede encontrar la codificación del mismo en este repositorio y un capítulo donde puedes ver cómo se ve gráficamente el software en su etapa final. 
 
 <br>
 
@@ -38,6 +38,7 @@ A continuación presento una **sintesis** de la documentación generada para el 
 
 * **[Capítulo 14 - Actualizaciones](#link-actualizaciones-14)**
 
+* **[Capítulo 15 - Un vistazo a la aplicación](#link-actualizaciones-14)**
 
 
 
@@ -983,6 +984,20 @@ Este capítulo indicará las actualizaciones que el proyecto ha recibido luego d
 * Se implementó .gitignore para prevenir la exposición de datos sensibles, como los perfiles de publicación, entre otros.
 * Se escaneó el proyecto y la documentación con [FOCA](https://github.com/ElevenPaths/FOCA), evitando la filtración de datos sensibles a través de metadatos.
 
+<br>
+
+# :link: UN VISTAZO A LA APLICACION (15)
+
+A modo de disponer de una presentacion donde se pueda apreciar de forma grafica el funcionamiento de la aplicacion me resulto util incluir este capitulo.
+
+## Login 
+![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Login.png)
+
+## Monitoreo de dispositivos
+![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Monitoreo%20de%20Dispositivos.gif)
+
+## Alta de dispositivo
+![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Alta%20Dispositivo.gif)
 
 
 
