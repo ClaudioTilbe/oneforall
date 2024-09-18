@@ -993,10 +993,20 @@ A modo de disponer de una presentacion donde se pueda apreciar de forma grafica 
 ## Login 
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Login.png)
 
+
+
 ## Monitoreo de dispositivos
+
+A travez del boton "Iniciar sondeo" el cliente se conecta al Hub de SignalR, comenzando a recibir de esta manera la actualizacion del estado de conexion de los dispositivos. En este caso la aplicacion percibe la desconexion del dispositivo 192.168.1.10.
+
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Monitoreo%20de%20Dispositivos.gif)
 
+
+
 ## Alta de dispositivo
+
+En este ejemplo se puede apreciar el proceso para dar de alta un dispositivo. Luego simplemente se revisa su estado en la aplicacion y se corrobora en la consola con un "Ping -t". 
+
 ![](https://github.com/ClaudioTilbe/oneforall/blob/3c0ad7986151e73207ee3117a0521cc70dfba8c4/Imagenes/Alta%20Dispositivo.gif)
 
 
