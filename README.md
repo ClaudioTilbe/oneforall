@@ -4,7 +4,7 @@
 
 La solución fue desarrollada como proyecto de fin de carrera para el instituto BIOS, sin ayuda a nivel técnico y autogestionando los tiempos de trabajo. Este proyecto se extendió a lo largo de poco más de un año y consta de 2 grandes bloques, documentación y desarrollo del software. Ambas etapas ya culminaron y el proyecto fue aprobado.
 
-A continuación presento una **sintesis** de la documentación generada para el proyecto, así como también se puede encontrar la codificación del mismo en este repositorio y un capítulo donde puedes ver cómo se ve gráficamente el software en su etapa final. 
+A continuación presento una **sintesis** de la documentación generada para el proyecto, así como también se puede encontrar la codificación del mismo en este repositorio y un capítulo donde puedes [ver](#link-un-vistazo-a-la-aplicacion-15) cómo se ve gráficamente el software en su etapa final. 
 
 <br>
 
